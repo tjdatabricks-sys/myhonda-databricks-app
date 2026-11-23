@@ -1,0 +1,56 @@
+{
+  "name": "myhonda-marketing-iq-databricks",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build --webpack",
+    "start": "node scripts/start.mjs",
+    "lint": "eslint src tests scripts --no-warn-ignored",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "test:ui": "playwright test",
+    "package:databricks": "node scripts/package.mjs"
+  },
+  "dependencies": {
+    "@databricks/sql": "^1.17.0",
+    "@radix-ui/react-accordion": "^1.2.11",
+    "@radix-ui/react-dialog": "^1.1.14",
+    "@radix-ui/react-progress": "^1.1.7",
+    "@radix-ui/react-select": "^2.2.5",
+    "@radix-ui/react-separator": "^1.1.7",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-tabs": "^1.1.12",
+    "@radix-ui/react-toast": "^1.2.14",
+    "@tailwindcss/postcss": "^4",
+    "@tanstack/react-query": "^5.82.0",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.525.0",
+    "next": "^16.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^2.15.4",
+    "sharp": "^0.34.3",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4",
+    "tw-animate-css": "^1.3.5",
+    "typescript": "^5",
+    "zustand": "^5.0.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/sql.js": "^1.4.9",
+    "eslint": "^9",
+    "eslint-config-next": "^16.1.1",
+    "fflate": "^0.8.3",
+    "sql.js": "^1.13.0",
+    "tsx": "^4.20.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

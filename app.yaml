@@ -1,0 +1,11 @@
+command: ['node', 'scripts/start.mjs']
+env:
+  - name: DATABRICKS_WAREHOUSE_ID
+    valueFrom: sql-warehouse
+  - name: DATABRICKS_CATALOG
+    value: 'media-poc'
+  - name: DATABRICKS_SCHEMA
+    value: 'gold_business'
+health_check:
+  path: /api/health
+  timeout_seconds: 300
