@@ -1,0 +1,91 @@
+campaign_key,reach_scope,platform,source_campaign_id,format,ad_id,window_type,window_start,window_end,unique_reach,impressions,reach_method,data_mode,pack_version,campaign_name
+CMP-1001,NATIONAL,Google Ads,goo-770827,Search Text,CMP-1001-ROLLUP,7-day,2024-03-05,2024-03-12,74437,770201,platform_reported_unique_users,SYNTHETIC,v2.1.0,Spring Checking Acquisition
+CMP-1001,NATIONAL,Google Ads,goo-770827,Search Text,CMP-1001-ROLLUP,28-day,2024-02-13,2024-03-12,244395,770201,platform_reported_unique_users,SYNTHETIC,v2.1.0,Spring Checking Acquisition
+CMP-1002,NATIONAL,Meta Ads,met-770828,Lead Form,CMP-1002-ROLLUP,7-day,2024-04-28,2024-05-05,453321,6038225,platform_reported_unique_users,SYNTHETIC,v2.1.0,High-Yield Savings Push
+CMP-1002,NATIONAL,Meta Ads,met-770828,Lead Form,CMP-1002-ROLLUP,28-day,2024-04-07,2024-05-05,1203451,6038225,platform_reported_unique_users,SYNTHETIC,v2.1.0,High-Yield Savings Push
+CMP-1003,NATIONAL,LinkedIn Ads,lin-770829,Carousel,CMP-1003-ROLLUP,7-day,2024-07-27,2024-08-03,264832,3437548,platform_reported_unique_users,SYNTHETIC,v2.1.0,Rewards Card Blitz
+CMP-1003,NATIONAL,LinkedIn Ads,lin-770829,Carousel,CMP-1003-ROLLUP,28-day,2024-07-06,2024-08-03,834064,3437548,platform_reported_unique_users,SYNTHETIC,v2.1.0,Rewards Card Blitz
+CMP-1004,NATIONAL,TikTok Ads,tik-770830,Lead Form,CMP-1004-ROLLUP,7-day,2025-04-13,2025-04-20,800344,11951534,platform_reported_unique_users,SYNTHETIC,v2.1.0,Auto Loan Rate Event
+CMP-1004,NATIONAL,TikTok Ads,tik-770830,Lead Form,CMP-1004-ROLLUP,28-day,2025-03-23,2025-04-20,2547166,11951534,platform_reported_unique_users,SYNTHETIC,v2.1.0,Auto Loan Rate Event
+CMP-1005,NATIONAL,The Trade Desk,the-770831,Lead Form,CMP-1005-ROLLUP,7-day,2025-05-11,2025-05-18,1486611,18110676,platform_reported_unique_users,SYNTHETIC,v2.1.0,Mortgage Pre-Approval Drive
+CMP-1005,NATIONAL,The Trade Desk,the-770831,Lead Form,CMP-1005-ROLLUP,28-day,2025-04-20,2025-05-18,5025056,18110676,platform_reported_unique_users,SYNTHETIC,v2.1.0,Mortgage Pre-Approval Drive
+CMP-1006,NATIONAL,YouTube Ads,you-770832,Story,CMP-1006-ROLLUP,7-day,2024-10-16,2024-10-23,855483,8640272,platform_reported_unique_users,SYNTHETIC,v2.1.0,Personal Loan Consolidation
+CMP-1006,NATIONAL,YouTube Ads,you-770832,Story,CMP-1006-ROLLUP,28-day,2024-09-25,2024-10-23,2749337,8640272,platform_reported_unique_users,SYNTHETIC,v2.1.0,Personal Loan Consolidation
+CMP-1007,NATIONAL,Google Ads,goo-770833,Display,CMP-1007-ROLLUP,7-day,2024-12-08,2024-12-15,159221,1440726,platform_reported_unique_users,SYNTHETIC,v2.1.0,CD Ladder Campaign
+CMP-1007,NATIONAL,Google Ads,goo-770833,Display,CMP-1007-ROLLUP,28-day,2024-11-17,2024-12-15,262664,1440726,platform_reported_unique_users,SYNTHETIC,v2.1.0,CD Ladder Campaign
+CMP-1008,NATIONAL,Meta Ads,met-770834,Lead Form,CMP-1008-ROLLUP,7-day,2024-07-04,2024-07-11,417407,6210912,platform_reported_unique_users,SYNTHETIC,v2.1.0,Home Equity Access
+CMP-1008,NATIONAL,Meta Ads,met-770834,Lead Form,CMP-1008-ROLLUP,28-day,2024-06-13,2024-07-11,1614703,6210912,platform_reported_unique_users,SYNTHETIC,v2.1.0,Home Equity Access
+CMP-1009,NATIONAL,LinkedIn Ads,lin-770835,Lead Form,CMP-1009-ROLLUP,7-day,2024-08-11,2024-08-18,224504,2354957,platform_reported_unique_users,SYNTHETIC,v2.1.0,Business Banking Starter
+CMP-1009,NATIONAL,LinkedIn Ads,lin-770835,Lead Form,CMP-1009-ROLLUP,28-day,2024-07-21,2024-08-18,434373,2354957,platform_reported_unique_users,SYNTHETIC,v2.1.0,Business Banking Starter
+CMP-1010,NATIONAL,TikTok Ads,tik-770857,Search Text,CMP-1010-ROLLUP,7-day,2025-04-12,2025-04-19,1246740,11322014,platform_reported_unique_users,SYNTHETIC,v2.1.0,Wealth Advisory Intro
+CMP-1010,NATIONAL,TikTok Ads,tik-770857,Search Text,CMP-1010-ROLLUP,28-day,2025-03-22,2025-04-19,3241720,11322014,platform_reported_unique_users,SYNTHETIC,v2.1.0,Wealth Advisory Intro
+CMP-1011,NATIONAL,The Trade Desk,the-770858,Carousel,CMP-1011-ROLLUP,7-day,2025-01-15,2025-01-22,1634998,14158602,platform_reported_unique_users,SYNTHETIC,v2.1.0,Summer Checking Boost
+CMP-1011,NATIONAL,The Trade Desk,the-770858,Carousel,CMP-1011-ROLLUP,28-day,2024-12-25,2025-01-22,2444226,14158602,platform_reported_unique_users,SYNTHETIC,v2.1.0,Summer Checking Boost
+CMP-1012,NATIONAL,YouTube Ads,you-770859,Image,CMP-1012-ROLLUP,7-day,2024-08-24,2024-08-31,628200,10253778,platform_reported_unique_users,SYNTHETIC,v2.1.0,Student Account Refresh
+CMP-1012,NATIONAL,YouTube Ads,you-770859,Image,CMP-1012-ROLLUP,28-day,2024-08-03,2024-08-31,2448074,10253778,platform_reported_unique_users,SYNTHETIC,v2.1.0,Student Account Refresh
+CMP-1013,NATIONAL,Google Ads,goo-770860,Search Text,CMP-1013-ROLLUP,7-day,2025-03-24,2025-03-31,167555,1589066,platform_reported_unique_users,SYNTHETIC,v2.1.0,Fall Savings Sprint
+CMP-1013,NATIONAL,Google Ads,goo-770860,Search Text,CMP-1013-ROLLUP,28-day,2025-03-03,2025-03-31,505160,1589066,platform_reported_unique_users,SYNTHETIC,v2.1.0,Fall Savings Sprint
+CMP-1014,NATIONAL,Meta Ads,met-770861,Lead Form,CMP-1014-ROLLUP,7-day,2024-05-29,2024-06-05,396204,5132306,platform_reported_unique_users,SYNTHETIC,v2.1.0,Credit Builder Card
+CMP-1014,NATIONAL,Meta Ads,met-770861,Lead Form,CMP-1014-ROLLUP,28-day,2024-05-08,2024-06-05,822667,5132306,platform_reported_unique_users,SYNTHETIC,v2.1.0,Credit Builder Card
+CMP-1015,NATIONAL,LinkedIn Ads,lin-770862,Image,CMP-1015-ROLLUP,7-day,2025-04-05,2025-04-12,211180,3559186,platform_reported_unique_users,SYNTHETIC,v2.1.0,Auto Refinance Wave
+CMP-1015,NATIONAL,LinkedIn Ads,lin-770862,Image,CMP-1015-ROLLUP,28-day,2025-03-15,2025-04-12,762647,3559186,platform_reported_unique_users,SYNTHETIC,v2.1.0,Auto Refinance Wave
+CMP-1016,NATIONAL,TikTok Ads,tik-770863,Search Text,CMP-1016-ROLLUP,7-day,2024-05-06,2024-05-13,767350,8823825,platform_reported_unique_users,SYNTHETIC,v2.1.0,First-Time Homebuyer
+CMP-1016,NATIONAL,TikTok Ads,tik-770863,Search Text,CMP-1016-ROLLUP,28-day,2024-04-15,2024-05-13,1752523,8823825,platform_reported_unique_users,SYNTHETIC,v2.1.0,First-Time Homebuyer
+CMP-1017,NATIONAL,The Trade Desk,the-770864,Search Text,CMP-1017-ROLLUP,7-day,2024-11-18,2024-11-25,928424,18001432,platform_reported_unique_users,SYNTHETIC,v2.1.0,Holiday CD Special
+CMP-1017,NATIONAL,The Trade Desk,the-770864,Search Text,CMP-1017-ROLLUP,28-day,2024-10-28,2024-11-25,5621473,18001432,platform_reported_unique_users,SYNTHETIC,v2.1.0,Holiday CD Special
+CMP-1018,NATIONAL,YouTube Ads,you-770865,Search Text,CMP-1018-ROLLUP,7-day,2024-04-21,2024-04-28,527560,9036165,platform_reported_unique_users,SYNTHETIC,v2.1.0,Year-End Tax Prep Loans
+CMP-1018,NATIONAL,YouTube Ads,you-770865,Search Text,CMP-1018-ROLLUP,28-day,2024-03-31,2024-04-28,1695931,9036165,platform_reported_unique_users,SYNTHETIC,v2.1.0,Year-End Tax Prep Loans
+CMP-1019,NATIONAL,Google Ads,goo-770866,Carousel,CMP-1019-ROLLUP,7-day,2024-05-05,2024-05-12,59055,1015504,platform_reported_unique_users,SYNTHETIC,v2.1.0,New Year Financial Wellness
+CMP-1019,NATIONAL,Google Ads,goo-770866,Carousel,CMP-1019-ROLLUP,28-day,2024-04-14,2024-05-12,249289,1015504,platform_reported_unique_users,SYNTHETIC,v2.1.0,New Year Financial Wellness
+CMP-1020,NATIONAL,Meta Ads,met-770888,Carousel,CMP-1020-ROLLUP,7-day,2024-11-11,2024-11-18,402978,3928491,platform_reported_unique_users,SYNTHETIC,v2.1.0,Spring Mortgage Season
+CMP-1020,NATIONAL,Meta Ads,met-770888,Carousel,CMP-1020-ROLLUP,28-day,2024-10-21,2024-11-18,998175,3928491,platform_reported_unique_users,SYNTHETIC,v2.1.0,Spring Mortgage Season
+CMP-1021,NATIONAL,LinkedIn Ads,lin-770889,Story,CMP-1021-ROLLUP,7-day,2024-10-13,2024-10-20,156187,1898774,platform_reported_unique_users,SYNTHETIC,v2.1.0,Small Business Lending Week
+CMP-1021,NATIONAL,LinkedIn Ads,lin-770889,Story,CMP-1021-ROLLUP,28-day,2024-09-22,2024-10-20,453790,1898774,platform_reported_unique_users,SYNTHETIC,v2.1.0,Small Business Lending Week
+CMP-1022,NATIONAL,TikTok Ads,tik-770890,Carousel,CMP-1022-ROLLUP,7-day,2024-08-02,2024-08-09,847396,7689583,platform_reported_unique_users,SYNTHETIC,v2.1.0,Premium Card Upgrade
+CMP-1022,NATIONAL,TikTok Ads,tik-770890,Carousel,CMP-1022-ROLLUP,28-day,2024-07-12,2024-08-09,1575141,7689583,platform_reported_unique_users,SYNTHETIC,v2.1.0,Premium Card Upgrade
+CMP-1023,NATIONAL,The Trade Desk,the-770891,Lead Form,CMP-1023-ROLLUP,7-day,2024-06-07,2024-06-14,1666895,18367770,platform_reported_unique_users,SYNTHETIC,v2.1.0,Money Market Momentum
+CMP-1023,NATIONAL,The Trade Desk,the-770891,Lead Form,CMP-1023-ROLLUP,28-day,2024-05-17,2024-06-14,3183862,18367770,platform_reported_unique_users,SYNTHETIC,v2.1.0,Money Market Momentum
+CMP-1024,NATIONAL,YouTube Ads,you-770892,Image,CMP-1024-ROLLUP,7-day,2025-06-23,2025-06-30,567057,8493715,platform_reported_unique_users,SYNTHETIC,v2.1.0,Green Auto EV Loans
+CMP-1024,NATIONAL,YouTube Ads,you-770892,Image,CMP-1024-ROLLUP,28-day,2025-06-02,2025-06-30,2420977,8493715,platform_reported_unique_users,SYNTHETIC,v2.1.0,Green Auto EV Loans
+CMP-1025,NATIONAL,Google Ads,goo-770893,Search Text,CMP-1025-ROLLUP,7-day,2024-10-04,2024-10-11,69006,758533,platform_reported_unique_users,SYNTHETIC,v2.1.0,Home Improvement Loans
+CMP-1025,NATIONAL,Google Ads,goo-770893,Search Text,CMP-1025-ROLLUP,28-day,2024-09-13,2024-10-11,123830,758533,platform_reported_unique_users,SYNTHETIC,v2.1.0,Home Improvement Loans
+CMP-1026,NATIONAL,Meta Ads,met-770894,Search Text,CMP-1026-ROLLUP,7-day,2025-01-30,2025-02-06,441769,5578808,platform_reported_unique_users,SYNTHETIC,v2.1.0,Digital Banking Adoption
+CMP-1026,NATIONAL,Meta Ads,met-770894,Search Text,CMP-1026-ROLLUP,28-day,2025-01-09,2025-02-06,1663608,5578808,platform_reported_unique_users,SYNTHETIC,v2.1.0,Digital Banking Adoption
+CMP-1027,NATIONAL,LinkedIn Ads,lin-770895,Lead Form,CMP-1027-ROLLUP,7-day,2024-12-01,2024-12-08,103222,1770906,platform_reported_unique_users,SYNTHETIC,v2.1.0,Overdraft Protection Plus
+CMP-1027,NATIONAL,LinkedIn Ads,lin-770895,Lead Form,CMP-1027-ROLLUP,28-day,2024-11-10,2024-12-08,295151,1770906,platform_reported_unique_users,SYNTHETIC,v2.1.0,Overdraft Protection Plus
+CMP-1028,NATIONAL,TikTok Ads,tik-770896,Search Text,CMP-1028-ROLLUP,7-day,2024-09-24,2024-10-01,939261,9481601,platform_reported_unique_users,SYNTHETIC,v2.1.0,Savings Goal Tracker
+CMP-1028,NATIONAL,TikTok Ads,tik-770896,Search Text,CMP-1028-ROLLUP,28-day,2024-09-03,2024-10-01,2790445,9481601,platform_reported_unique_users,SYNTHETIC,v2.1.0,Savings Goal Tracker
+CMP-1029,NATIONAL,The Trade Desk,the-770897,Lead Form,CMP-1029-ROLLUP,7-day,2024-06-05,2024-06-12,1513950,16169131,platform_reported_unique_users,SYNTHETIC,v2.1.0,Joint Account Families
+CMP-1029,NATIONAL,The Trade Desk,the-770897,Lead Form,CMP-1029-ROLLUP,28-day,2024-05-15,2024-06-12,4167893,16169131,platform_reported_unique_users,SYNTHETIC,v2.1.0,Joint Account Families
+CMP-1030,NATIONAL,YouTube Ads,you-770919,Carousel,CMP-1030-ROLLUP,7-day,2024-10-02,2024-10-09,387724,5007209,platform_reported_unique_users,SYNTHETIC,v2.1.0,Senior CD Ladder
+CMP-1030,NATIONAL,YouTube Ads,you-770919,Carousel,CMP-1030-ROLLUP,28-day,2024-09-11,2024-10-09,1113682,5007209,platform_reported_unique_users,SYNTHETIC,v2.1.0,Senior CD Ladder
+CMP-1031,NATIONAL,Google Ads,goo-770920,Video,CMP-1031-ROLLUP,7-day,2024-08-04,2024-08-11,106183,1109469,platform_reported_unique_users,SYNTHETIC,v2.1.0,Grad Starter Accounts
+CMP-1031,NATIONAL,Google Ads,goo-770920,Video,CMP-1031-ROLLUP,28-day,2024-07-14,2024-08-11,347601,1109469,platform_reported_unique_users,SYNTHETIC,v2.1.0,Grad Starter Accounts
+CMP-1032,NATIONAL,Meta Ads,met-770921,Carousel,CMP-1032-ROLLUP,7-day,2025-03-03,2025-03-10,804543,6796388,platform_reported_unique_users,SYNTHETIC,v2.1.0,Travel Rewards Card
+CMP-1032,NATIONAL,Meta Ads,met-770921,Carousel,CMP-1032-ROLLUP,28-day,2025-02-10,2025-03-10,1236738,6796388,platform_reported_unique_users,SYNTHETIC,v2.1.0,Travel Rewards Card
+CMP-1033,NATIONAL,LinkedIn Ads,lin-770922,Story,CMP-1033-ROLLUP,7-day,2024-03-25,2024-04-01,126281,1753039,platform_reported_unique_users,SYNTHETIC,v2.1.0,Local Business Spotlight
+CMP-1033,NATIONAL,LinkedIn Ads,lin-770922,Story,CMP-1033-ROLLUP,28-day,2024-03-04,2024-04-01,511200,1753039,platform_reported_unique_users,SYNTHETIC,v2.1.0,Local Business Spotlight
+CMP-1034,NATIONAL,TikTok Ads,tik-770923,Lead Form,CMP-1034-ROLLUP,7-day,2025-05-20,2025-05-27,1636724,14848042,platform_reported_unique_users,SYNTHETIC,v2.1.0,Community Reinvestment
+CMP-1034,NATIONAL,TikTok Ads,tik-770923,Lead Form,CMP-1034-ROLLUP,28-day,2025-04-29,2025-05-27,3669302,14848042,platform_reported_unique_users,SYNTHETIC,v2.1.0,Community Reinvestment
+CMP-1035,NATIONAL,The Trade Desk,the-770924,Lead Form,CMP-1035-ROLLUP,7-day,2025-03-19,2025-03-26,879422,12570271,platform_reported_unique_users,SYNTHETIC,v2.1.0,Veteran Banking Package
+CMP-1035,NATIONAL,The Trade Desk,the-770924,Lead Form,CMP-1035-ROLLUP,28-day,2025-02-26,2025-03-26,3081690,12570271,platform_reported_unique_users,SYNTHETIC,v2.1.0,Veteran Banking Package
+CMP-1036,NATIONAL,YouTube Ads,you-770925,Search Text,CMP-1036-ROLLUP,7-day,2025-06-23,2025-06-30,568323,9660628,platform_reported_unique_users,SYNTHETIC,v2.1.0,Teacher Appreciation Banking
+CMP-1036,NATIONAL,YouTube Ads,you-770925,Search Text,CMP-1036-ROLLUP,28-day,2025-06-02,2025-06-30,2488438,9660628,platform_reported_unique_users,SYNTHETIC,v2.1.0,Teacher Appreciation Banking
+CMP-1037,NATIONAL,Google Ads,goo-770926,Search Text,CMP-1037-ROLLUP,7-day,2024-05-28,2024-06-04,68859,699446,platform_reported_unique_users,SYNTHETIC,v2.1.0,Healthcare Professional Loans
+CMP-1037,NATIONAL,Google Ads,goo-770926,Search Text,CMP-1037-ROLLUP,28-day,2024-05-07,2024-06-04,180075,699446,platform_reported_unique_users,SYNTHETIC,v2.1.0,Healthcare Professional Loans
+CMP-1038,NATIONAL,Meta Ads,met-770927,Search Text,CMP-1038-ROLLUP,7-day,2024-11-20,2024-11-27,535173,5305313,platform_reported_unique_users,SYNTHETIC,v2.1.0,Tech Worker Mortgage
+CMP-1038,NATIONAL,Meta Ads,met-770927,Search Text,CMP-1038-ROLLUP,28-day,2024-10-30,2024-11-27,1171439,5305313,platform_reported_unique_users,SYNTHETIC,v2.1.0,Tech Worker Mortgage
+CMP-1039,NATIONAL,LinkedIn Ads,lin-770928,Search Text,CMP-1039-ROLLUP,7-day,2024-05-08,2024-05-15,137646,2024649,platform_reported_unique_users,SYNTHETIC,v2.1.0,Remote Worker Banking
+CMP-1039,NATIONAL,LinkedIn Ads,lin-770928,Search Text,CMP-1039-ROLLUP,28-day,2024-04-17,2024-05-15,529734,2024649,platform_reported_unique_users,SYNTHETIC,v2.1.0,Remote Worker Banking
+CMP-1040,NATIONAL,TikTok Ads,tik-770950,Carousel,CMP-1040-ROLLUP,7-day,2025-02-13,2025-02-20,927072,9417860,platform_reported_unique_users,SYNTHETIC,v2.1.0,Zelle Adoption Push
+CMP-1040,NATIONAL,TikTok Ads,tik-770950,Carousel,CMP-1040-ROLLUP,28-day,2025-01-23,2025-02-20,2161283,9417860,platform_reported_unique_users,SYNTHETIC,v2.1.0,Zelle Adoption Push
+CMP-1041,NATIONAL,The Trade Desk,the-770951,Search Text,CMP-1041-ROLLUP,7-day,2024-08-09,2024-08-16,1251001,17737944,platform_reported_unique_users,SYNTHETIC,v2.1.0,Card Rewards Redemption
+CMP-1041,NATIONAL,The Trade Desk,the-770951,Search Text,CMP-1041-ROLLUP,28-day,2024-07-19,2024-08-16,4784371,17737944,platform_reported_unique_users,SYNTHETIC,v2.1.0,Card Rewards Redemption
+CMP-1042,NATIONAL,YouTube Ads,you-770952,Lead Form,CMP-1042-ROLLUP,7-day,2024-09-08,2024-09-15,435917,5159127,platform_reported_unique_users,SYNTHETIC,v2.1.0,Branch Grand Opening Tour
+CMP-1042,NATIONAL,YouTube Ads,you-770952,Lead Form,CMP-1042-ROLLUP,28-day,2024-08-18,2024-09-15,1351124,5159127,platform_reported_unique_users,SYNTHETIC,v2.1.0,Branch Grand Opening Tour
+CMP-1043,NATIONAL,Google Ads,goo-770953,Lead Form,CMP-1043-ROLLUP,7-day,2025-04-13,2025-04-20,154745,1496318,platform_reported_unique_users,SYNTHETIC,v2.1.0,Financial Literacy Month
+CMP-1043,NATIONAL,Google Ads,goo-770953,Lead Form,CMP-1043-ROLLUP,28-day,2025-03-23,2025-04-20,355892,1496318,platform_reported_unique_users,SYNTHETIC,v2.1.0,Financial Literacy Month
+CMP-1044,NATIONAL,Meta Ads,met-770954,Search Text,CMP-1044-ROLLUP,7-day,2024-08-26,2024-09-02,463957,5200709,platform_reported_unique_users,SYNTHETIC,v2.1.0,Rate Lock Window
+CMP-1044,NATIONAL,Meta Ads,met-770954,Search Text,CMP-1044-ROLLUP,28-day,2024-08-05,2024-09-02,1031199,5200709,platform_reported_unique_users,SYNTHETIC,v2.1.0,Rate Lock Window
+CMP-1045,NATIONAL,LinkedIn Ads,lin-770955,Lead Form,CMP-1045-ROLLUP,7-day,2024-05-05,2024-05-12,163311,2288572,platform_reported_unique_users,SYNTHETIC,v2.1.0,Portfolio Review Season
+CMP-1045,NATIONAL,LinkedIn Ads,lin-770955,Lead Form,CMP-1045-ROLLUP,28-day,2024-04-14,2024-05-12,729172,2288572,platform_reported_unique_users,SYNTHETIC,v2.1.0,Portfolio Review Season

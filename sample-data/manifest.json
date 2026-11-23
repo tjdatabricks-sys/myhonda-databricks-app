@@ -1,0 +1,283 @@
+{
+  "package": "myhonda-gold-business-sample-data",
+  "source": "upload/07_gold_to_gold_business.csv (catalog media-poc, schema gold_business)",
+  "generatedAt": "2026-11-23T11:08:47.042Z",
+  "tables": 39,
+  "totalRows": 26854,
+  "description": "Sample row-level data for every gold_business table powering the myhonda Marketing IQ analytics app. Column names, order and types follow the uploaded gold_to_gold_business schema file exactly (39 tables / 468 columns).",
+  "tablesManifest": [
+    {
+      "table": "dim_branch",
+      "model": "Branch",
+      "rows": 36,
+      "columns": 11,
+      "file": "data/dim_branch.csv"
+    },
+    {
+      "table": "dim_campaign",
+      "model": "Campaign",
+      "rows": 45,
+      "columns": 18,
+      "file": "data/dim_campaign.csv"
+    },
+    {
+      "table": "dim_customer",
+      "model": "Customer",
+      "rows": 6000,
+      "columns": 20,
+      "file": "data/dim_customer.csv"
+    },
+    {
+      "table": "dim_customer_segment",
+      "model": "CustomerSegment",
+      "rows": 7,
+      "columns": 7,
+      "file": "data/dim_customer_segment.csv"
+    },
+    {
+      "table": "dim_date",
+      "model": "DateDim",
+      "rows": 547,
+      "columns": 8,
+      "file": "data/dim_date.csv"
+    },
+    {
+      "table": "dim_demo_customer",
+      "model": "DemoCustomer",
+      "rows": 200,
+      "columns": 5,
+      "file": "data/dim_demo_customer.csv"
+    },
+    {
+      "table": "dim_demo_experiment_variant",
+      "model": "ExperimentVariantDim",
+      "rows": 28,
+      "columns": 9,
+      "file": "data/dim_demo_experiment_variant.csv"
+    },
+    {
+      "table": "dim_ecom_product",
+      "model": "EcomProduct",
+      "rows": 30,
+      "columns": 8,
+      "file": "data/dim_ecom_product.csv"
+    },
+    {
+      "table": "dim_email_campaign",
+      "model": "EmailCampaign",
+      "rows": 108,
+      "columns": 19,
+      "file": "data/dim_email_campaign.csv"
+    },
+    {
+      "table": "dim_market",
+      "model": "Market",
+      "rows": 12,
+      "columns": 9,
+      "file": "data/dim_market.csv"
+    },
+    {
+      "table": "dim_paid_ad",
+      "model": "PaidAd",
+      "rows": 240,
+      "columns": 17,
+      "file": "data/dim_paid_ad.csv"
+    },
+    {
+      "table": "dim_paid_source_campaign",
+      "model": "PaidSourceCampaign",
+      "rows": 45,
+      "columns": 17,
+      "file": "data/dim_paid_source_campaign.csv"
+    },
+    {
+      "table": "dim_product",
+      "model": "Product",
+      "rows": 10,
+      "columns": 16,
+      "file": "data/dim_product.csv"
+    },
+    {
+      "table": "dim_programmatic_creative",
+      "model": "ProgrammaticCreative",
+      "rows": 38,
+      "columns": 19,
+      "file": "data/dim_programmatic_creative.csv"
+    },
+    {
+      "table": "dim_region",
+      "model": "Region",
+      "rows": 5,
+      "columns": 5,
+      "file": "data/dim_region.csv"
+    },
+    {
+      "table": "dim_social_campaign",
+      "model": "SocialCampaign",
+      "rows": 320,
+      "columns": 14,
+      "file": "data/dim_social_campaign.csv"
+    },
+    {
+      "table": "dim_vendor_campaign",
+      "model": "VendorCampaign",
+      "rows": 22,
+      "columns": 18,
+      "file": "data/dim_vendor_campaign.csv"
+    },
+    {
+      "table": "dim_web_experiment_variant",
+      "model": "WebExperimentVariant",
+      "rows": 28,
+      "columns": 18,
+      "file": "data/dim_web_experiment_variant.csv"
+    },
+    {
+      "table": "dim_zip_geography",
+      "model": "ZipGeography",
+      "rows": 120,
+      "columns": 12,
+      "file": "data/dim_zip_geography.csv"
+    },
+    {
+      "table": "mart_banking_funded_accounts_monthly",
+      "model": "BankingFundedAccountsMonthly",
+      "rows": 1071,
+      "columns": 5,
+      "file": "data/mart_banking_funded_accounts_monthly.csv"
+    },
+    {
+      "table": "mart_brand_survey_wave",
+      "model": "BrandSurveyWave",
+      "rows": 72,
+      "columns": 13,
+      "file": "data/mart_brand_survey_wave.csv"
+    },
+    {
+      "table": "mart_campaign_attribution_coverage",
+      "model": "CampaignAttributionCoverage",
+      "rows": 181,
+      "columns": 7,
+      "file": "data/mart_campaign_attribution_coverage.csv"
+    },
+    {
+      "table": "mart_demo_experiment_variant",
+      "model": "ExperimentVariantMart",
+      "rows": 28,
+      "columns": 13,
+      "file": "data/mart_demo_experiment_variant.csv"
+    },
+    {
+      "table": "mart_demo_finance_reconciliation_monthly",
+      "model": "FinanceReconciliationMonthly",
+      "rows": 72,
+      "columns": 7,
+      "file": "data/mart_demo_finance_reconciliation_monthly.csv"
+    },
+    {
+      "table": "mart_demo_paid_media_daily",
+      "model": "PaidMediaDaily",
+      "rows": 2875,
+      "columns": 15,
+      "file": "data/mart_demo_paid_media_daily.csv"
+    },
+    {
+      "table": "mart_demo_paid_reach_window",
+      "model": "PaidReachWindow",
+      "rows": 90,
+      "columns": 15,
+      "file": "data/mart_demo_paid_reach_window.csv"
+    },
+    {
+      "table": "mart_demo_relationship_value_monthly",
+      "model": "RelationshipValueMonthly",
+      "rows": 324,
+      "columns": 10,
+      "file": "data/mart_demo_relationship_value_monthly.csv"
+    },
+    {
+      "table": "mart_demo_submission_funnel",
+      "model": "SubmissionFunnelMart",
+      "rows": 187,
+      "columns": 20,
+      "file": "data/mart_demo_submission_funnel.csv"
+    },
+    {
+      "table": "mart_direct_mail_performance_monthly",
+      "model": "DirectMailPerformanceMonthly",
+      "rows": 63,
+      "columns": 13,
+      "file": "data/mart_direct_mail_performance_monthly.csv"
+    },
+    {
+      "table": "mart_ecom_orders_monthly",
+      "model": "EcomOrdersMonthly",
+      "rows": 108,
+      "columns": 7,
+      "file": "data/mart_ecom_orders_monthly.csv"
+    },
+    {
+      "table": "mart_email_engagement_daily",
+      "model": "EmailEngagementDaily",
+      "rows": 108,
+      "columns": 14,
+      "file": "data/mart_email_engagement_daily.csv"
+    },
+    {
+      "table": "mart_new_funded_customers_monthly",
+      "model": "NewFundedCustomersMonthly",
+      "rows": 705,
+      "columns": 7,
+      "file": "data/mart_new_funded_customers_monthly.csv"
+    },
+    {
+      "table": "mart_offline_activity_monthly",
+      "model": "OfflineActivityMonthly",
+      "rows": 345,
+      "columns": 8,
+      "file": "data/mart_offline_activity_monthly.csv"
+    },
+    {
+      "table": "mart_sales_target_attainment_monthly",
+      "model": "SalesTargetAttainmentMonthly",
+      "rows": 984,
+      "columns": 10,
+      "file": "data/mart_sales_target_attainment_monthly.csv"
+    },
+    {
+      "table": "mart_vendor_media_daily",
+      "model": "VendorMediaDaily",
+      "rows": 680,
+      "columns": 21,
+      "file": "data/mart_vendor_media_daily.csv"
+    },
+    {
+      "table": "mart_website_engagement_daily",
+      "model": "WebsiteEngagementDaily",
+      "rows": 10947,
+      "columns": 12,
+      "file": "data/mart_website_engagement_daily.csv"
+    },
+    {
+      "table": "ref_fx_rate",
+      "model": "FxRate",
+      "rows": 108,
+      "columns": 4,
+      "file": "data/ref_fx_rate.csv"
+    },
+    {
+      "table": "ref_sales_target_override_candidate",
+      "model": "SalesTargetOverrideCandidate",
+      "rows": 40,
+      "columns": 12,
+      "file": "data/ref_sales_target_override_candidate.csv"
+    },
+    {
+      "table": "ref_source_acceptance_check",
+      "model": "SourceAcceptanceCheck",
+      "rows": 25,
+      "columns": 5,
+      "file": "data/ref_source_acceptance_check.csv"
+    }
+  ]
+}

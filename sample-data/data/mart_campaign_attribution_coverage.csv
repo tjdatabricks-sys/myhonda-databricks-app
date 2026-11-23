@@ -1,0 +1,182 @@
+report_month,platform,currency,campaign_resolution_status,source_row_count,distinct_source_campaigns,spend_amount
+2024-01-01,Google Ads,USD,Resolved,1437,9,91623.4
+2024-01-01,Meta Ads,USD,Resolved,5134,13,34353.81
+2024-01-01,Meta Ads,USD,Pending,2547,14,13907.29
+2024-01-01,LinkedIn Ads,USD,Resolved,3122,7,29206.97
+2024-01-01,TikTok Ads,USD,Resolved,5096,10,89113.2
+2024-01-01,The Trade Desk,USD,Resolved,4349,5,89607.39
+2024-01-01,YouTube Ads,USD,Resolved,3763,18,60523.15
+2024-01-01,SFMC Email,USD,Resolved,4299,8,0
+2024-01-01,Organic Social,USD,Resolved,400,16,0
+2024-02-01,Google Ads,USD,Resolved,3390,12,55310.3
+2024-02-01,Meta Ads,USD,Resolved,5010,11,70996.69
+2024-02-01,Meta Ads,USD,Pending,4668,11,11151.31
+2024-02-01,LinkedIn Ads,USD,Resolved,900,16,35888.15
+2024-02-01,TikTok Ads,USD,Resolved,2452,8,43019.19
+2024-02-01,TikTok Ads,USD,Pending,620,12,11212.53
+2024-02-01,The Trade Desk,USD,Resolved,2655,13,35712.64
+2024-02-01,YouTube Ads,USD,Resolved,526,10,80079.14
+2024-02-01,SFMC Email,USD,Resolved,1605,8,0
+2024-02-01,Organic Social,USD,Resolved,3656,13,0
+2024-03-01,Google Ads,USD,Resolved,3955,9,50245.92
+2024-03-01,Google Ads,USD,Pending,1250,18,14130.1
+2024-03-01,Meta Ads,USD,Resolved,3160,14,76297.89
+2024-03-01,LinkedIn Ads,USD,Resolved,3372,16,51899.13
+2024-03-01,LinkedIn Ads,USD,Pending,2357,13,13828.2
+2024-03-01,TikTok Ads,USD,Resolved,5172,18,59827.3
+2024-03-01,The Trade Desk,USD,Resolved,3141,7,22133.49
+2024-03-01,YouTube Ads,USD,Resolved,4840,4,26559.8
+2024-03-01,YouTube Ads,USD,Pending,1887,6,7523.09
+2024-03-01,SFMC Email,USD,Resolved,4469,12,0
+2024-03-01,Organic Social,USD,Resolved,4924,18,0
+2024-04-01,Google Ads,USD,Resolved,4281,3,42628.94
+2024-04-01,Meta Ads,USD,Resolved,2564,12,44957.38
+2024-04-01,Meta Ads,USD,Pending,5052,10,3427.89
+2024-04-01,LinkedIn Ads,USD,Resolved,512,3,78812.38
+2024-04-01,TikTok Ads,USD,Resolved,3429,8,45236.93
+2024-04-01,The Trade Desk,USD,Resolved,5152,16,67498.24
+2024-04-01,YouTube Ads,USD,Resolved,4466,17,21271.77
+2024-04-01,SFMC Email,USD,Resolved,3531,17,0
+2024-04-01,Organic Social,USD,Resolved,1074,5,0
+2024-05-01,Google Ads,USD,Resolved,3742,16,63165.15
+2024-05-01,Meta Ads,USD,Resolved,2100,11,58518.77
+2024-05-01,LinkedIn Ads,USD,Resolved,4864,3,44068.21
+2024-05-01,TikTok Ads,USD,Resolved,4925,10,32690.75
+2024-05-01,The Trade Desk,USD,Resolved,5178,17,36904.34
+2024-05-01,The Trade Desk,USD,Pending,3236,10,7624.15
+2024-05-01,YouTube Ads,USD,Resolved,584,13,38553.17
+2024-05-01,SFMC Email,USD,Resolved,4981,10,0
+2024-05-01,Organic Social,USD,Resolved,4604,9,0
+2024-06-01,Google Ads,USD,Resolved,5191,18,82153.22
+2024-06-01,Meta Ads,USD,Resolved,4468,10,87371.85
+2024-06-01,LinkedIn Ads,USD,Resolved,3478,6,22555.59
+2024-06-01,TikTok Ads,USD,Resolved,4140,4,68044.29
+2024-06-01,The Trade Desk,USD,Resolved,4996,3,66317.68
+2024-06-01,The Trade Desk,USD,Pending,1246,4,6583.65
+2024-06-01,The Trade Desk,USD,Unresolved,2951,11,4961.78
+2024-06-01,YouTube Ads,USD,Resolved,3210,8,92137.45
+2024-06-01,SFMC Email,USD,Resolved,4536,18,0
+2024-06-01,SFMC Email,USD,Pending,4347,11,0
+2024-06-01,SFMC Email,USD,Unresolved,2255,16,0
+2024-06-01,Organic Social,USD,Resolved,3987,9,0
+2024-06-01,Organic Social,USD,Pending,1160,16,0
+2024-06-01,Organic Social,USD,Unresolved,1067,8,0
+2024-07-01,Google Ads,USD,Resolved,3072,16,41252.9
+2024-07-01,Meta Ads,USD,Resolved,4751,5,23755.77
+2024-07-01,LinkedIn Ads,USD,Resolved,2383,6,65912.61
+2024-07-01,TikTok Ads,USD,Resolved,3316,18,65482.02
+2024-07-01,TikTok Ads,USD,Pending,2858,14,6038.16
+2024-07-01,TikTok Ads,USD,Unresolved,4905,4,8952.66
+2024-07-01,The Trade Desk,USD,Resolved,4113,5,52351.92
+2024-07-01,YouTube Ads,USD,Resolved,425,5,40925.45
+2024-07-01,SFMC Email,USD,Resolved,1340,16,0
+2024-07-01,Organic Social,USD,Resolved,3589,4,0
+2024-08-01,Google Ads,USD,Resolved,2819,8,66387.49
+2024-08-01,Meta Ads,USD,Resolved,3106,4,34793.59
+2024-08-01,LinkedIn Ads,USD,Resolved,3079,14,83763.63
+2024-08-01,TikTok Ads,USD,Resolved,4489,16,58451.87
+2024-08-01,The Trade Desk,USD,Resolved,3062,12,75682.41
+2024-08-01,The Trade Desk,USD,Pending,2537,9,4429.79
+2024-08-01,YouTube Ads,USD,Resolved,1278,18,70818.99
+2024-08-01,SFMC Email,USD,Resolved,658,13,0
+2024-08-01,SFMC Email,USD,Pending,3437,9,0
+2024-08-01,SFMC Email,USD,Unresolved,2920,15,0
+2024-08-01,Organic Social,USD,Resolved,1311,17,0
+2024-08-01,Organic Social,USD,Pending,4033,8,0
+2024-09-01,Google Ads,USD,Resolved,4627,14,88835.81
+2024-09-01,Meta Ads,USD,Resolved,1647,5,80097.39
+2024-09-01,Meta Ads,USD,Pending,4684,11,11636.95
+2024-09-01,Meta Ads,USD,Unresolved,2692,10,9436.42
+2024-09-01,LinkedIn Ads,USD,Resolved,4019,15,36734.75
+2024-09-01,TikTok Ads,USD,Resolved,1062,18,92901.05
+2024-09-01,The Trade Desk,USD,Resolved,790,10,26023.49
+2024-09-01,YouTube Ads,USD,Resolved,4882,17,56430.51
+2024-09-01,YouTube Ads,USD,Pending,2556,11,11847.96
+2024-09-01,YouTube Ads,USD,Unresolved,3356,16,5691.58
+2024-09-01,SFMC Email,USD,Resolved,1980,9,0
+2024-09-01,SFMC Email,USD,Pending,2811,10,0
+2024-09-01,Organic Social,USD,Resolved,3971,7,0
+2024-09-01,Organic Social,USD,Pending,2577,11,0
+2024-09-01,Organic Social,USD,Unresolved,1280,6,0
+2024-10-01,Google Ads,USD,Resolved,4577,18,85525.1
+2024-10-01,Meta Ads,USD,Resolved,5199,18,84984.55
+2024-10-01,LinkedIn Ads,USD,Resolved,5157,9,81881.9
+2024-10-01,TikTok Ads,USD,Resolved,4624,6,41795.47
+2024-10-01,The Trade Desk,USD,Resolved,2115,3,88780.85
+2024-10-01,YouTube Ads,USD,Resolved,2868,13,68903.1
+2024-10-01,SFMC Email,USD,Resolved,3737,13,0
+2024-10-01,Organic Social,USD,Resolved,4776,11,0
+2024-11-01,Google Ads,USD,Resolved,3794,12,54345.57
+2024-11-01,Meta Ads,USD,Resolved,3084,11,92657.53
+2024-11-01,LinkedIn Ads,USD,Resolved,2297,4,58061.02
+2024-11-01,TikTok Ads,USD,Resolved,2898,7,24219.42
+2024-11-01,TikTok Ads,USD,Pending,2508,9,9386.19
+2024-11-01,TikTok Ads,USD,Unresolved,1057,18,10203.66
+2024-11-01,The Trade Desk,USD,Resolved,2715,3,59991.24
+2024-11-01,YouTube Ads,USD,Resolved,2063,3,77976.41
+2024-11-01,YouTube Ads,USD,Pending,2345,4,9960.93
+2024-11-01,SFMC Email,USD,Resolved,2061,9,0
+2024-11-01,Organic Social,USD,Resolved,1870,7,0
+2024-11-01,Organic Social,USD,Pending,767,6,0
+2024-12-01,Google Ads,USD,Resolved,3671,6,91814.63
+2024-12-01,Meta Ads,USD,Resolved,704,8,58517.98
+2024-12-01,LinkedIn Ads,USD,Resolved,1943,5,37717.83
+2024-12-01,TikTok Ads,USD,Resolved,3373,18,81047.64
+2024-12-01,The Trade Desk,USD,Resolved,2063,7,21369.62
+2024-12-01,YouTube Ads,USD,Resolved,3032,6,66781.01
+2024-12-01,SFMC Email,USD,Resolved,4304,4,0
+2024-12-01,SFMC Email,USD,Pending,3002,18,0
+2024-12-01,Organic Social,USD,Resolved,4540,9,0
+2025-01-01,Google Ads,USD,Resolved,5121,13,27642.31
+2025-01-01,Meta Ads,USD,Resolved,4643,17,30754.59
+2025-01-01,LinkedIn Ads,USD,Resolved,2391,8,21886.51
+2025-01-01,TikTok Ads,USD,Resolved,5161,12,89433.21
+2025-01-01,The Trade Desk,USD,Resolved,3944,7,42405.34
+2025-01-01,YouTube Ads,USD,Resolved,1040,12,26904.97
+2025-01-01,YouTube Ads,USD,Pending,3403,3,12470.68
+2025-01-01,SFMC Email,USD,Resolved,3520,16,0
+2025-01-01,Organic Social,USD,Resolved,2082,17,0
+2025-01-01,Organic Social,USD,Pending,1388,5,0
+2025-02-01,Google Ads,USD,Resolved,2350,8,28616.3
+2025-02-01,Meta Ads,USD,Resolved,494,12,69550.23
+2025-02-01,LinkedIn Ads,USD,Resolved,3544,6,25441.6
+2025-02-01,TikTok Ads,USD,Resolved,2124,13,54257.84
+2025-02-01,The Trade Desk,USD,Resolved,4707,15,23690.11
+2025-02-01,YouTube Ads,USD,Resolved,5076,5,31098.26
+2025-02-01,SFMC Email,USD,Resolved,2169,16,0
+2025-02-01,Organic Social,USD,Resolved,607,4,0
+2025-03-01,Google Ads,USD,Resolved,2699,18,25608.5
+2025-03-01,Meta Ads,USD,Resolved,4759,3,29180.61
+2025-03-01,LinkedIn Ads,USD,Resolved,4337,18,91951.45
+2025-03-01,LinkedIn Ads,USD,Pending,578,15,8525.95
+2025-03-01,LinkedIn Ads,USD,Unresolved,1819,7,4359.41
+2025-03-01,TikTok Ads,USD,Resolved,3764,7,24291.21
+2025-03-01,The Trade Desk,USD,Resolved,2346,11,47515.08
+2025-03-01,YouTube Ads,USD,Resolved,5084,8,66168.28
+2025-03-01,SFMC Email,USD,Resolved,1182,11,0
+2025-03-01,Organic Social,USD,Resolved,3413,8,0
+2025-04-01,Google Ads,USD,Resolved,3416,9,70705.79
+2025-04-01,Meta Ads,USD,Resolved,2498,7,91884.01
+2025-04-01,LinkedIn Ads,USD,Resolved,3523,14,32810.73
+2025-04-01,TikTok Ads,USD,Resolved,2641,7,68918.01
+2025-04-01,The Trade Desk,USD,Resolved,2181,8,68221.05
+2025-04-01,YouTube Ads,USD,Resolved,4172,9,39835.28
+2025-04-01,SFMC Email,USD,Resolved,554,9,0
+2025-04-01,Organic Social,USD,Resolved,1345,11,0
+2025-04-01,Organic Social,USD,Pending,1431,10,0
+2025-05-01,Google Ads,USD,Resolved,1804,12,38943.91
+2025-05-01,Meta Ads,USD,Resolved,781,11,33987.1
+2025-05-01,LinkedIn Ads,USD,Resolved,1781,7,71262.91
+2025-05-01,TikTok Ads,USD,Resolved,3270,8,21417.75
+2025-05-01,The Trade Desk,USD,Resolved,3100,17,63736.36
+2025-05-01,YouTube Ads,USD,Resolved,3778,15,41181.09
+2025-05-01,SFMC Email,USD,Resolved,2168,13,0
+2025-05-01,Organic Social,USD,Resolved,406,5,0
+2025-06-01,Google Ads,USD,Resolved,2167,15,90900.03
+2025-06-01,Meta Ads,USD,Resolved,774,10,29792.01
+2025-06-01,LinkedIn Ads,USD,Resolved,1324,14,24437.52
+2025-06-01,TikTok Ads,USD,Resolved,3838,14,65579.06
+2025-06-01,The Trade Desk,USD,Resolved,1987,3,52769.86
+2025-06-01,YouTube Ads,USD,Resolved,2654,5,55816.39
+2025-06-01,SFMC Email,USD,Resolved,3571,15,0
+2025-06-01,Organic Social,USD,Resolved,2772,15,0

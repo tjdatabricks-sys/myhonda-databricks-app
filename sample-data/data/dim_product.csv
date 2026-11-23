@@ -1,0 +1,11 @@
+product_id,product_name,product_family,product_type,primary_success_event,unit_economics_note,product_cd,prod_nm,is_active,effective_date,product_category,estimated_value_usd,estimated_value_currency,estimated_value_period_months,estimated_value_basis,is_synthetic
+PRD-CHK,Essential Checking,Deposits,Transaction Account,Account Funded,"Avg balance $4,300 · spread 2.60% APR · fee $4.5/mo",CD-CHK,ESSENTIAL CHECKING,true,2023-12-01,Deposits,138,USD,36,36-month contribution model,false
+PRD-SAV,High-Yield Savings,Deposits,Savings Account,Account Funded,"Avg balance $9,800 · spread 1.80% APR · fee $0.5/mo",CD-SAV,HIGH-YIELD SAVINGS,true,2023-12-01,Deposits,176,USD,36,36-month contribution model,false
+PRD-CC,Rewards Credit Card,Cards,Revolving Credit,Card Activated,"Avg balance $2,100 · spread 14.50% APR · fee $24/mo",CD-CC,REWARDS CREDIT CARD,true,2023-12-01,Cards,502,USD,36,36-month contribution model,false
+PRD-AUTO,Auto Loan,Lending,Installment Loan,Loan Funded,"Avg balance $24,800 · spread 3.40% APR · fee $0/mo",CD-AUTO,AUTO LOAN,true,2023-12-01,Lending,742,USD,36,36-month contribution model,false
+PRD-MTG,Home Mortgage,Lending,Mortgage,Mortgage Funded,"Avg balance $287,000 · spread 1.90% APR · fee $0/mo",CD-MTG,HOME MORTGAGE,true,2023-12-01,Lending,5230,USD,36,36-month contribution model,false
+PRD-PL,Personal Loan,Lending,Installment Loan,Loan Funded,"Avg balance $15,400 · spread 6.20% APR · fee $0/mo",CD-PL,PERSONAL LOAN,true,2023-12-01,Lending,845,USD,36,36-month contribution model,false
+PRD-CD,Certificate of Deposit,Deposits,Term Deposit,CD Opened,"Avg balance $22,000 · spread 1.20% APR · fee $0/mo",CD-CD,CERTIFICATE OF DEPOSIT,true,2023-12-01,Deposits,238,USD,36,36-month contribution model,false
+PRD-HELOC,Home Equity Line,Lending,Revolving Loan,Line Funded,"Avg balance $24,500 · spread 3.80% APR · fee $0/mo",CD-HELOC,HOME EQUITY LINE,true,2023-12-01,Lending,812,USD,36,36-month contribution model,false
+PRD-BIZ,Business Checking,Business,Transaction Account,Account Funded,"Avg balance $12,800 · spread 2.20% APR · fee $16/mo",CD-BIZ,BUSINESS CHECKING,true,2023-12-01,Business,366,USD,36,36-month contribution model,false
+PRD-WM,Wealth Management,Wealth,Advisory Relationship,AUM Funded,"Avg balance $118,000 · spread 0.40% APR · fee $95/mo",CD-WM,WEALTH MANAGEMENT,true,2023-12-01,Wealth,2660,USD,36,36-month contribution model,false

@@ -1,0 +1,29 @@
+campaign_key,experiment_id,variant_id,allocation_fraction,primary_event,window_start,window_end,data_mode,pack_version,eligible_units,converted_units,primary_event_rate,campaign_name
+CMP-1006,EXP-001,EXP-001-V0,0.4,application_start_rate,2024-07-07,2024-08-12,SYNTHETIC,v2.1.0,6818,407,0.0597,Personal Loan Consolidation
+CMP-1006,EXP-001,EXP-001-V1,0.3,application_start_rate,2024-07-07,2024-08-12,SYNTHETIC,v2.1.0,24453,2038,0.0833,Personal Loan Consolidation
+CMP-1006,EXP-001,EXP-001-V2,0.3,application_start_rate,2024-07-07,2024-08-12,SYNTHETIC,v2.1.0,24839,1550,0.0624,Personal Loan Consolidation
+CMP-1007,EXP-002,EXP-002-V0,0.5,qualified_lead_rate,2024-08-06,2024-08-31,SYNTHETIC,v2.1.0,12335,508,0.0412,CD Ladder Campaign
+CMP-1007,EXP-002,EXP-002-V1,0.5,qualified_lead_rate,2024-08-06,2024-08-31,SYNTHETIC,v2.1.0,19300,1008,0.0522,CD Ladder Campaign
+CMP-1008,EXP-003,EXP-003-V0,0.5,funded_account_rate,2024-04-07,2024-05-08,SYNTHETIC,v2.1.0,30932,1929,0.0624,Home Equity Access
+CMP-1008,EXP-003,EXP-003-V1,0.5,funded_account_rate,2024-04-07,2024-05-08,SYNTHETIC,v2.1.0,7338,633,0.0863,Home Equity Access
+CMP-1009,EXP-004,EXP-004-V0,0.4,prequal_start_rate,2024-06-09,2024-07-22,SYNTHETIC,v2.1.0,29477,992,0.0337,Business Banking Starter
+CMP-1009,EXP-004,EXP-004-V1,0.3,prequal_start_rate,2024-06-09,2024-07-22,SYNTHETIC,v2.1.0,19702,941,0.0478,Business Banking Starter
+CMP-1009,EXP-004,EXP-004-V2,0.3,prequal_start_rate,2024-06-09,2024-07-22,SYNTHETIC,v2.1.0,20109,937,0.0466,Business Banking Starter
+CMP-1010,EXP-005,EXP-005-V0,0.5,application_completion_rate,2025-01-08,2025-02-14,SYNTHETIC,v2.1.0,21927,1032,0.0471,Wealth Advisory Intro
+CMP-1010,EXP-005,EXP-005-V1,0.5,application_completion_rate,2025-01-08,2025-02-14,SYNTHETIC,v2.1.0,20900,1390,0.0665,Wealth Advisory Intro
+CMP-1011,EXP-006,EXP-006-V0,0.5,average_deposit_usd,2024-11-19,2024-12-22,SYNTHETIC,v2.1.0,25897,689,0.0266,Summer Checking Boost
+CMP-1011,EXP-006,EXP-006-V1,0.5,average_deposit_usd,2024-11-19,2024-12-22,SYNTHETIC,v2.1.0,18121,543,0.03,Summer Checking Boost
+CMP-1012,EXP-007,EXP-007-V0,0.4,inquiry_rate,2024-05-17,2024-06-21,SYNTHETIC,v2.1.0,27045,1401,0.0518,Student Account Refresh
+CMP-1012,EXP-007,EXP-007-V1,0.3,inquiry_rate,2024-05-17,2024-06-21,SYNTHETIC,v2.1.0,10135,714,0.0704,Student Account Refresh
+CMP-1012,EXP-007,EXP-007-V2,0.3,inquiry_rate,2024-05-17,2024-06-21,SYNTHETIC,v2.1.0,12798,911,0.0712,Student Account Refresh
+CMP-1013,EXP-008,EXP-008-V0,0.5,application_completion_rate,2024-11-12,2024-12-11,SYNTHETIC,v2.1.0,27220,1225,0.045,Fall Savings Sprint
+CMP-1013,EXP-008,EXP-008-V1,0.5,application_completion_rate,2024-11-12,2024-12-11,SYNTHETIC,v2.1.0,23771,1514,0.0637,Fall Savings Sprint
+CMP-1014,EXP-009,EXP-009-V0,0.5,consultation_booking_rate,2024-03-18,2024-05-02,SYNTHETIC,v2.1.0,7529,191,0.0254,Credit Builder Card
+CMP-1014,EXP-009,EXP-009-V1,0.5,consultation_booking_rate,2024-03-18,2024-05-02,SYNTHETIC,v2.1.0,11441,336,0.0294,Credit Builder Card
+CMP-1015,EXP-010,EXP-010-V0,0.4,referral_rate,2024-12-10,2025-01-24,SYNTHETIC,v2.1.0,32777,1107,0.0338,Auto Refinance Wave
+CMP-1015,EXP-010,EXP-010-V1,0.3,referral_rate,2024-12-10,2025-01-24,SYNTHETIC,v2.1.0,27137,988,0.0364,Auto Refinance Wave
+CMP-1015,EXP-010,EXP-010-V2,0.3,referral_rate,2024-12-10,2025-01-24,SYNTHETIC,v2.1.0,11384,392,0.0344,Auto Refinance Wave
+CMP-1016,EXP-011,EXP-011-V0,0.5,application_completion_rate,2024-03-17,2024-04-22,SYNTHETIC,v2.1.0,14264,1033,0.0724,First-Time Homebuyer
+CMP-1016,EXP-011,EXP-011-V1,0.5,application_completion_rate,2024-03-17,2024-04-22,SYNTHETIC,v2.1.0,10549,793,0.0752,First-Time Homebuyer
+CMP-1017,EXP-012,EXP-012-V0,0.5,email_click_rate,2024-08-12,2024-09-16,SYNTHETIC,v2.1.0,16378,438,0.0267,Holiday CD Special
+CMP-1017,EXP-012,EXP-012-V1,0.5,email_click_rate,2024-08-12,2024-09-16,SYNTHETIC,v2.1.0,15126,524,0.0346,Holiday CD Special

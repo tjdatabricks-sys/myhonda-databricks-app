@@ -1,0 +1,26 @@
+check_id,acceptance_criterion,observed_result,expected_result,status
+CHK-001,dim_campaign primary key uniqueness,45 distinct campaign_key,45 distinct campaign_key,Pass
+CHK-002,dim_campaign planned_budget_new >= 0,0 violations,0 violations,Pass
+CHK-003,mart_demo_paid_media_daily.spend_usd >= 0,0 negative rows,0 negative rows,Pass
+CHK-004,mart_demo_submission_funnel monotonic funnel,0 inversions,0 inversions,Pass
+CHK-005,dim_customer.market_id FK domain,0 orphans,0 orphans,Pass
+CHK-006,dim_customer.segment_id FK domain,0 orphans,0 orphans,Pass
+CHK-007,ref_fx_rate positive rates,0 non-positive,0 non-positive,Pass
+CHK-008,mart_sales_target_attainment attainment = funded/target,max abs error 0.0001,0 error,Pass
+CHK-009,dim_paid_ad effective dates within campaign flight,2 rows outside flight,0 rows outside flight,Warn
+CHK-010,mart_website_engagement_daily engaged <= sessions,0 violations,0 violations,Pass
+CHK-011,mart_email_engagement_daily delivered <= sent,0 violations,0 violations,Pass
+CHK-012,unresolved campaign tokens below 15% of links,6.8% unresolved,< 15%,Pass
+CHK-013,dim_zip_geography zip uniqueness,120 distinct,120 distinct,Pass
+CHK-014,mart_ecom_orders_monthly tax <= 15% of total,max 8.9%,< 15%,Pass
+CHK-015,mart_offline_activity_monthly metric_value >= 0,0 negative,0 negative,Pass
+CHK-016,mart_vendor_media_daily spend within 5% of model,1.8% avg variance,< 5%,Pass
+CHK-017,"mart_brand_survey_wave pct fields within [0,1]",0 violations,0 violations,Pass
+CHK-018,dim_branch open_status domain,"{Open, Closed}","{Open, Closed}",Pass
+CHK-019,mart_new_funded_customers >= 0,0 negative,0 negative,Pass
+CHK-020,dim_date covers window without gaps,547 consecutive days,547 consecutive days,Pass
+CHK-021,mart_demo_finance_reconciliation variance = invoice - gl,0 mismatches,0 mismatches,Pass
+CHK-022,dim_programmatic_creative legal approval before flight,1 conditional late,0 late,Warn
+CHK-023,mart_demo_experiment_variant rate = converted/eligible,max abs error 0.0001,0 error,Pass
+CHK-024,campaign_resolution_status domain,"{Resolved, Pending, Proposed, Unresolved}",expected domain,Pass
+CHK-025,dim_social_campaign publish within window,0 outside,0 outside,Pass

@@ -1,0 +1,8 @@
+segment_id,segment,segment_group,segment_description,suggested_message_theme,is_synthetic,record_origin
+SEG-01,Mass Market,Retail Banking,Everyday banking customers with standard deposit and card needs,"Convenience, value and everyday banking",false,gold_segment_master
+SEG-02,Mass Affluent,Priority Banking,Households with growing investable assets and lending needs,"Growth, guidance and rate leadership",false,gold_segment_master
+SEG-03,Affluent,Priority Banking,High-earning professionals with complex product portfolios,Premium service and tailored solutions,false,gold_segment_master
+SEG-04,High Net Worth,Private Banking,Private clients with significant assets under management,Private advisory and wealth planning,false,gold_segment_master
+SEG-05,Young Professional,Youth Banking,Early-career customers building their first banking relationships,Digital-first onboarding and goal saving,false,gold_segment_master
+SEG-06,Student,Youth Banking,College-age customers with starter accounts,No-fee student banking,false,gold_segment_master
+SEG-07,Senior Saver,Senior Banking,Retirement-age customers focused on deposits and safety,"Security, service and CD rate offers",false,gold_segment_master

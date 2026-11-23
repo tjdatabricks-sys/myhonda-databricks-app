@@ -1,0 +1,346 @@
+observation_month,source_channel,mapping_source_campaign_id,resolved_campaign_key,campaign_resolution_status,geography_source_value,metric,metric_value
+2024-06-01,Billboard,lin-770835,CMP-1009,Resolved,MKT-DEN,impressions,226144
+2024-06-01,Billboard,lin-770835,CMP-1009,Resolved,MKT-LAX,panels_booked,9
+2024-07-01,Billboard,lin-770835,CMP-1009,Resolved,MKT-HOU,impressions,129157
+2024-07-01,Billboard,lin-770835,CMP-1009,Resolved,National,panels_booked,14
+2024-08-01,Billboard,lin-770835,CMP-1009,Resolved,National,impressions,72592
+2024-08-01,Billboard,lin-770835,CMP-1009,Resolved,MKT-DAL,panels_booked,22
+2025-01-01,Billboard,tik-770857,,Pending,MKT-SEA,impressions,239534
+2025-01-01,Billboard,tik-770857,CMP-1010,Resolved,MKT-DEN,panels_booked,20
+2025-02-01,Billboard,tik-770857,CMP-1010,Resolved,MKT-BOS,impressions,226592
+2025-02-01,Billboard,tik-770857,CMP-1010,Resolved,National,panels_booked,10
+2025-03-01,Billboard,tik-770857,CMP-1010,Resolved,National,impressions,206083
+2025-03-01,Billboard,tik-770857,CMP-1010,Resolved,National,panels_booked,10
+2025-04-01,Billboard,tik-770857,CMP-1010,Resolved,MKT-PHX,impressions,179425
+2025-04-01,Billboard,tik-770857,CMP-1010,Resolved,MKT-HOU,panels_booked,6
+2024-11-01,Billboard,the-770858,CMP-1011,Resolved,MKT-BOS,impressions,179723
+2024-11-01,Billboard,the-770858,CMP-1011,Resolved,MKT-MIA,panels_booked,14
+2024-12-01,Billboard,the-770858,CMP-1011,Resolved,National,impressions,214691
+2024-12-01,Billboard,the-770858,CMP-1011,Resolved,National,panels_booked,5
+2025-01-01,Billboard,the-770858,CMP-1011,Resolved,MKT-DEN,impressions,274821
+2025-01-01,Billboard,the-770858,CMP-1011,Resolved,MKT-DEN,panels_booked,8
+2024-05-01,Billboard,you-770859,CMP-1012,Resolved,MKT-ATL,impressions,47610
+2024-05-01,Billboard,you-770859,CMP-1012,Resolved,MKT-CHI,panels_booked,21
+2024-06-01,Billboard,you-770859,CMP-1012,Resolved,MKT-PHX,impressions,138706
+2024-06-01,Billboard,you-770859,CMP-1012,Resolved,MKT-DAL,panels_booked,7
+2024-07-01,Billboard,you-770859,CMP-1012,Resolved,MKT-MIA,impressions,204171
+2024-07-01,Billboard,you-770859,CMP-1012,Resolved,MKT-DAL,panels_booked,8
+2024-08-01,Billboard,you-770859,CMP-1012,Resolved,National,impressions,302852
+2024-08-01,Billboard,you-770859,CMP-1012,Resolved,MKT-LAX,panels_booked,12
+2024-11-01,Billboard,goo-770860,CMP-1013,Resolved,MKT-LAX,impressions,260782
+2024-11-01,Billboard,goo-770860,CMP-1013,Resolved,MKT-DAL,panels_booked,18
+2024-12-01,Billboard,goo-770860,CMP-1013,Resolved,MKT-NYC,impressions,300332
+2024-12-01,Billboard,goo-770860,CMP-1013,Resolved,National,panels_booked,6
+2025-01-01,Billboard,goo-770860,CMP-1013,Resolved,MKT-MIA,impressions,162047
+2025-01-01,Billboard,goo-770860,CMP-1013,Resolved,MKT-SEA,panels_booked,22
+2025-02-01,Billboard,goo-770860,CMP-1013,Resolved,MKT-SFO,impressions,114814
+2025-02-01,Billboard,goo-770860,CMP-1013,Resolved,MKT-NYC,panels_booked,9
+2025-03-01,Billboard,goo-770860,CMP-1013,Resolved,MKT-SEA,impressions,163306
+2025-03-01,Billboard,goo-770860,,Pending,MKT-DEN,panels_booked,8
+2024-03-01,Billboard,met-770861,CMP-1014,Resolved,MKT-MIA,impressions,122005
+2024-03-01,Billboard,met-770861,CMP-1014,Resolved,National,panels_booked,19
+2024-04-01,Billboard,met-770861,CMP-1014,Resolved,National,impressions,294206
+2024-04-01,Billboard,met-770861,CMP-1014,Resolved,MKT-PHX,panels_booked,17
+2024-05-01,Billboard,met-770861,CMP-1014,Resolved,MKT-DAL,impressions,125354
+2024-05-01,Billboard,met-770861,CMP-1014,Resolved,MKT-DEN,panels_booked,15
+2024-06-01,Billboard,met-770861,CMP-1014,Resolved,National,impressions,227954
+2024-06-01,Billboard,met-770861,CMP-1014,Resolved,National,panels_booked,20
+2024-12-01,DOOH,lin-770862,CMP-1015,Resolved,MKT-SEA,plays,20934
+2024-12-01,DOOH,lin-770862,CMP-1015,Resolved,National,estimated_audience,25677
+2025-01-01,DOOH,lin-770862,CMP-1015,Resolved,National,plays,11310
+2025-01-01,DOOH,lin-770862,CMP-1015,Resolved,MKT-ATL,estimated_audience,7004
+2025-02-01,DOOH,lin-770862,CMP-1015,Resolved,National,plays,57946
+2025-02-01,DOOH,lin-770862,CMP-1015,Resolved,MKT-PHX,estimated_audience,22747
+2025-03-01,DOOH,lin-770862,CMP-1015,Resolved,MKT-DAL,plays,43714
+2025-03-01,DOOH,lin-770862,CMP-1015,Resolved,MKT-NYC,estimated_audience,8382
+2025-04-01,DOOH,lin-770862,CMP-1015,Resolved,National,plays,22749
+2025-04-01,DOOH,lin-770862,CMP-1015,Resolved,National,estimated_audience,15026
+2024-03-01,DOOH,tik-770863,CMP-1016,Resolved,MKT-MIA,plays,29376
+2024-03-01,DOOH,tik-770863,CMP-1016,Resolved,MKT-SFO,estimated_audience,17998
+2024-04-01,DOOH,tik-770863,CMP-1016,Resolved,National,plays,28551
+2024-04-01,DOOH,tik-770863,,Pending,MKT-BOS,estimated_audience,25164
+2024-05-01,DOOH,tik-770863,CMP-1016,Resolved,National,plays,40647
+2024-05-01,DOOH,tik-770863,CMP-1016,Resolved,National,estimated_audience,31115
+2024-08-01,DOOH,the-770864,CMP-1017,Resolved,National,plays,24853
+2024-08-01,DOOH,the-770864,CMP-1017,Resolved,National,estimated_audience,17011
+2024-09-01,DOOH,the-770864,CMP-1017,Resolved,MKT-MIA,plays,51051
+2024-09-01,DOOH,the-770864,CMP-1017,Resolved,National,estimated_audience,10567
+2024-10-01,DOOH,the-770864,CMP-1017,Resolved,National,plays,22628
+2024-10-01,DOOH,the-770864,CMP-1017,Resolved,MKT-SFO,estimated_audience,15738
+2024-11-01,DOOH,the-770864,CMP-1017,Resolved,National,plays,35402
+2024-11-01,DOOH,the-770864,CMP-1017,Resolved,MKT-SFO,estimated_audience,29576
+2024-01-01,DOOH,you-770865,CMP-1018,Resolved,MKT-HOU,plays,59369
+2024-01-01,DOOH,you-770865,CMP-1018,Resolved,MKT-MIA,estimated_audience,32275
+2024-02-01,DOOH,you-770865,CMP-1018,Resolved,National,plays,32137
+2024-02-01,DOOH,you-770865,CMP-1018,Resolved,MKT-LAX,estimated_audience,25088
+2024-03-01,DOOH,you-770865,CMP-1018,Resolved,MKT-HOU,plays,59261
+2024-03-01,DOOH,you-770865,CMP-1018,Resolved,MKT-CHI,estimated_audience,22167
+2024-04-01,DOOH,you-770865,CMP-1018,Resolved,MKT-DAL,plays,50134
+2024-04-01,DOOH,you-770865,CMP-1018,Resolved,MKT-NYC,estimated_audience,29902
+2024-02-01,Broadcast TV,goo-770866,CMP-1019,Resolved,MKT-LAX,spots_aired,104
+2024-02-01,Broadcast TV,goo-770866,CMP-1019,Resolved,National,estimated_reach,322539
+2024-03-01,Broadcast TV,goo-770866,CMP-1019,Resolved,MKT-BOS,spots_aired,122
+2024-03-01,Broadcast TV,goo-770866,CMP-1019,Resolved,MKT-ATL,estimated_reach,451093
+2024-04-01,Broadcast TV,goo-770866,CMP-1019,Resolved,MKT-DAL,spots_aired,127
+2024-04-01,Broadcast TV,goo-770866,CMP-1019,Resolved,MKT-PHX,estimated_reach,448415
+2024-05-01,Broadcast TV,goo-770866,CMP-1019,Resolved,MKT-DAL,spots_aired,66
+2024-05-01,Broadcast TV,goo-770866,CMP-1019,Resolved,MKT-PHX,estimated_reach,106300
+2024-09-01,Broadcast TV,met-770888,CMP-1020,Resolved,MKT-LAX,spots_aired,100
+2024-09-01,Broadcast TV,met-770888,CMP-1020,Resolved,National,estimated_reach,237295
+2024-10-01,Broadcast TV,met-770888,CMP-1020,Resolved,National,spots_aired,107
+2024-10-01,Broadcast TV,met-770888,CMP-1020,Resolved,MKT-SEA,estimated_reach,192113
+2024-11-01,Broadcast TV,met-770888,CMP-1020,Resolved,MKT-DAL,spots_aired,82
+2024-11-01,Broadcast TV,met-770888,CMP-1020,Resolved,MKT-SEA,estimated_reach,137282
+2024-08-01,Broadcast TV,lin-770889,CMP-1021,Resolved,MKT-SEA,spots_aired,77
+2024-08-01,Broadcast TV,lin-770889,,Pending,MKT-DAL,estimated_reach,148651
+2024-09-01,Broadcast TV,lin-770889,,Pending,National,spots_aired,125
+2024-09-01,Broadcast TV,lin-770889,CMP-1021,Resolved,National,estimated_reach,356659
+2024-10-01,Broadcast TV,lin-770889,CMP-1021,Resolved,MKT-CHI,spots_aired,34
+2024-10-01,Broadcast TV,lin-770889,CMP-1021,Resolved,MKT-DEN,estimated_reach,393784
+2024-06-01,Broadcast TV,tik-770890,CMP-1022,Resolved,MKT-BOS,spots_aired,33
+2024-06-01,Broadcast TV,tik-770890,CMP-1022,Resolved,MKT-HOU,estimated_reach,377238
+2024-07-01,Broadcast TV,tik-770890,CMP-1022,Resolved,MKT-CHI,spots_aired,143
+2024-07-01,Broadcast TV,tik-770890,CMP-1022,Resolved,MKT-LAX,estimated_reach,352855
+2024-08-01,Broadcast TV,tik-770890,CMP-1022,Resolved,MKT-DAL,spots_aired,65
+2024-08-01,Broadcast TV,tik-770890,CMP-1022,Resolved,MKT-MIA,estimated_reach,137928
+2024-03-01,Broadcast TV,the-770891,CMP-1023,Resolved,MKT-SFO,spots_aired,155
+2024-03-01,Broadcast TV,the-770891,CMP-1023,Resolved,MKT-DEN,estimated_reach,442522
+2024-04-01,Broadcast TV,the-770891,,Pending,MKT-BOS,spots_aired,124
+2024-04-01,Broadcast TV,the-770891,CMP-1023,Resolved,National,estimated_reach,320760
+2024-05-01,Broadcast TV,the-770891,CMP-1023,Resolved,MKT-DAL,spots_aired,42
+2024-05-01,Broadcast TV,the-770891,CMP-1023,Resolved,MKT-HOU,estimated_reach,349490
+2024-06-01,Broadcast TV,the-770891,CMP-1023,Resolved,MKT-ATL,spots_aired,121
+2024-06-01,Broadcast TV,the-770891,CMP-1023,Resolved,MKT-SEA,estimated_reach,235944
+2025-03-01,Radio,you-770892,CMP-1024,Resolved,MKT-SFO,spots_aired,209
+2025-04-01,Radio,you-770892,CMP-1024,Resolved,MKT-LAX,spots_aired,54
+2025-05-01,Radio,you-770892,CMP-1024,Resolved,MKT-HOU,spots_aired,171
+2025-06-01,Radio,you-770892,CMP-1024,Resolved,MKT-LAX,spots_aired,217
+2024-08-01,Radio,goo-770893,,Pending,MKT-SFO,spots_aired,113
+2024-09-01,Radio,goo-770893,CMP-1025,Resolved,National,spots_aired,41
+2024-10-01,Radio,goo-770893,CMP-1025,Resolved,MKT-SFO,spots_aired,78
+2024-11-01,Radio,met-770894,CMP-1026,Resolved,MKT-NYC,spots_aired,203
+2024-12-01,Radio,met-770894,CMP-1026,Resolved,MKT-ATL,spots_aired,175
+2025-01-01,Radio,met-770894,CMP-1026,Resolved,MKT-NYC,spots_aired,57
+2025-02-01,Radio,met-770894,CMP-1026,Resolved,MKT-CHI,spots_aired,127
+2024-01-01,Call Center,goo-770827,CMP-1001,Resolved,MKT-MIA,calls,1101
+2024-01-01,Call Center,goo-770827,CMP-1001,Resolved,MKT-MIA,calls_connected,1181
+2024-01-01,Call Center,goo-770827,CMP-1001,Resolved,MKT-HOU,calls_converted,51
+2024-02-01,Call Center,goo-770827,CMP-1001,Resolved,National,calls,1404
+2024-02-01,Call Center,goo-770827,,Pending,MKT-LAX,calls_connected,1184
+2024-02-01,Call Center,goo-770827,CMP-1001,Resolved,MKT-SEA,calls_converted,72
+2024-03-01,Call Center,goo-770827,CMP-1001,Resolved,National,calls,994
+2024-03-01,Call Center,goo-770827,CMP-1001,Resolved,MKT-MIA,calls_connected,615
+2024-03-01,Call Center,goo-770827,CMP-1001,Resolved,MKT-PHX,calls_converted,97
+2024-02-01,Call Center,met-770828,,Pending,National,calls,535
+2024-02-01,Call Center,met-770828,CMP-1002,Resolved,MKT-BOS,calls_connected,312
+2024-02-01,Call Center,met-770828,CMP-1002,Resolved,MKT-ATL,calls_converted,30
+2024-03-01,Call Center,met-770828,,Pending,MKT-PHX,calls,610
+2024-03-01,Call Center,met-770828,CMP-1002,Resolved,MKT-SEA,calls_connected,1122
+2024-03-01,Call Center,met-770828,CMP-1002,Resolved,MKT-DEN,calls_converted,77
+2024-04-01,Call Center,met-770828,CMP-1002,Resolved,MKT-PHX,calls,1831
+2024-04-01,Call Center,met-770828,CMP-1002,Resolved,MKT-SFO,calls_connected,844
+2024-04-01,Call Center,met-770828,CMP-1002,Resolved,MKT-LAX,calls_converted,72
+2024-05-01,Call Center,met-770828,CMP-1002,Resolved,National,calls,1004
+2024-05-01,Call Center,met-770828,CMP-1002,Resolved,MKT-PHX,calls_connected,443
+2024-05-01,Call Center,met-770828,CMP-1002,Resolved,MKT-DAL,calls_converted,100
+2024-04-01,Call Center,lin-770829,CMP-1003,Resolved,MKT-SFO,calls,1090
+2024-04-01,Call Center,lin-770829,CMP-1003,Resolved,MKT-CHI,calls_connected,431
+2024-04-01,Call Center,lin-770829,CMP-1003,Resolved,MKT-PHX,calls_converted,74
+2024-05-01,Call Center,lin-770829,CMP-1003,Resolved,MKT-DAL,calls,413
+2024-05-01,Call Center,lin-770829,CMP-1003,Resolved,National,calls_connected,581
+2024-05-01,Call Center,lin-770829,CMP-1003,Resolved,MKT-PHX,calls_converted,101
+2024-06-01,Call Center,lin-770829,CMP-1003,Resolved,MKT-NYC,calls,1200
+2024-06-01,Call Center,lin-770829,CMP-1003,Resolved,MKT-MIA,calls_connected,1347
+2024-06-01,Call Center,lin-770829,CMP-1003,Resolved,MKT-SFO,calls_converted,115
+2024-07-01,Call Center,lin-770829,CMP-1003,Resolved,National,calls,1615
+2024-07-01,Call Center,lin-770829,CMP-1003,Resolved,MKT-SEA,calls_connected,614
+2024-07-01,Call Center,lin-770829,CMP-1003,Resolved,MKT-SEA,calls_converted,116
+2024-08-01,Call Center,lin-770829,CMP-1003,Resolved,National,calls,940
+2024-08-01,Call Center,lin-770829,CMP-1003,Resolved,MKT-SFO,calls_connected,310
+2024-08-01,Call Center,lin-770829,CMP-1003,Resolved,MKT-SFO,calls_converted,37
+2025-01-01,Call Center,tik-770830,CMP-1004,Resolved,MKT-NYC,calls,1193
+2025-01-01,Call Center,tik-770830,CMP-1004,Resolved,MKT-ATL,calls_connected,629
+2025-01-01,Call Center,tik-770830,CMP-1004,Resolved,MKT-DAL,calls_converted,54
+2025-02-01,Call Center,tik-770830,CMP-1004,Resolved,MKT-BOS,calls,1708
+2025-02-01,Call Center,tik-770830,CMP-1004,Resolved,National,calls_connected,787
+2025-02-01,Call Center,tik-770830,CMP-1004,Resolved,National,calls_converted,82
+2025-03-01,Call Center,tik-770830,CMP-1004,Resolved,MKT-PHX,calls,1405
+2025-03-01,Call Center,tik-770830,CMP-1004,Resolved,MKT-SFO,calls_connected,1348
+2025-03-01,Call Center,tik-770830,CMP-1004,Resolved,National,calls_converted,26
+2025-04-01,Call Center,tik-770830,CMP-1004,Resolved,MKT-BOS,calls,1884
+2025-04-01,Call Center,tik-770830,CMP-1004,Resolved,MKT-HOU,calls_connected,1097
+2025-04-01,Call Center,tik-770830,CMP-1004,Resolved,MKT-NYC,calls_converted,36
+2025-02-01,Call Center,the-770831,CMP-1005,Resolved,National,calls,911
+2025-02-01,Call Center,the-770831,CMP-1005,Resolved,MKT-BOS,calls_connected,851
+2025-02-01,Call Center,the-770831,CMP-1005,Resolved,MKT-HOU,calls_converted,115
+2025-03-01,Call Center,the-770831,CMP-1005,Resolved,MKT-LAX,calls,1036
+2025-03-01,Call Center,the-770831,CMP-1005,Resolved,National,calls_connected,655
+2025-03-01,Call Center,the-770831,CMP-1005,Resolved,National,calls_converted,111
+2025-04-01,Call Center,the-770831,CMP-1005,Resolved,MKT-ATL,calls,1190
+2025-04-01,Call Center,the-770831,CMP-1005,Resolved,National,calls_connected,1020
+2025-04-01,Call Center,the-770831,CMP-1005,Resolved,MKT-SFO,calls_converted,82
+2025-05-01,Call Center,the-770831,CMP-1005,Resolved,MKT-MIA,calls,1822
+2025-05-01,Call Center,the-770831,CMP-1005,Resolved,MKT-SFO,calls_connected,718
+2025-05-01,Call Center,the-770831,CMP-1005,Resolved,MKT-DEN,calls_converted,98
+2024-07-01,Call Center,you-770832,CMP-1006,Resolved,MKT-HOU,calls,901
+2024-07-01,Call Center,you-770832,,Pending,MKT-DEN,calls_connected,900
+2024-07-01,Call Center,you-770832,CMP-1006,Resolved,MKT-SFO,calls_converted,92
+2024-08-01,Call Center,you-770832,,Pending,MKT-ATL,calls,1868
+2024-08-01,Call Center,you-770832,CMP-1006,Resolved,MKT-CHI,calls_connected,1308
+2024-08-01,Call Center,you-770832,,Pending,MKT-BOS,calls_converted,29
+2024-09-01,Call Center,you-770832,CMP-1006,Resolved,MKT-PHX,calls,1298
+2024-09-01,Call Center,you-770832,CMP-1006,Resolved,MKT-CHI,calls_connected,693
+2024-09-01,Call Center,you-770832,CMP-1006,Resolved,MKT-SFO,calls_converted,31
+2024-10-01,Call Center,you-770832,CMP-1006,Resolved,National,calls,1104
+2024-10-01,Call Center,you-770832,,Pending,MKT-HOU,calls_connected,936
+2024-10-01,Call Center,you-770832,CMP-1006,Resolved,MKT-BOS,calls_converted,38
+2024-08-01,Call Center,goo-770833,CMP-1007,Resolved,MKT-SFO,calls,1465
+2024-08-01,Call Center,goo-770833,CMP-1007,Resolved,National,calls_connected,1331
+2024-08-01,Call Center,goo-770833,CMP-1007,Resolved,MKT-CHI,calls_converted,31
+2024-09-01,Call Center,goo-770833,CMP-1007,Resolved,National,calls,1191
+2024-09-01,Call Center,goo-770833,CMP-1007,Resolved,MKT-SFO,calls_connected,476
+2024-09-01,Call Center,goo-770833,CMP-1007,Resolved,MKT-SFO,calls_converted,72
+2024-10-01,Call Center,goo-770833,CMP-1007,Resolved,MKT-SEA,calls,1879
+2024-10-01,Call Center,goo-770833,,Pending,National,calls_connected,605
+2024-10-01,Call Center,goo-770833,CMP-1007,Resolved,MKT-SEA,calls_converted,91
+2024-11-01,Call Center,goo-770833,CMP-1007,Resolved,National,calls,1661
+2024-11-01,Call Center,goo-770833,CMP-1007,Resolved,National,calls_connected,487
+2024-11-01,Call Center,goo-770833,CMP-1007,Resolved,MKT-HOU,calls_converted,109
+2024-12-01,Call Center,goo-770833,CMP-1007,Resolved,MKT-CHI,calls,1824
+2024-12-01,Call Center,goo-770833,CMP-1007,Resolved,National,calls_connected,1276
+2024-12-01,Call Center,goo-770833,CMP-1007,Resolved,MKT-MIA,calls_converted,84
+2024-04-01,Call Center,met-770834,,Pending,MKT-BOS,calls,1719
+2024-04-01,Call Center,met-770834,CMP-1008,Resolved,National,calls_connected,713
+2024-04-01,Call Center,met-770834,CMP-1008,Resolved,MKT-MIA,calls_converted,66
+2024-05-01,Call Center,met-770834,CMP-1008,Resolved,MKT-DEN,calls,1513
+2024-05-01,Call Center,met-770834,CMP-1008,Resolved,MKT-HOU,calls_connected,1096
+2024-05-01,Call Center,met-770834,CMP-1008,Resolved,MKT-PHX,calls_converted,57
+2024-06-01,Call Center,met-770834,CMP-1008,Resolved,MKT-CHI,calls,1725
+2024-06-01,Call Center,met-770834,CMP-1008,Resolved,MKT-DAL,calls_connected,668
+2024-06-01,Call Center,met-770834,,Pending,National,calls_converted,46
+2024-07-01,Call Center,met-770834,CMP-1008,Resolved,MKT-LAX,calls,1793
+2024-07-01,Call Center,met-770834,CMP-1008,Resolved,MKT-NYC,calls_connected,1179
+2024-07-01,Call Center,met-770834,,Pending,MKT-LAX,calls_converted,106
+2024-06-01,Call Center,lin-770835,CMP-1009,Resolved,MKT-DAL,calls,1589
+2024-06-01,Call Center,lin-770835,CMP-1009,Resolved,National,calls_connected,414
+2024-06-01,Call Center,lin-770835,CMP-1009,Resolved,MKT-LAX,calls_converted,39
+2024-07-01,Call Center,lin-770835,CMP-1009,Resolved,MKT-HOU,calls,779
+2024-07-01,Call Center,lin-770835,CMP-1009,Resolved,MKT-ATL,calls_connected,1295
+2024-07-01,Call Center,lin-770835,,Pending,MKT-CHI,calls_converted,40
+2024-08-01,Call Center,lin-770835,CMP-1009,Resolved,MKT-SEA,calls,1812
+2024-08-01,Call Center,lin-770835,CMP-1009,Resolved,MKT-SEA,calls_connected,1008
+2024-08-01,Call Center,lin-770835,CMP-1009,Resolved,National,calls_converted,88
+2025-01-01,Call Center,tik-770857,CMP-1010,Resolved,National,calls,979
+2025-01-01,Call Center,tik-770857,CMP-1010,Resolved,MKT-NYC,calls_connected,334
+2025-01-01,Call Center,tik-770857,CMP-1010,Resolved,National,calls_converted,118
+2025-02-01,Call Center,tik-770857,CMP-1010,Resolved,National,calls,1387
+2025-02-01,Call Center,tik-770857,CMP-1010,Resolved,MKT-HOU,calls_connected,1303
+2025-02-01,Call Center,tik-770857,CMP-1010,Resolved,MKT-SFO,calls_converted,23
+2025-03-01,Call Center,tik-770857,CMP-1010,Resolved,MKT-ATL,calls,1444
+2025-03-01,Call Center,tik-770857,CMP-1010,Resolved,National,calls_connected,1137
+2025-03-01,Call Center,tik-770857,CMP-1010,Resolved,National,calls_converted,106
+2025-04-01,Call Center,tik-770857,CMP-1010,Resolved,National,calls,753
+2025-04-01,Call Center,tik-770857,CMP-1010,Resolved,MKT-LAX,calls_connected,1254
+2025-04-01,Call Center,tik-770857,CMP-1010,Resolved,MKT-CHI,calls_converted,25
+2024-10-01,Branch Event,lin-770895,,Pending,MKT-BOS,events_held,1
+2024-10-01,Branch Event,lin-770895,CMP-1027,Resolved,National,registrations,278
+2024-10-01,Branch Event,lin-770895,CMP-1027,Resolved,MKT-NYC,attendees,258
+2024-11-01,Branch Event,lin-770895,CMP-1027,Resolved,MKT-MIA,events_held,3
+2024-11-01,Branch Event,lin-770895,CMP-1027,Resolved,MKT-DEN,registrations,249
+2024-11-01,Branch Event,lin-770895,CMP-1027,Resolved,MKT-NYC,attendees,67
+2024-12-01,Branch Event,lin-770895,CMP-1027,Resolved,MKT-BOS,events_held,2
+2024-12-01,Branch Event,lin-770895,CMP-1027,Resolved,MKT-HOU,registrations,89
+2024-12-01,Branch Event,lin-770895,CMP-1027,Resolved,MKT-NYC,attendees,305
+2024-07-01,Branch Event,tik-770896,CMP-1028,Resolved,MKT-BOS,events_held,3
+2024-07-01,Branch Event,tik-770896,CMP-1028,Resolved,MKT-NYC,registrations,117
+2024-07-01,Branch Event,tik-770896,CMP-1028,Resolved,MKT-LAX,attendees,205
+2024-08-01,Branch Event,tik-770896,CMP-1028,Resolved,MKT-DAL,events_held,3
+2024-08-01,Branch Event,tik-770896,CMP-1028,Resolved,National,registrations,328
+2024-08-01,Branch Event,tik-770896,CMP-1028,Resolved,MKT-ATL,attendees,253
+2024-09-01,Branch Event,tik-770896,CMP-1028,Resolved,MKT-DEN,events_held,1
+2024-09-01,Branch Event,tik-770896,CMP-1028,Resolved,MKT-MIA,registrations,192
+2024-09-01,Branch Event,tik-770896,CMP-1028,Resolved,MKT-PHX,attendees,249
+2024-10-01,Branch Event,tik-770896,CMP-1028,Resolved,MKT-NYC,events_held,4
+2024-10-01,Branch Event,tik-770896,CMP-1028,Resolved,MKT-DEN,registrations,243
+2024-10-01,Branch Event,tik-770896,CMP-1028,Resolved,National,attendees,195
+2024-03-01,Branch Event,the-770897,CMP-1029,Resolved,MKT-MIA,events_held,4
+2024-03-01,Branch Event,the-770897,CMP-1029,Resolved,MKT-SFO,registrations,108
+2024-03-01,Branch Event,the-770897,CMP-1029,Resolved,MKT-CHI,attendees,214
+2024-04-01,Branch Event,the-770897,CMP-1029,Resolved,MKT-DEN,events_held,3
+2024-04-01,Branch Event,the-770897,CMP-1029,Resolved,National,registrations,312
+2024-04-01,Branch Event,the-770897,CMP-1029,Resolved,National,attendees,112
+2024-05-01,Branch Event,the-770897,CMP-1029,Resolved,MKT-LAX,events_held,2
+2024-05-01,Branch Event,the-770897,,Pending,National,registrations,237
+2024-05-01,Branch Event,the-770897,CMP-1029,Resolved,MKT-DAL,attendees,176
+2024-06-01,Branch Event,the-770897,CMP-1029,Resolved,National,events_held,4
+2024-06-01,Branch Event,the-770897,CMP-1029,Resolved,MKT-MIA,registrations,98
+2024-06-01,Branch Event,the-770897,,Pending,MKT-ATL,attendees,169
+2024-08-01,Branch Event,you-770919,CMP-1030,Resolved,MKT-SEA,events_held,2
+2024-08-01,Branch Event,you-770919,CMP-1030,Resolved,National,registrations,411
+2024-08-01,Branch Event,you-770919,,Pending,National,attendees,198
+2024-09-01,Branch Event,you-770919,CMP-1030,Resolved,National,events_held,1
+2024-09-01,Branch Event,you-770919,CMP-1030,Resolved,MKT-DEN,registrations,166
+2024-09-01,Branch Event,you-770919,CMP-1030,Resolved,National,attendees,231
+2024-10-01,Branch Event,you-770919,CMP-1030,Resolved,MKT-DEN,events_held,2
+2024-10-01,Branch Event,you-770919,CMP-1030,Resolved,National,registrations,302
+2024-10-01,Branch Event,you-770919,CMP-1030,Resolved,MKT-PHX,attendees,307
+2024-05-01,Branch Event,goo-770920,CMP-1031,Resolved,MKT-NYC,events_held,2
+2024-05-01,Branch Event,goo-770920,CMP-1031,Resolved,MKT-SEA,registrations,269
+2024-05-01,Branch Event,goo-770920,CMP-1031,Resolved,MKT-NYC,attendees,230
+2024-06-01,Branch Event,goo-770920,CMP-1031,Resolved,National,events_held,1
+2024-06-01,Branch Event,goo-770920,CMP-1031,Resolved,MKT-DAL,registrations,76
+2024-06-01,Branch Event,goo-770920,CMP-1031,Resolved,MKT-LAX,attendees,102
+2024-07-01,Branch Event,goo-770920,CMP-1031,Resolved,MKT-NYC,events_held,3
+2024-07-01,Branch Event,goo-770920,CMP-1031,Resolved,MKT-PHX,registrations,289
+2024-07-01,Branch Event,goo-770920,CMP-1031,Resolved,MKT-BOS,attendees,255
+2024-08-01,Branch Event,goo-770920,,Pending,MKT-DEN,events_held,4
+2024-08-01,Branch Event,goo-770920,,Pending,MKT-NYC,registrations,182
+2024-08-01,Branch Event,goo-770920,CMP-1031,Resolved,National,attendees,230
+2024-12-01,Branch Event,met-770921,CMP-1032,Resolved,MKT-LAX,events_held,3
+2024-12-01,Branch Event,met-770921,CMP-1032,Resolved,National,registrations,124
+2024-12-01,Branch Event,met-770921,CMP-1032,Resolved,MKT-LAX,attendees,97
+2025-01-01,Branch Event,met-770921,,Pending,National,events_held,4
+2025-01-01,Branch Event,met-770921,CMP-1032,Resolved,National,registrations,385
+2025-01-01,Branch Event,met-770921,CMP-1032,Resolved,MKT-SEA,attendees,242
+2025-02-01,Branch Event,met-770921,CMP-1032,Resolved,MKT-ATL,events_held,1
+2025-02-01,Branch Event,met-770921,CMP-1032,Resolved,MKT-DAL,registrations,133
+2025-02-01,Branch Event,met-770921,CMP-1032,Resolved,MKT-MIA,attendees,295
+2025-03-01,Branch Event,met-770921,,Pending,National,events_held,1
+2025-03-01,Branch Event,met-770921,CMP-1032,Resolved,MKT-HOU,registrations,371
+2025-03-01,Branch Event,met-770921,CMP-1032,Resolved,MKT-CHI,attendees,164
+2024-02-01,Referral,lin-770922,CMP-1033,Resolved,MKT-SFO,referrals_completed,67
+2024-02-01,Referral,lin-770922,CMP-1033,Resolved,National,referrals_pending,58
+2024-03-01,Referral,lin-770922,CMP-1033,Resolved,National,referrals_completed,118
+2024-03-01,Referral,lin-770922,,Pending,MKT-CHI,referrals_pending,11
+2024-04-01,Referral,lin-770922,CMP-1033,Resolved,National,referrals_completed,113
+2024-04-01,Referral,lin-770922,CMP-1033,Resolved,National,referrals_pending,25
+2025-01-01,Referral,tik-770923,CMP-1034,Resolved,National,referrals_completed,175
+2025-01-01,Referral,tik-770923,CMP-1034,Resolved,MKT-NYC,referrals_pending,53
+2025-02-01,Referral,tik-770923,CMP-1034,Resolved,MKT-HOU,referrals_completed,120
+2025-02-01,Referral,tik-770923,CMP-1034,Resolved,MKT-NYC,referrals_pending,16
+2025-03-01,Referral,tik-770923,CMP-1034,Resolved,National,referrals_completed,198
+2025-03-01,Referral,tik-770923,CMP-1034,Resolved,MKT-BOS,referrals_pending,8
+2025-04-01,Referral,tik-770923,CMP-1034,Resolved,MKT-CHI,referrals_completed,174
+2025-04-01,Referral,tik-770923,CMP-1034,Resolved,MKT-NYC,referrals_pending,21
+2025-05-01,Referral,tik-770923,CMP-1034,Resolved,MKT-NYC,referrals_completed,133
+2025-05-01,Referral,tik-770923,CMP-1034,Resolved,MKT-DEN,referrals_pending,60
+2025-01-01,Referral,the-770924,CMP-1035,Resolved,National,referrals_completed,88
+2025-01-01,Referral,the-770924,CMP-1035,Resolved,MKT-SEA,referrals_pending,45
+2025-02-01,Referral,the-770924,CMP-1035,Resolved,National,referrals_completed,71
+2025-02-01,Referral,the-770924,CMP-1035,Resolved,MKT-LAX,referrals_pending,57
+2025-03-01,Referral,the-770924,CMP-1035,Resolved,MKT-SFO,referrals_completed,92
+2025-03-01,Referral,the-770924,,Pending,National,referrals_pending,24
+2025-03-01,Referral,you-770925,CMP-1036,Resolved,MKT-CHI,referrals_completed,207
+2025-03-01,Referral,you-770925,CMP-1036,Resolved,National,referrals_pending,20
+2025-04-01,Referral,you-770925,CMP-1036,Resolved,MKT-BOS,referrals_completed,104
+2025-04-01,Referral,you-770925,CMP-1036,Resolved,National,referrals_pending,31
+2025-05-01,Referral,you-770925,CMP-1036,Resolved,MKT-SEA,referrals_completed,174
+2025-05-01,Referral,you-770925,CMP-1036,Resolved,National,referrals_pending,59
+2025-06-01,Referral,you-770925,CMP-1036,Resolved,MKT-ATL,referrals_completed,55
+2025-06-01,Referral,you-770925,CMP-1036,Resolved,MKT-MIA,referrals_pending,31
+2024-04-01,Referral,goo-770926,CMP-1037,Resolved,National,referrals_completed,208
+2024-04-01,Referral,goo-770926,CMP-1037,Resolved,MKT-SFO,referrals_pending,43
+2024-05-01,Referral,goo-770926,CMP-1037,Resolved,National,referrals_completed,144
+2024-05-01,Referral,goo-770926,CMP-1037,Resolved,MKT-PHX,referrals_pending,25
+2024-06-01,Referral,goo-770926,CMP-1037,Resolved,MKT-MIA,referrals_completed,41
+2024-06-01,Referral,goo-770926,CMP-1037,Resolved,MKT-PHX,referrals_pending,30

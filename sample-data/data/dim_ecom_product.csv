@@ -1,0 +1,31 @@
+sku,product_name,category,brand,list_price_usd,unit_cost_usd,is_active,effective_date
+SKU-0001,Banking Basics Kit,Merchandise,myhonda,34.99,20.26,true,2024-01-01
+SKU-0002,Premium Leather Card Holder,Accessories,Fossil,49.5,28.24,true,2024-01-01
+SKU-0003,Wireless Card Reader,Business,Square,59,37.01,true,2024-01-01
+SKU-0004,Financial Planner 2025,Stationery,Moleskine,28,19.11,true,2024-01-01
+SKU-0005,Savings Goal Journal,Stationery,Leuchtturm,22.5,11.41,true,2024-01-01
+SKU-0006,Home Loan Checklist Guide,Stationery,myhonda,12.99,7.3,true,2024-01-01
+SKU-0007,Insulated Travel Tumbler,Lifestyle,Yeti,38,23.96,true,2024-01-01
+SKU-0008,Compounding Interest Board Game,Family,FinLudo,45,30.75,true,2024-01-01
+SKU-0009,Kids Money Manager Set,Family,LearningCents,29.99,19.01,true,2024-01-01
+SKU-0010,Branch Anniversary Cap,Apparel,Nike,26,12.65,true,2024-01-01
+SKU-0011,Digital Banking Handbook,Stationery,myhonda,15,6.91,true,2024-01-01
+SKU-0012,Security Key Fob,Security,YubiKey,55,31.74,true,2024-01-01
+SKU-0013,Checkbook Cover Deluxe,Accessories,myhonda,18.5,12.93,true,2024-01-01
+SKU-0014,Piggy Bank Ceramic,Family,myhonda,24,11.41,true,2024-01-01
+SKU-0015,Rate Watch Desk Clock,Lifestyle,Seiko,42,24.31,true,2024-01-01
+SKU-0016,Budget Envelope System,Stationery,CleverFox,19.99,11.91,true,2024-01-01
+SKU-0017,Business Card Holder Steel,Accessories,myhonda,21,10.37,true,2024-01-01
+SKU-0018,Mortgage Calculator Watch,Lifestyle,Casio,68,34.52,true,2024-01-01
+SKU-0019,Fraud Prevention Guide,Stationery,myhonda,9.99,5.98,true,2024-01-01
+SKU-0020,Retirement Planning Workbook,Stationery,myhonda,16.5,8.91,true,2024-01-01
+SKU-0021,Currency Collection Folder,Accessories,myhonda,27,16.2,true,2024-01-01
+SKU-0022,Credit Score Tracker Notepad,Stationery,myhonda,11,6.38,true,2024-01-01
+SKU-0023,Travel Money Belt,Travel,Zero Grid,31,19.99,true,2024-01-01
+SKU-0024,RFID Blocking Wallet,Security,Travelambo,23.5,11.42,true,2024-01-01
+SKU-0025,Investment Starter Poster,Stationery,myhonda,14,7.67,false,2024-01-01
+SKU-0026,Savings Thermometer Chart,Stationery,myhonda,8.99,5.36,true,2024-01-01
+SKU-0027,Loan Amortization Slide Rule,Stationery,myhonda,33,16.7,true,2024-01-01
+SKU-0028,First Account Certificate Frame,Family,myhonda,20,9.53,true,2024-01-01
+SKU-0029,Financial Freedom Hoodie,Apparel,Gildan,39,25.81,true,2024-01-01
+SKU-0030,Money Mindfulness Cards,Lifestyle,myhonda,17.99,10.78,true,2024-01-01

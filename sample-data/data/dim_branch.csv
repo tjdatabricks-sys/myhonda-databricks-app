@@ -1,0 +1,37 @@
+branch_code,branch_name,market_code,market_name,state_code,branch_type,open_status,latitude,longitude,region_id,is_synthetic
+BR-GA11,Atlanta Downtown Branch,MKT-ATL,Atlanta Metro,GA,Financial Center,Open,25.1416,-83.7446,REG-S,false
+BR-GA12,Atlanta Westside Branch,MKT-ATL,Atlanta Metro,GA,Full Service,Open,30.394,-107.7885,REG-S,false
+BR-GA13,Atlanta Riverside Branch,MKT-ATL,Atlanta Metro,GA,Full Service,Open,29.3987,-86.4168,REG-S,false
+BR-IL21,Chicago Downtown Branch,MKT-CHI,Chicago Metro,IL,Financial Center,Open,37.0597,-101.1152,REG-MW,false
+BR-IL22,Chicago Westside Branch,MKT-CHI,Chicago Metro,IL,Full Service,Open,27.9615,-80.628,REG-MW,false
+BR-IL23,Chicago Riverside Branch,MKT-CHI,Chicago Metro,IL,Full Service,Open,44.4182,-100.9545,REG-MW,false
+BR-TX31,Dallas Downtown Branch,MKT-DAL,Dallas-Fort Worth,TX,Full Service,Open,39.8759,-113.6004,REG-S,false
+BR-TX32,Dallas Westside Branch,MKT-DAL,Dallas-Fort Worth,TX,In-Store,Open,33.351,-89.6224,REG-S,false
+BR-TX33,Dallas Riverside Branch,MKT-DAL,Dallas-Fort Worth,TX,In-Store,Open,31.7837,-86.6594,REG-S,false
+BR-CO41,Denver Downtown Branch,MKT-DEN,Denver Front Range,CO,Full Service,Open,27.8394,-97.5302,REG-W,false
+BR-CO42,Denver Westside Branch,MKT-DEN,Denver Front Range,CO,Financial Center,Open,38.931,-82.066,REG-W,false
+BR-CO43,Denver Riverside Branch,MKT-DEN,Denver Front Range,CO,Full Service,Open,35.1504,-105.0162,REG-W,false
+BR-TX51,Houston Downtown Branch,MKT-HOU,Greater Houston,TX,Financial Center,Open,38.5409,-95.959,REG-S,false
+BR-TX52,Houston Westside Branch,MKT-HOU,Greater Houston,TX,Financial Center,Open,26.6984,-86.25,REG-S,false
+BR-TX53,Houston Riverside Branch,MKT-HOU,Greater Houston,TX,Full Service,Open,36.3569,-82.0205,REG-S,false
+BR-CA61,Los Angeles Downtown Branch,MKT-LAX,Greater Los Angeles,CA,Financial Center,Open,37.8039,-89.1677,REG-W,false
+BR-CA62,Los Angeles Westside Branch,MKT-LAX,Greater Los Angeles,CA,Full Service,Open,34.0402,-119.2352,REG-W,false
+BR-CA63,Los Angeles Riverside Branch,MKT-LAX,Greater Los Angeles,CA,In-Store,Open,39.4324,-103.7096,REG-W,false
+BR-FL71,Miami Downtown Branch,MKT-MIA,South Florida,FL,In-Store,Open,27.8144,-87.5627,REG-S,false
+BR-FL72,Miami Westside Branch,MKT-MIA,South Florida,FL,Full Service,Open,35.5204,-94.4067,REG-S,false
+BR-FL73,Miami Riverside Branch,MKT-MIA,South Florida,FL,In-Store,Open,25.3825,-86.2995,REG-S,false
+BR-NY81,New York Downtown Branch,MKT-NYC,New York Metro,NY,Financial Center,Open,30.6281,-86.795,REG-NE,false
+BR-NY82,New York Westside Branch,MKT-NYC,New York Metro,NY,In-Store,Open,31.6523,-116.128,REG-NE,false
+BR-NY83,New York Riverside Branch,MKT-NYC,New York Metro,NY,In-Store,Open,43.6224,-104.3443,REG-NE,false
+BR-AZ91,Phoenix Downtown Branch,MKT-PHX,Phoenix Valley,AZ,Financial Center,Open,26.054,-83.9438,REG-SW,false
+BR-AZ92,Phoenix Westside Branch,MKT-PHX,Phoenix Valley,AZ,Financial Center,Open,36.7948,-118.0214,REG-SW,false
+BR-AZ93,Phoenix Riverside Branch,MKT-PHX,Phoenix Valley,AZ,Financial Center,Closed,31.3611,-97.1701,REG-SW,false
+BR-CA101,San Francisco Downtown Branch,MKT-SFO,San Francisco Bay,CA,In-Store,Open,27.669,-118.6655,REG-W,false
+BR-CA102,San Francisco Westside Branch,MKT-SFO,San Francisco Bay,CA,Financial Center,Open,25.3814,-81.9383,REG-W,false
+BR-CA103,San Francisco Riverside Branch,MKT-SFO,San Francisco Bay,CA,Full Service,Open,28.6676,-105.9093,REG-W,false
+BR-WA111,Seattle Downtown Branch,MKT-SEA,Puget Sound,WA,In-Store,Open,38.8049,-100.5178,REG-W,false
+BR-WA112,Seattle Westside Branch,MKT-SEA,Puget Sound,WA,Full Service,Open,35.4353,-89.7563,REG-W,false
+BR-WA113,Seattle Riverside Branch,MKT-SEA,Puget Sound,WA,Financial Center,Open,31.9546,-112.7099,REG-W,false
+BR-MA121,Boston Downtown Branch,MKT-BOS,Greater Boston,MA,Financial Center,Open,40.9291,-87.0666,REG-NE,false
+BR-MA122,Boston Westside Branch,MKT-BOS,Greater Boston,MA,In-Store,Open,26.1757,-116.2249,REG-NE,false
+BR-MA123,Boston Riverside Branch,MKT-BOS,Greater Boston,MA,Full Service,Open,42.6467,-98.1698,REG-NE,false

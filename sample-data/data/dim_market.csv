@@ -1,0 +1,13 @@
+market_id,market_display_name,state_abbr,sales_region,market_tier,record_origin,region_id,primary_city,is_synthetic
+MKT-ATL,Atlanta Metro,GA,South,Tier 1,conformed_master,REG-S,Atlanta,false
+MKT-CHI,Chicago Metro,IL,Midwest,Tier 1,conformed_master,REG-MW,Chicago,false
+MKT-DAL,Dallas-Fort Worth,TX,South,Tier 1,conformed_master,REG-S,Dallas,false
+MKT-DEN,Denver Front Range,CO,West,Tier 2,conformed_master,REG-W,Denver,false
+MKT-HOU,Greater Houston,TX,South,Tier 1,conformed_master,REG-S,Houston,false
+MKT-LAX,Greater Los Angeles,CA,West,Tier 1,conformed_master,REG-W,Los Angeles,false
+MKT-MIA,South Florida,FL,South,Tier 2,conformed_master,REG-S,Miami,false
+MKT-NYC,New York Metro,NY,Northeast,Tier 1,conformed_master,REG-NE,New York,false
+MKT-PHX,Phoenix Valley,AZ,Southwest,Tier 2,conformed_master,REG-SW,Phoenix,false
+MKT-SFO,San Francisco Bay,CA,West,Tier 1,conformed_master,REG-W,San Francisco,false
+MKT-SEA,Puget Sound,WA,West,Tier 2,conformed_master,REG-W,Seattle,false
+MKT-BOS,Greater Boston,MA,Northeast,Tier 1,conformed_master,REG-NE,Boston,false

@@ -1,0 +1,3746 @@
+[
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_branch",
+    "column_name": "branch_code",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_branch",
+    "column_name": "branch_name",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_branch",
+    "column_name": "market_code",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_branch",
+    "column_name": "market_name",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_branch",
+    "column_name": "state_code",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_branch",
+    "column_name": "branch_type",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_branch",
+    "column_name": "open_status",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_branch",
+    "column_name": "latitude",
+    "data_type": "DOUBLE",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_branch",
+    "column_name": "longitude",
+    "data_type": "DOUBLE",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_branch",
+    "column_name": "region_id",
+    "data_type": "STRING",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_branch",
+    "column_name": "is_synthetic",
+    "data_type": "BOOLEAN",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "campaign_title",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "initiative_type",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "product_cd",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "market_scope",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "plan_currency",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "start_dt",
+    "data_type": "DATE",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "end_dt",
+    "data_type": "DATE",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "approval_status",
+    "data_type": "STRING",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "business_owner",
+    "data_type": "STRING",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "campaign_notes",
+    "data_type": "STRING",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "product_id",
+    "data_type": "STRING",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "product_category",
+    "data_type": "STRING",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "estimated_value_usd",
+    "data_type": "DOUBLE",
+    "ordinal_position": "13"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "planned_budget_new",
+    "data_type": "DECIMAL",
+    "ordinal_position": "14"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "campaign_name",
+    "data_type": "STRING",
+    "ordinal_position": "15"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "campaign_start_date",
+    "data_type": "DATE",
+    "ordinal_position": "16"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_campaign",
+    "column_name": "campaign_end_date",
+    "data_type": "DATE",
+    "ordinal_position": "17"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "party_id",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "relationship_status",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "relationship_tenure_months",
+    "data_type": "INT",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "value_segment",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "home_market_cd",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "home_branch_cd",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "digital_banking_flag",
+    "data_type": "BOOLEAN",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "email_marketing_permission",
+    "data_type": "BOOLEAN",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "sms_marketing_permission",
+    "data_type": "BOOLEAN",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "direct_mail_eligible",
+    "data_type": "BOOLEAN",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "contact_preference",
+    "data_type": "STRING",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "customer_since",
+    "data_type": "DATE",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "record_created_ts",
+    "data_type": "DATE",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "customer_id",
+    "data_type": "STRING",
+    "ordinal_position": "13"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "segment",
+    "data_type": "STRING",
+    "ordinal_position": "14"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "segment_id",
+    "data_type": "STRING",
+    "ordinal_position": "15"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "zip_code",
+    "data_type": "INT",
+    "ordinal_position": "16"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "market_id",
+    "data_type": "STRING",
+    "ordinal_position": "17"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "region_id",
+    "data_type": "STRING",
+    "ordinal_position": "18"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer",
+    "column_name": "is_synthetic",
+    "data_type": "BOOLEAN",
+    "ordinal_position": "19"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer_segment",
+    "column_name": "segment_id",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer_segment",
+    "column_name": "segment",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer_segment",
+    "column_name": "segment_group",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer_segment",
+    "column_name": "segment_description",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer_segment",
+    "column_name": "suggested_message_theme",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer_segment",
+    "column_name": "is_synthetic",
+    "data_type": "BOOLEAN",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_customer_segment",
+    "column_name": "record_origin",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_date",
+    "column_name": "calendar_date",
+    "data_type": "DATE",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_date",
+    "column_name": "calendar_year",
+    "data_type": "INT",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_date",
+    "column_name": "calendar_quarter",
+    "data_type": "INT",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_date",
+    "column_name": "month_start",
+    "data_type": "DATE",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_date",
+    "column_name": "week_start",
+    "data_type": "DATE",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_date",
+    "column_name": "is_weekend",
+    "data_type": "BOOLEAN",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_date",
+    "column_name": "holiday_name",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_date",
+    "column_name": "is_bank_holiday",
+    "data_type": "BOOLEAN",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_demo_customer",
+    "column_name": "customer_id",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_demo_customer",
+    "column_name": "home_market_id",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_demo_customer",
+    "column_name": "created_at",
+    "data_type": "DATE",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_demo_customer",
+    "column_name": "data_mode",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_demo_customer",
+    "column_name": "pack_version",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_demo_experiment_variant",
+    "column_name": "experiment_id",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_demo_experiment_variant",
+    "column_name": "campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_demo_experiment_variant",
+    "column_name": "variant_id",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_demo_experiment_variant",
+    "column_name": "allocation_fraction",
+    "data_type": "DOUBLE",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_demo_experiment_variant",
+    "column_name": "primary_event",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_demo_experiment_variant",
+    "column_name": "window_start",
+    "data_type": "DATE",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_demo_experiment_variant",
+    "column_name": "window_end",
+    "data_type": "DATE",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_demo_experiment_variant",
+    "column_name": "data_mode",
+    "data_type": "STRING",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_demo_experiment_variant",
+    "column_name": "pack_version",
+    "data_type": "STRING",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_ecom_product",
+    "column_name": "sku",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_ecom_product",
+    "column_name": "product_name",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_ecom_product",
+    "column_name": "category",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_ecom_product",
+    "column_name": "brand",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_ecom_product",
+    "column_name": "list_price_usd",
+    "data_type": "DOUBLE",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_ecom_product",
+    "column_name": "unit_cost_usd",
+    "data_type": "DOUBLE",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_ecom_product",
+    "column_name": "is_active",
+    "data_type": "BOOLEAN",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_ecom_product",
+    "column_name": "effective_date",
+    "data_type": "DATE",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "mapping_source_system",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "campaign_match_token",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "campaignid",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "campaignlabel",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "subject_line",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "send_date",
+    "data_type": "DATE",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "audience_count",
+    "data_type": "INT",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "product_line",
+    "data_type": "STRING",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "segment_filter",
+    "data_type": "STRING",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "from_name",
+    "data_type": "STRING",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "journey_status",
+    "data_type": "STRING",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "unsubscribe_handling",
+    "data_type": "STRING",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "product_id",
+    "data_type": "STRING",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "product_category",
+    "data_type": "STRING",
+    "ordinal_position": "13"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "estimated_value_usd",
+    "data_type": "DOUBLE",
+    "ordinal_position": "14"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "mapping_source_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "15"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "resolved_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "16"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "proposed_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "17"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_email_campaign",
+    "column_name": "campaign_resolution_status",
+    "data_type": "STRING",
+    "ordinal_position": "18"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_market",
+    "column_name": "market_id",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_market",
+    "column_name": "market_display_name",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_market",
+    "column_name": "state_abbr",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_market",
+    "column_name": "sales_region",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_market",
+    "column_name": "market_tier",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_market",
+    "column_name": "record_origin",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_market",
+    "column_name": "region_id",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_market",
+    "column_name": "primary_city",
+    "data_type": "STRING",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_market",
+    "column_name": "is_synthetic",
+    "data_type": "BOOLEAN",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "source_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "ad_id",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "creative_id",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "creative_version",
+    "data_type": "INT",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "format",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "asset_family",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "destination_type",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "form_id",
+    "data_type": "STRING",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "market_id",
+    "data_type": "STRING",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "effective_start",
+    "data_type": "DATE",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "effective_end",
+    "data_type": "DATE",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "data_mode",
+    "data_type": "STRING",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "pack_version",
+    "data_type": "STRING",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "platform",
+    "data_type": "STRING",
+    "ordinal_position": "13"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "14"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "resolved_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "15"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_ad",
+    "column_name": "campaign_resolution_status",
+    "data_type": "STRING",
+    "ordinal_position": "16"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "mapping_source_system",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "campaign_match_token",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "source_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "platform",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "product_id",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "objective",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "flight_start",
+    "data_type": "DATE",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "flight_end",
+    "data_type": "DATE",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "planned_budget_usd",
+    "data_type": "DOUBLE",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "currency",
+    "data_type": "STRING",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "data_mode",
+    "data_type": "STRING",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "pack_version",
+    "data_type": "STRING",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "mapping_source_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "13"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "resolved_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "14"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "proposed_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "15"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_paid_source_campaign",
+    "column_name": "campaign_resolution_status",
+    "data_type": "STRING",
+    "ordinal_position": "16"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_product",
+    "column_name": "product_id",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_product",
+    "column_name": "product_name",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_product",
+    "column_name": "product_family",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_product",
+    "column_name": "product_type",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_product",
+    "column_name": "primary_success_event",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_product",
+    "column_name": "unit_economics_note",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_product",
+    "column_name": "product_cd",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_product",
+    "column_name": "prod_nm",
+    "data_type": "STRING",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_product",
+    "column_name": "is_active",
+    "data_type": "BOOLEAN",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_product",
+    "column_name": "effective_date",
+    "data_type": "DATE",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_product",
+    "column_name": "product_category",
+    "data_type": "STRING",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_product",
+    "column_name": "estimated_value_usd",
+    "data_type": "DOUBLE",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_product",
+    "column_name": "estimated_value_currency",
+    "data_type": "STRING",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_product",
+    "column_name": "estimated_value_period_months",
+    "data_type": "INT",
+    "ordinal_position": "13"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_product",
+    "column_name": "estimated_value_basis",
+    "data_type": "STRING",
+    "ordinal_position": "14"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_product",
+    "column_name": "is_synthetic",
+    "data_type": "BOOLEAN",
+    "ordinal_position": "15"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "mapping_source_system",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "campaign_match_token",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "creative_asset_id",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "dsp_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "asset_name",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "ad_format",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "asset_dimensions",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "creative_version",
+    "data_type": "STRING",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "destination_url",
+    "data_type": "STRING",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "legal_approval_status",
+    "data_type": "STRING",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "effective_start",
+    "data_type": "DATE",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "effective_end",
+    "data_type": "DATE",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "utm_source",
+    "data_type": "STRING",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "utm_medium",
+    "data_type": "STRING",
+    "ordinal_position": "13"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "utm_campaign",
+    "data_type": "STRING",
+    "ordinal_position": "14"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "mapping_source_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "15"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "resolved_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "16"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "proposed_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "17"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_programmatic_creative",
+    "column_name": "campaign_resolution_status",
+    "data_type": "STRING",
+    "ordinal_position": "18"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_region",
+    "column_name": "region_id",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_region",
+    "column_name": "region_name",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_region",
+    "column_name": "region_description",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_region",
+    "column_name": "is_synthetic",
+    "data_type": "BOOLEAN",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_region",
+    "column_name": "record_origin",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_social_campaign",
+    "column_name": "mapping_source_system",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_social_campaign",
+    "column_name": "campaign_match_token",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_social_campaign",
+    "column_name": "post_campaign_ref",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_social_campaign",
+    "column_name": "content_theme",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_social_campaign",
+    "column_name": "owned_handle",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_social_campaign",
+    "column_name": "platform",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_social_campaign",
+    "column_name": "post_type",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_social_campaign",
+    "column_name": "publish_dt",
+    "data_type": "DATE",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_social_campaign",
+    "column_name": "campaign_goal",
+    "data_type": "STRING",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_social_campaign",
+    "column_name": "legal_copy_status",
+    "data_type": "STRING",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_social_campaign",
+    "column_name": "mapping_source_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_social_campaign",
+    "column_name": "resolved_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_social_campaign",
+    "column_name": "proposed_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_social_campaign",
+    "column_name": "campaign_resolution_status",
+    "data_type": "STRING",
+    "ordinal_position": "13"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "mapping_source_system",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "campaign_match_token",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "source_record_json",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "source_table",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "platform",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "native_campaign_identifier",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "source_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "source_campaign_name",
+    "data_type": "STRING",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "flight_start",
+    "data_type": "DATE",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "flight_end",
+    "data_type": "DATE",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "campaign_status",
+    "data_type": "STRING",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "budget_amount",
+    "data_type": "DECIMAL",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "currency",
+    "data_type": "STRING",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "budget_period",
+    "data_type": "STRING",
+    "ordinal_position": "13"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "mapping_source_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "14"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "resolved_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "15"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "proposed_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "16"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_vendor_campaign",
+    "column_name": "campaign_resolution_status",
+    "data_type": "STRING",
+    "ordinal_position": "17"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "mapping_source_system",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "campaign_match_token",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "test_key",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "experiment_name",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "cmpgn_ref",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "hypothesis_text",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "primary_metric",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "variant",
+    "data_type": "STRING",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "allocation_pct",
+    "data_type": "INT",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "begin_date",
+    "data_type": "DATE",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "end_date",
+    "data_type": "DATE",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "status",
+    "data_type": "STRING",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "owner_team",
+    "data_type": "STRING",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "variant_id",
+    "data_type": "STRING",
+    "ordinal_position": "13"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "mapping_source_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "14"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "resolved_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "15"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "proposed_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "16"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_web_experiment_variant",
+    "column_name": "campaign_resolution_status",
+    "data_type": "STRING",
+    "ordinal_position": "17"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_zip_geography",
+    "column_name": "zip_code",
+    "data_type": "INT",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_zip_geography",
+    "column_name": "city",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_zip_geography",
+    "column_name": "state_abbr",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_zip_geography",
+    "column_name": "market_id",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_zip_geography",
+    "column_name": "market_name",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_zip_geography",
+    "column_name": "region_id",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_zip_geography",
+    "column_name": "region",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_zip_geography",
+    "column_name": "market_tier",
+    "data_type": "STRING",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_zip_geography",
+    "column_name": "zip3",
+    "data_type": "INT",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_zip_geography",
+    "column_name": "is_synthetic",
+    "data_type": "BOOLEAN",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_zip_geography",
+    "column_name": "record_origin",
+    "data_type": "STRING",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "dim_zip_geography",
+    "column_name": "geography_note",
+    "data_type": "STRING",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_banking_funded_accounts_monthly",
+    "column_name": "opening_month",
+    "data_type": "DATE",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_banking_funded_accounts_monthly",
+    "column_name": "product_id",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_banking_funded_accounts_monthly",
+    "column_name": "market_id",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_banking_funded_accounts_monthly",
+    "column_name": "opened_accounts",
+    "data_type": "LONG",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_banking_funded_accounts_monthly",
+    "column_name": "funded_accounts",
+    "data_type": "LONG",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_brand_survey_wave",
+    "column_name": "survey_wave_id",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_brand_survey_wave",
+    "column_name": "survey_date",
+    "data_type": "DATE",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_brand_survey_wave",
+    "column_name": "market_code",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_brand_survey_wave",
+    "column_name": "campaign_ref",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_brand_survey_wave",
+    "column_name": "resolved_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_brand_survey_wave",
+    "column_name": "campaign_resolution_status",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_brand_survey_wave",
+    "column_name": "measurement_wave",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_brand_survey_wave",
+    "column_name": "sample_size",
+    "data_type": "INT",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_brand_survey_wave",
+    "column_name": "brand_awareness_pct",
+    "data_type": "DOUBLE",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_brand_survey_wave",
+    "column_name": "consideration_pct",
+    "data_type": "DOUBLE",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_brand_survey_wave",
+    "column_name": "message_recall_pct",
+    "data_type": "DOUBLE",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_brand_survey_wave",
+    "column_name": "collection_method",
+    "data_type": "STRING",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_brand_survey_wave",
+    "column_name": "source_note",
+    "data_type": "STRING",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_campaign_attribution_coverage",
+    "column_name": "report_month",
+    "data_type": "DATE",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_campaign_attribution_coverage",
+    "column_name": "platform",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_campaign_attribution_coverage",
+    "column_name": "currency",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_campaign_attribution_coverage",
+    "column_name": "campaign_resolution_status",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_campaign_attribution_coverage",
+    "column_name": "source_row_count",
+    "data_type": "LONG",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_campaign_attribution_coverage",
+    "column_name": "distinct_source_campaigns",
+    "data_type": "LONG",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_campaign_attribution_coverage",
+    "column_name": "spend_amount",
+    "data_type": "DECIMAL",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_experiment_variant",
+    "column_name": "campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_experiment_variant",
+    "column_name": "experiment_id",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_experiment_variant",
+    "column_name": "variant_id",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_experiment_variant",
+    "column_name": "allocation_fraction",
+    "data_type": "DOUBLE",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_experiment_variant",
+    "column_name": "primary_event",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_experiment_variant",
+    "column_name": "window_start",
+    "data_type": "DATE",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_experiment_variant",
+    "column_name": "window_end",
+    "data_type": "DATE",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_experiment_variant",
+    "column_name": "data_mode",
+    "data_type": "STRING",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_experiment_variant",
+    "column_name": "pack_version",
+    "data_type": "STRING",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_experiment_variant",
+    "column_name": "eligible_units",
+    "data_type": "LONG",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_experiment_variant",
+    "column_name": "converted_units",
+    "data_type": "LONG",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_experiment_variant",
+    "column_name": "primary_event_rate",
+    "data_type": "DOUBLE",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_experiment_variant",
+    "column_name": "campaign_name",
+    "data_type": "STRING",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_finance_reconciliation_monthly",
+    "column_name": "spend_month",
+    "data_type": "DATE",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_finance_reconciliation_monthly",
+    "column_name": "currency",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_finance_reconciliation_monthly",
+    "column_name": "reconciliation_status",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_finance_reconciliation_monthly",
+    "column_name": "finance_links",
+    "data_type": "LONG",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_finance_reconciliation_monthly",
+    "column_name": "invoice_net_usd",
+    "data_type": "DECIMAL",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_finance_reconciliation_monthly",
+    "column_name": "gl_net_usd",
+    "data_type": "DECIMAL",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_finance_reconciliation_monthly",
+    "column_name": "invoice_minus_gl_usd",
+    "data_type": "DECIMAL",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_media_daily",
+    "column_name": "campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_media_daily",
+    "column_name": "report_date",
+    "data_type": "DATE",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_media_daily",
+    "column_name": "source_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_media_daily",
+    "column_name": "platform",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_media_daily",
+    "column_name": "format",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_media_daily",
+    "column_name": "currency",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_media_daily",
+    "column_name": "pack_version",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_media_daily",
+    "column_name": "active_ads",
+    "data_type": "LONG",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_media_daily",
+    "column_name": "impressions",
+    "data_type": "LONG",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_media_daily",
+    "column_name": "link_clicks",
+    "data_type": "LONG",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_media_daily",
+    "column_name": "response_starts",
+    "data_type": "LONG",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_media_daily",
+    "column_name": "reported_response_submissions",
+    "data_type": "LONG",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_media_daily",
+    "column_name": "spend_usd",
+    "data_type": "DECIMAL",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_media_daily",
+    "column_name": "link_click_rate",
+    "data_type": "DOUBLE",
+    "ordinal_position": "13"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_media_daily",
+    "column_name": "campaign_name",
+    "data_type": "STRING",
+    "ordinal_position": "14"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_reach_window",
+    "column_name": "campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_reach_window",
+    "column_name": "reach_scope",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_reach_window",
+    "column_name": "platform",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_reach_window",
+    "column_name": "source_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_reach_window",
+    "column_name": "format",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_reach_window",
+    "column_name": "ad_id",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_reach_window",
+    "column_name": "window_type",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_reach_window",
+    "column_name": "window_start",
+    "data_type": "DATE",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_reach_window",
+    "column_name": "window_end",
+    "data_type": "DATE",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_reach_window",
+    "column_name": "unique_reach",
+    "data_type": "INT",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_reach_window",
+    "column_name": "impressions",
+    "data_type": "INT",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_reach_window",
+    "column_name": "reach_method",
+    "data_type": "STRING",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_reach_window",
+    "column_name": "data_mode",
+    "data_type": "STRING",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_reach_window",
+    "column_name": "pack_version",
+    "data_type": "STRING",
+    "ordinal_position": "13"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_paid_reach_window",
+    "column_name": "campaign_name",
+    "data_type": "STRING",
+    "ordinal_position": "14"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_relationship_value_monthly",
+    "column_name": "campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_relationship_value_monthly",
+    "column_name": "value_month",
+    "data_type": "DATE",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_relationship_value_monthly",
+    "column_name": "product_id",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_relationship_value_monthly",
+    "column_name": "market_id",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_relationship_value_monthly",
+    "column_name": "value_status",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_relationship_value_monthly",
+    "column_name": "pack_version",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_relationship_value_monthly",
+    "column_name": "observed_accounts",
+    "data_type": "LONG",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_relationship_value_monthly",
+    "column_name": "net_interest_income_usd",
+    "data_type": "DECIMAL",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_relationship_value_monthly",
+    "column_name": "net_relationship_contribution_usd",
+    "data_type": "DECIMAL",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_relationship_value_monthly",
+    "column_name": "campaign_name",
+    "data_type": "STRING",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "submission_month",
+    "data_type": "DATE",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "source_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "platform",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "format",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "pack_version",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "submissions",
+    "data_type": "LONG",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "duplicate_submissions",
+    "data_type": "LONG",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "eligible_submissions",
+    "data_type": "LONG",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "submissions_without_crm_match",
+    "data_type": "LONG",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "submissions_with_leads",
+    "data_type": "LONG",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "submissions_with_qualified_leads",
+    "data_type": "LONG",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "submissions_with_applications",
+    "data_type": "LONG",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "submissions_with_approved_applications",
+    "data_type": "LONG",
+    "ordinal_position": "13"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "submissions_with_opened_accounts",
+    "data_type": "LONG",
+    "ordinal_position": "14"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "submissions_with_funded_accounts",
+    "data_type": "LONG",
+    "ordinal_position": "15"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "lead_rate",
+    "data_type": "DOUBLE",
+    "ordinal_position": "16"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "application_rate",
+    "data_type": "DOUBLE",
+    "ordinal_position": "17"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "funded_account_rate",
+    "data_type": "DOUBLE",
+    "ordinal_position": "18"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_demo_submission_funnel",
+    "column_name": "campaign_name",
+    "data_type": "STRING",
+    "ordinal_position": "19"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_direct_mail_performance_monthly",
+    "column_name": "mail_month",
+    "data_type": "DATE",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_direct_mail_performance_monthly",
+    "column_name": "mapping_source_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_direct_mail_performance_monthly",
+    "column_name": "resolved_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_direct_mail_performance_monthly",
+    "column_name": "campaign_resolution_status",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_direct_mail_performance_monthly",
+    "column_name": "addr_market",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_direct_mail_performance_monthly",
+    "column_name": "mail_jobs",
+    "data_type": "LONG",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_direct_mail_performance_monthly",
+    "column_name": "delivered_jobs",
+    "data_type": "LONG",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_direct_mail_performance_monthly",
+    "column_name": "delivered_jobs_with_response",
+    "data_type": "LONG",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_direct_mail_performance_monthly",
+    "column_name": "delivered_jobs_with_qr_scan",
+    "data_type": "LONG",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_direct_mail_performance_monthly",
+    "column_name": "linked_response_events",
+    "data_type": "LONG",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_direct_mail_performance_monthly",
+    "column_name": "postage_usd",
+    "data_type": "DECIMAL",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_direct_mail_performance_monthly",
+    "column_name": "delivered_job_response_rate",
+    "data_type": "DOUBLE",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_direct_mail_performance_monthly",
+    "column_name": "delivered_job_qr_scan_rate",
+    "data_type": "DOUBLE",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_ecom_orders_monthly",
+    "column_name": "order_month",
+    "data_type": "DATE",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_ecom_orders_monthly",
+    "column_name": "currency",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_ecom_orders_monthly",
+    "column_name": "order_status",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_ecom_orders_monthly",
+    "column_name": "orders",
+    "data_type": "LONG",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_ecom_orders_monthly",
+    "column_name": "order_total_amount",
+    "data_type": "DECIMAL",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_ecom_orders_monthly",
+    "column_name": "order_tax_amount",
+    "data_type": "DECIMAL",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_ecom_orders_monthly",
+    "column_name": "order_shipping_amount",
+    "data_type": "DECIMAL",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_email_engagement_daily",
+    "column_name": "cmpgn_id",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_email_engagement_daily",
+    "column_name": "send_dt",
+    "data_type": "DATE",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_email_engagement_daily",
+    "column_name": "resolved_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_email_engagement_daily",
+    "column_name": "campaign_resolution_status",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_email_engagement_daily",
+    "column_name": "sent",
+    "data_type": "INT",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_email_engagement_daily",
+    "column_name": "delivered",
+    "data_type": "INT",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_email_engagement_daily",
+    "column_name": "unique_opens",
+    "data_type": "INT",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_email_engagement_daily",
+    "column_name": "unique_clicks",
+    "data_type": "INT",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_email_engagement_daily",
+    "column_name": "hard_soft_bounces",
+    "data_type": "INT",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_email_engagement_daily",
+    "column_name": "opt_outs",
+    "data_type": "INT",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_email_engagement_daily",
+    "column_name": "delivery_rate",
+    "data_type": "DOUBLE",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_email_engagement_daily",
+    "column_name": "bounce_rate",
+    "data_type": "DOUBLE",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_email_engagement_daily",
+    "column_name": "email_click_rate",
+    "data_type": "DOUBLE",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_email_engagement_daily",
+    "column_name": "opt_out_rate",
+    "data_type": "DOUBLE",
+    "ordinal_position": "13"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_new_funded_customers_monthly",
+    "column_name": "acquisition_month",
+    "data_type": "DATE",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_new_funded_customers_monthly",
+    "column_name": "product_id",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_new_funded_customers_monthly",
+    "column_name": "market_id",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_new_funded_customers_monthly",
+    "column_name": "segment_id",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_new_funded_customers_monthly",
+    "column_name": "resolved_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_new_funded_customers_monthly",
+    "column_name": "campaign_resolution_status",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_new_funded_customers_monthly",
+    "column_name": "new_funded_customers",
+    "data_type": "LONG",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_offline_activity_monthly",
+    "column_name": "observation_month",
+    "data_type": "DATE",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_offline_activity_monthly",
+    "column_name": "source_channel",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_offline_activity_monthly",
+    "column_name": "mapping_source_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_offline_activity_monthly",
+    "column_name": "resolved_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_offline_activity_monthly",
+    "column_name": "campaign_resolution_status",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_offline_activity_monthly",
+    "column_name": "geography_source_value",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_offline_activity_monthly",
+    "column_name": "metric",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_offline_activity_monthly",
+    "column_name": "metric_value",
+    "data_type": "LONG",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_sales_target_attainment_monthly",
+    "column_name": "target_month",
+    "data_type": "DATE",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_sales_target_attainment_monthly",
+    "column_name": "product_id",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_sales_target_attainment_monthly",
+    "column_name": "market_id",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_sales_target_attainment_monthly",
+    "column_name": "target_funded_accounts",
+    "data_type": "INT",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_sales_target_attainment_monthly",
+    "column_name": "target_contribution_usd",
+    "data_type": "DOUBLE",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_sales_target_attainment_monthly",
+    "column_name": "plan_version",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_sales_target_attainment_monthly",
+    "column_name": "opened_accounts",
+    "data_type": "LONG",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_sales_target_attainment_monthly",
+    "column_name": "funded_accounts",
+    "data_type": "LONG",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_sales_target_attainment_monthly",
+    "column_name": "funded_account_gap",
+    "data_type": "LONG",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_sales_target_attainment_monthly",
+    "column_name": "funded_account_attainment",
+    "data_type": "DOUBLE",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "resolved_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "source_table",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "platform",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "report_date",
+    "data_type": "DATE",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "report_end_date",
+    "data_type": "DATE",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "source_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "campaign_resolution_status",
+    "data_type": "STRING",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "currency",
+    "data_type": "STRING",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "click_event",
+    "data_type": "STRING",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "conversion_event",
+    "data_type": "STRING",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "conversion_value_event",
+    "data_type": "STRING",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "source_row_count",
+    "data_type": "LONG",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "reported_impressions",
+    "data_type": "LONG",
+    "ordinal_position": "12"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "reported_clicks",
+    "data_type": "LONG",
+    "ordinal_position": "13"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "spend_amount",
+    "data_type": "DECIMAL",
+    "ordinal_position": "14"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "reported_conversions",
+    "data_type": "DECIMAL",
+    "ordinal_position": "15"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "reported_conversion_value",
+    "data_type": "DECIMAL",
+    "ordinal_position": "16"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "reported_click_rate",
+    "data_type": "DOUBLE",
+    "ordinal_position": "17"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "cost_per_reported_click",
+    "data_type": "DECIMAL",
+    "ordinal_position": "18"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "cost_per_thousand_impressions",
+    "data_type": "DECIMAL",
+    "ordinal_position": "19"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_vendor_media_daily",
+    "column_name": "campaign_name",
+    "data_type": "STRING",
+    "ordinal_position": "20"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_website_engagement_daily",
+    "column_name": "session_date",
+    "data_type": "DATE",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_website_engagement_daily",
+    "column_name": "landing_page_path",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_website_engagement_daily",
+    "column_name": "device_category",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_website_engagement_daily",
+    "column_name": "mapping_source_campaign_id",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_website_engagement_daily",
+    "column_name": "resolved_campaign_key",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_website_engagement_daily",
+    "column_name": "campaign_resolution_status",
+    "data_type": "STRING",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_website_engagement_daily",
+    "column_name": "sessions",
+    "data_type": "LONG",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_website_engagement_daily",
+    "column_name": "sessions_with_engagement_flag",
+    "data_type": "LONG",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_website_engagement_daily",
+    "column_name": "engaged_sessions",
+    "data_type": "LONG",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_website_engagement_daily",
+    "column_name": "sessions_with_application_submit",
+    "data_type": "LONG",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_website_engagement_daily",
+    "column_name": "engaged_session_rate",
+    "data_type": "DOUBLE",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "mart_website_engagement_daily",
+    "column_name": "web_application_submit_rate",
+    "data_type": "DOUBLE",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_fx_rate",
+    "column_name": "rate_date",
+    "data_type": "DATE",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_fx_rate",
+    "column_name": "base_ccy",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_fx_rate",
+    "column_name": "quote_ccy",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_fx_rate",
+    "column_name": "rate",
+    "data_type": "DOUBLE",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_sales_target_override_candidate",
+    "column_name": "target_month",
+    "data_type": "DATE",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_sales_target_override_candidate",
+    "column_name": "product_id",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_sales_target_override_candidate",
+    "column_name": "market_id",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_sales_target_override_candidate",
+    "column_name": "plan_version",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_sales_target_override_candidate",
+    "column_name": "selected_funded_accounts",
+    "data_type": "INT",
+    "ordinal_position": "4"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_sales_target_override_candidate",
+    "column_name": "selected_contribution_usd",
+    "data_type": "DOUBLE",
+    "ordinal_position": "5"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_sales_target_override_candidate",
+    "column_name": "rejected_funded_accounts",
+    "data_type": "INT",
+    "ordinal_position": "6"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_sales_target_override_candidate",
+    "column_name": "rejected_contribution_usd",
+    "data_type": "DOUBLE",
+    "ordinal_position": "7"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_sales_target_override_candidate",
+    "column_name": "override_status",
+    "data_type": "STRING",
+    "ordinal_position": "8"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_sales_target_override_candidate",
+    "column_name": "reason",
+    "data_type": "STRING",
+    "ordinal_position": "9"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_sales_target_override_candidate",
+    "column_name": "data_mode",
+    "data_type": "STRING",
+    "ordinal_position": "10"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_sales_target_override_candidate",
+    "column_name": "pack_version",
+    "data_type": "STRING",
+    "ordinal_position": "11"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_source_acceptance_check",
+    "column_name": "check_id",
+    "data_type": "STRING",
+    "ordinal_position": "0"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_source_acceptance_check",
+    "column_name": "acceptance_criterion",
+    "data_type": "STRING",
+    "ordinal_position": "1"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_source_acceptance_check",
+    "column_name": "observed_result",
+    "data_type": "STRING",
+    "ordinal_position": "2"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_source_acceptance_check",
+    "column_name": "expected_result",
+    "data_type": "STRING",
+    "ordinal_position": "3"
+  },
+  {
+    "catalog_name": "media-poc",
+    "schema_name": "gold_business",
+    "table_name": "ref_source_acceptance_check",
+    "column_name": "status",
+    "data_type": "STRING",
+    "ordinal_position": "4"
+  }
+]

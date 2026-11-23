@@ -1,9 +1,8 @@
 import { NextResponse } from 'next/server';
-import { withApiErrors } from '@/lib/server/api-errors';
-import { assertReady } from '@/lib/server/metadata';
 
 export const dynamic = 'force-dynamic';
-export const GET = withApiErrors(async () => {
-  await assertReady();
-  return NextResponse.json({ status: 'ready', tables: 39, checkedAt: new Date().toISOString() }, { headers: { 'Cache-Control': 'no-store' } });
-});
+// Deployment liveness: the HTTP server can serve requests. Warehouse validation
+// belongs to /api/ready, so a data configuration issue cannot stop the app UI.
+export async function GET() {
+  return NextResponse.json({ status: 'alive', checkedAt: new Date().toISOString() }, { headers: { 'Cache-Control': 'no-store' } });
+}

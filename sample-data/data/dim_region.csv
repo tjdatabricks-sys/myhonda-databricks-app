@@ -1,0 +1,6 @@
+region_id,region_name,region_description,is_synthetic,record_origin
+REG-W,West,Pacific and mountain western markets,false,conformed_master
+REG-MW,Midwest,Central plains and great lakes markets,false,conformed_master
+REG-S,South,Southeastern and gulf coast markets,false,conformed_master
+REG-NE,Northeast,Atlantic seaboard markets,false,conformed_master
+REG-SW,Southwest,Desert southwest markets,false,conformed_master

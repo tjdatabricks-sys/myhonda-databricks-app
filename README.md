@@ -9,7 +9,7 @@ Next.js / React analytics application with 15 tabs, 17 data API routes, live Uni
 3. In `app.yaml`, set `DATABRICKS_CATALOG` and `DATABRICKS_SCHEMA`. The defaults are `media-poc` and `gold_business`. The warehouse ID comes from the resource binding; the workspace host and OAuth credentials come from Databricks automatically.
 4. Grant the app service principal `USE CATALOG`, `USE SCHEMA`, and `SELECT` on the required tables. Its identity is on the app's Authorization tab. Use `deployment/grants.sql` as the template.
 5. Extract `dist/myhonda-databricks-app.zip` locally and upload/sync its **contents** into a workspace source folder. `app.yaml` and `package.json` must be at that folder's root. Select that folder as the app source and deploy. Do not upload the ZIP as the app's only source file.
-6. Check the deployment logs and open the app. `/api/health` must return HTTP 200 with `status: ready`. It validates all 39 required tables, column types, and SELECT access. Missing configuration, unavailable compute, and missing grants return HTTP 503 with a diagnostic instead of silently loading sample data.
+6. Check the deployment logs and open the app. `/api/health` returns HTTP 200 with `status: alive` when the HTTP server is running; this is the deployment probe. Separately, `/api/ready` must return HTTP 200 with `status: ready` before warehouse data is usable. It validates all 39 required tables, column types, and SELECT access. Missing configuration, unavailable compute, and missing grants return HTTP 503 from `/api/ready`, with a diagnostic displayed in the app. A successful deployment alone does not prove warehouse connectivity.
 
 Databricks installs Node packages and builds Next.js from source. The start script also builds if the standalone server does not exist, copies static assets, and binds to `0.0.0.0:$DATABRICKS_APP_PORT`. No PAT is needed in deployed operation. Do not add `NODE_ENV=production` to the build environment unless all required build dependencies are installed; the package lists build dependencies under `dependencies`.
 
@@ -72,3 +72,20 @@ This produces `dist/myhonda-databricks-app.zip`. It includes the app source, npm
 Sample data remains in `sample-data/` in the complete workspace for reproducible testing and reference. It is never read by the production application and is not served publicly. The complete workspace is needed to run the fixture tests and regenerate the archive; the smaller deployment ZIP is intended for Databricks execution.
 
 References: [Databricks Apps runtime](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/system-env), [app.yaml configuration](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/app-runtime), [app authorization](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth), [SQL warehouse resources](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/sql-warehouse), [Node.js SQL driver](https://docs.databricks.com/aws/en/dev-tools/nodejs-sql-driver).
+
+## Troubleshoot a deployment healthcheck timeout
+
+The initial package used a full warehouse/schema check as `/api/health`. This could block deployment for five minutes even though the web server was running. The updated package keeps `/api/health` independent of SQL and moves the full check to `/api/ready`. Re-upload the updated source, preserve your catalog/schema and warehouse resource settings, and redeploy. Do not change only the YAML path: the corresponding health, readiness, and UI code must be updated together.
+
+If the app shows **Warehouse needs attention**, inspect `/api/ready` and the `api_error` entry in app logs. Logs now include the safe diagnostic message and request ID, without raw driver messages, SQL values, or secrets. Typical codes:
+
+| Code | Action |
+|---|---|
+| `CONFIGURATION_ERROR` | Set the named variable; bind warehouse resource key `sql-warehouse`. |
+| `WAREHOUSE_AUTHENTICATION` | Check automatically injected app OAuth credentials. |
+| `WAREHOUSE_PERMISSION` | Grant warehouse and Unity Catalog access to the app principal, not just the developer. |
+| `SCHEMA_MISMATCH` / `WAREHOUSE_SCHEMA` | Check the selected catalog/schema and required table/column types. |
+| `WAREHOUSE_CONNECTION` / `QUERY_TIMEOUT` | Check warehouse availability and app networking. |
+| `WAREHOUSE_ERROR` | The driver error was not classified; share the request ID and relevant sanitized workspace diagnostics for investigation. |
+
+The healthcheck change fixes the deployment gate; it does not repair missing warehouse grants, business tables, or workspace networking.
