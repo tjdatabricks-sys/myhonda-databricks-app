@@ -34,7 +34,7 @@ const ACCENTS: Record<string, string> = {
 export function KpiCard({ label, value, delta, invertDelta, deltaLabel, icon: Icon, iconClassName, description, loading, accent = "teal" }: KpiCardProps) {
   if (loading) {
     return (
-      <Card>
+      <Card role="group" aria-label={`${label} KPI`}>
         <CardContent className="p-4">
           <Skeleton className="h-4 w-24" />
           <Skeleton className="mt-3 h-8 w-32" />
@@ -46,7 +46,7 @@ export function KpiCard({ label, value, delta, invertDelta, deltaLabel, icon: Ic
   const hasDelta = delta != null && Number.isFinite(delta);
   const good = hasDelta ? (invertDelta ? delta < 0 : delta > 0) : null;
   return (
-    <Card className="group transition-shadow hover:shadow-md">
+    <Card role="group" aria-label={`${label} KPI`} className="group transition-shadow hover:shadow-md">
       <CardContent className="p-4">
         <div className="flex items-start justify-between gap-2">
           <div className="min-w-0">

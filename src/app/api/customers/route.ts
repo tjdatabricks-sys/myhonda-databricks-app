@@ -1,3 +1,4 @@
+import { tableWhere } from "@/lib/server/filters";
 import { withApiErrors } from "@/lib/server/api-errors";
 // ============================================================
 // GET /api/customers — Customer base & acquisition analytics
@@ -9,8 +10,6 @@ import { withApiErrors } from "@/lib/server/api-errors";
 // campaignChannelGroups() for the channel rollup.
 // ============================================================
 import { NextResponse } from "next/server";
-import type { Where, Comparison } from "@/lib/server/query";
-import type { RowModels } from "@/lib/server/row-models";
 import { db } from "@/lib/db";
 import type { CustomersResponse } from "@/lib/api-types";
 import {
@@ -30,9 +29,7 @@ async function handleGet(req: Request) {
 
   // dim_customer: segment + market filters apply; product filters do
   // not (customers are not product-scoped).
-  const custWhere: Where<RowModels["Customer"]> = {};
-  if (f.segment) custWhere.segmentId = f.segment;
-  if (f.market) custWhere.marketId = f.market;
+  const custWhere = tableWhere("Customer", f);
 
   const [nfRows, custRows, segDim, markets, products, funnelRows, paidRows, relRows, groups] =
     await Promise.all([

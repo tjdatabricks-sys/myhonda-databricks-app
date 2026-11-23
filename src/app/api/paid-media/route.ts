@@ -1,3 +1,4 @@
+import { tableWhere } from "@/lib/server/filters";
 import { withApiErrors } from "@/lib/server/api-errors";
 // ============================================================
 // GET /api/paid-media — paid delivery KPIs (incl. 28-day unique
@@ -29,13 +30,8 @@ export const dynamic = "force-dynamic";
 async function handleGet(req: Request) {
   const f = await parseFilters(req);
 
-  // Reach windows: 28-day dedupe windows; campaign filter only (no date filter).
-  const reachWhere: { windowType: string; campaignKey?: string } = { windowType: "28-day" };
-  if (f.campaign) reachWhere.campaignKey = f.campaign;
-
-  const adWhere: { campaignKey?: string; platform?: string } = {};
-  if (f.campaign) adWhere.campaignKey = f.campaign;
-  if (f.platform) adWhere.platform = f.platform;
+  const reachWhere = { ...tableWhere("PaidReachWindow", f), windowType: "28-day" };
+  const adWhere = tableWhere("PaidAd", f);
 
   const [paidRows, funnelRows, reachRows, adRows, vendorRows, campaigns] = await Promise.all([
     db.paidMediaDaily.selectRows({

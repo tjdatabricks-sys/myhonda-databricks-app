@@ -47,6 +47,7 @@ interface FilterState {
   setProduct: (v: string) => void;
   setSegment: (v: string) => void;
   reset: () => void;
+  clearDimensions: () => void;
   hasActiveFilters: () => boolean;
   toParams: () => Record<string, string>;
   queryKey: () => string;
@@ -68,6 +69,7 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   setProduct: (productId) => set({ productId }),
   setSegment: (segmentId) => set({ segmentId }),
   reset: () => set({ rangePreset: "12m", campaignKey: "", platform: "", marketId: "", productId: "", segmentId: "" }),
+  clearDimensions: () => set({ campaignKey: "", platform: "", marketId: "", productId: "", segmentId: "" }),
   hasActiveFilters: () => {
     const s = get();
     return Boolean(s.campaignKey || s.platform || s.marketId || s.productId || s.segmentId);

@@ -7,8 +7,8 @@ import { withApiErrors } from "@/lib/server/api-errors";
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import type { FiltersResponse } from "@/lib/api-types";
-import { parseFilters, campaignChannelGroups } from "@/lib/server/filters";
-import { dateKey } from "@/lib/server/helpers";
+import { campaignChannelGroups } from "@/lib/server/filters";
+import { loadFilterCatalog } from "@/lib/server/filter-catalog";
 import { GOLD_TABLES } from "@/lib/server/gold-tables";
 
 export const dynamic = "force-dynamic";
@@ -20,16 +20,14 @@ function delegateFor(model: string): { countRows: () => Promise<number> } | unde
   ];
 }
 
-async function handleGet(req: Request) {
-  const f = await parseFilters(req); // filters ignored: this endpoint lists all options
-  void f;
+async function handleGet(_req: Request) {
 
-  const [campaignRows, platformRows, markets, products, segments, dateAgg, fundedAgg] =
+  const [campaignRows, catalog, markets, products, segments, fundedAgg] =
     await Promise.all([
       db.campaign.selectRows({
         select: { campaignKey: true, campaignTitle: true, initiativeType: true },
       }),
-      db.paidMediaDaily.selectRows({ distinct: ["platform"], select: { platform: true } }),
+      loadFilterCatalog(),
       db.market.selectRows({
         orderBy: { marketId: "asc" },
         select: { marketId: true, marketDisplayName: true, regionId: true },
@@ -42,7 +40,6 @@ async function handleGet(req: Request) {
         orderBy: { segmentId: "asc" },
         select: { segmentId: true, segment: true, segmentGroup: true },
       }),
-      db.paidMediaDaily.summarize({ _min: { reportDate: true }, _max: { reportDate: true } }),
       db.newFundedCustomersMonthly.summarize({ _sum: { newFundedCustomers: true } }),
     ]);
 
@@ -57,7 +54,7 @@ async function handleGet(req: Request) {
     }))
     .sort((a, b) => (a.campaignKey < b.campaignKey ? -1 : a.campaignKey > b.campaignKey ? 1 : 0));
 
-  const platforms = platformRows.map((p) => p.platform).sort();
+  const platforms = catalog.platforms;
 
   // Row counts across every gold_business table (39 tables).
   const counts = await Promise.all(
@@ -74,10 +71,7 @@ async function handleGet(req: Request) {
     markets,
     products,
     segments,
-    dateRange: {
-      min: dateAgg._min.reportDate ? dateKey(dateAgg._min.reportDate) : new Date().toISOString().slice(0, 10),
-      max: dateAgg._max.reportDate ? dateKey(dateAgg._max.reportDate) : new Date().toISOString().slice(0, 10),
-    },
+    dateRange: catalog.dateRange,
     totals: {
       campaigns: campaigns.length,
       tables: Object.keys(GOLD_TABLES).length,

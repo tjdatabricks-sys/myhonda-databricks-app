@@ -1,3 +1,4 @@
+import { tableWhere } from "@/lib/server/filters";
 import { withApiErrors } from "@/lib/server/api-errors";
 // ============================================================
 // GET /api/targets — sales target attainment vs actuals by
@@ -10,8 +11,6 @@ import { withApiErrors } from "@/lib/server/api-errors";
 // ============================================================
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
-import type { Where, Comparison } from "@/lib/server/query";
-import type { RowModels } from "@/lib/server/row-models";
 import type { TargetsResponse } from "@/lib/api-types";
 import { parseFilters, relWhere, targetWhere } from "@/lib/server/filters";
 import {
@@ -30,11 +29,7 @@ export const dynamic = "force-dynamic";
 async function handleGet(req: Request) {
   const f = await parseFilters(req);
 
-  // Override candidates: product/market filters apply; the date range is
-  // intentionally ignored so the review queue always shows every candidate.
-  const ovrWhere: Where<RowModels["SalesTargetOverrideCandidate"]> = {};
-  if (f.product) ovrWhere.productId = f.product;
-  if (f.market) ovrWhere.marketId = f.market;
+  const ovrWhere = tableWhere("SalesTargetOverrideCandidate", f);
 
   const [martRows, relRows, overrideRows, products, markets] = await Promise.all([
     db.salesTargetAttainmentMonthly.selectRows({

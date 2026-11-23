@@ -3,7 +3,7 @@ import { FIELD_TYPES } from './row-models';
 import { qualifiedTable, quoteIdentifier } from './config';
 
 export type Scalar = string | number | boolean | Date | null;
-export type Comparison<T> = { equals?: T | null; gte?: T; lte?: T; gt?: T; lt?: T; in?: T[]; not?: T | null };
+export type Comparison<T> = { equals?: T | null; gte?: T; lte?: T; gt?: T; lt?: T; in?: T[]; normalizedIn?: string[]; not?: T | null };
 export type Where<T> = { [K in keyof T]?: T[K] | Comparison<NonNullable<T[K]>> } & { OR?: Where<T>[]; AND?: Where<T>[] };
 export type Selection<T> = Partial<Record<keyof T, boolean>>;
 export interface ReadOptions<T> {
@@ -54,7 +54,10 @@ export function compileWhere(table: string, where: object = {}): Statement {
       else if (value instanceof Date || typeof value !== 'object') parts.push(`${column} = ${param(value)}`);
       else for (const [operator, operand] of Object.entries(value)) {
         if (operand === undefined) continue;
-        if (operator === 'in') {
+        if (operator === 'normalizedIn') {
+          if (FIELD_TYPES[definition(table).model][field] !== 'String' || !Array.isArray(operand) || operand.some(v => typeof v !== 'string')) throw new Error('Invalid normalized string filter');
+          parts.push(operand.length ? `LOWER(TRIM(${column})) IN (${operand.map(v => bind(v.trim().toLowerCase())).join(', ')})` : 'FALSE');
+        } else if (operator === 'in') {
           if (!Array.isArray(operand)) throw new Error('Invalid IN filter');
           parts.push(operand.length ? `${column} IN (${operand.map(param).join(', ')})` : 'FALSE');
         } else {

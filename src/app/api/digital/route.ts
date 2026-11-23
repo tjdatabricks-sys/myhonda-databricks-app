@@ -1,3 +1,4 @@
+import { tableWhere } from "@/lib/server/filters";
 import { withApiErrors } from "@/lib/server/api-errors";
 // ============================================================
 // GET /api/digital — Website + Email + Organic Social analytics
@@ -9,8 +10,6 @@ import { withApiErrors } from "@/lib/server/api-errors";
 // resolution / legal-clearance rates).
 // ============================================================
 import { NextResponse } from "next/server";
-import type { Where, Comparison } from "@/lib/server/query";
-import type { RowModels } from "@/lib/server/row-models";
 import { db } from "@/lib/db";
 import type { DigitalResponse } from "@/lib/api-types";
 import { parseFilters, webWhere, emailMartWhere } from "@/lib/server/filters";
@@ -43,11 +42,7 @@ function webMetrics(rows: WebRow[]): { sessions: number; engagedRate: number; su
 async function handleGet(req: Request) {
   const f = await parseFilters(req);
 
-  // dim_social_campaign: campaign filter only (no metrics table to
-  // constrain by date; platform values are social networks, not ad
-  // platforms, so the global platform filter does not apply).
-  const socialWhere: Where<RowModels["SocialCampaign"]> = {};
-  if (f.campaign) socialWhere.resolvedCampaignKey = f.campaign;
+  const socialWhere = tableWhere("SocialCampaign", f);
 
   const [webRows, emailRows, socialRows, campaigns] = await Promise.all([
     db.websiteEngagementDaily.selectRows({

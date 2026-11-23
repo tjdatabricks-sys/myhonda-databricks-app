@@ -3,7 +3,7 @@ import { withApiErrors } from "@/lib/server/api-errors";
 // GET /api/brand — Brand-lift survey tracker: waves, pre/post
 // lift by campaign, market and collection method, monthly
 // timeline. (BrandResponse contract; see src/lib/api-types.ts)
-// Only the campaign filter applies (mart_brand_survey_wave).
+// Survey date/market and campaign-linked platform/product filters apply.
 // Awareness / consideration / recall are stored as decimals 0-1.
 // ============================================================
 import { NextResponse } from "next/server";
@@ -32,7 +32,7 @@ function meanBy<T>(rows: T[], fn: (row: T) => number): number {
 }
 
 async function handleGet(req: Request) {
-  const f = await parseFilters(req); // only the campaign filter applies
+  const f = await parseFilters(req);
 
   const [rows, campaigns, markets, channelGroups] = await Promise.all([
     db.brandSurveyWave.selectRows({ where: brandWhere(f) }),

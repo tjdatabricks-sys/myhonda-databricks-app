@@ -1,6 +1,7 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
+import { parametersForReport } from "@/lib/filter-capabilities";
 import { useFilterStore } from "@/lib/store";
 
 export async function apiGet<T>(endpoint: string, params?: Record<string, string | undefined>): Promise<T> {
@@ -22,12 +23,14 @@ export async function apiGet<T>(endpoint: string, params?: Record<string, string
 export function useAnalyticsQuery<T>(endpoint: string, opts?: { withFilters?: boolean }) {
   const withFilters = opts?.withFilters ?? true;
   const rangeReady = useFilterStore((s) => s.dataRange !== null);
-  const queryKey = useFilterStore((s) => s.queryKey());
-  const toParams = useFilterStore((s) => s.toParams);
+  const queryKey = useFilterStore((s) => JSON.stringify(parametersForReport(endpoint, s.toParams())));
+  // Bind the request to its cache-key snapshot. Reading the live store inside
+  // queryFn can associate a retry/refetch with a different filter selection.
+  const params = JSON.parse(queryKey) as Record<string, string>;
   return useQuery<T>({
     enabled: !withFilters || rangeReady,
     queryKey: [endpoint, withFilters ? queryKey : "none"],
-    queryFn: () => apiGet<T>(endpoint, withFilters ? toParams() : undefined),
+    queryFn: () => apiGet<T>(endpoint, withFilters ? params : undefined),
     staleTime: 120_000,
     retry: 1,
   });

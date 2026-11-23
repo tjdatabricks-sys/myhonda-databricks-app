@@ -51,8 +51,8 @@ const TABS: TabDef[] = [
   { id: "contribution", label: "Revenue & Contribution", shortLabel: "Contribution", icon: TrendingUp, group: "Customers & Revenue", description: "Relationship value, product contribution and campaign payback (UC07)", hasFilters: true },
   { id: "finance", label: "Finance Reconciliation", shortLabel: "Reconciliation", icon: Receipt, group: "Finance & Planning", description: "Platform spend vs vendor invoices vs GL postings with variance analysis (UC08)", hasFilters: true },
   { id: "targets", label: "Targets & Attainment", shortLabel: "Targets", icon: Flag, group: "Finance & Planning", description: "Plan versus actual funded accounts and contribution by product and market (UC09)", hasFilters: true },
-  { id: "experiments", label: "Experiments", shortLabel: "Experiments", icon: FlaskConical, group: "Advanced Analytics", description: "A/B test results with conversion uplift and statistical confidence (UC04)", hasFilters: false },
-  { id: "brand", label: "Brand Lift", shortLabel: "Brand Lift", icon: Award, group: "Advanced Analytics", description: "Brand awareness, consideration and message recall by survey wave (UC10)", hasFilters: false },
+  { id: "experiments", label: "Experiments", shortLabel: "Experiments", icon: FlaskConical, group: "Advanced Analytics", description: "A/B test results with conversion uplift and statistical confidence (UC04)", hasFilters: true },
+  { id: "brand", label: "Brand Lift", shortLabel: "Brand Lift", icon: Award, group: "Advanced Analytics", description: "Brand awareness, consideration and message recall by survey wave (UC10)", hasFilters: true },
   { id: "ecom", label: "E-Commerce", shortLabel: "E-Commerce", icon: ShoppingCart, group: "Advanced Analytics", description: "Order revenue, categories and campaign ROAS from the supplemental e-commerce domain (UC11)", hasFilters: true },
   { id: "schema", label: "Schema Explorer", shortLabel: "Schema", icon: Database, group: "Data Platform", description: "Browse all 39 tables in the gold_business schema — dimensions, marts, reference data and lineage", hasFilters: false },
   { id: "governance", label: "Governance & Quality", shortLabel: "Governance", icon: ShieldCheck, group: "Data Platform", description: "Campaign resolution, source coverage, acceptance checks and the governed KPI dictionary", hasFilters: false },
@@ -176,7 +176,7 @@ export default function Home() {
               </div>
             </header>
 
-            {active.hasFilters ? <FilterBar /> : null}
+            {active.hasFilters ? <FilterBar report={activeId} /> : null}
             </div>
 
             <main className="flex-1 px-4 py-5 md:px-6">

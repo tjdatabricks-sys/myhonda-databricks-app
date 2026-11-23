@@ -1,3 +1,4 @@
+import { tableWhere } from "@/lib/server/filters";
 import { withApiErrors } from "@/lib/server/api-errors";
 // ============================================================
 // GET /api/omnichannel — Direct Mail / Offline / Branch / Vendor
@@ -80,6 +81,7 @@ async function handleGet(req: Request) {
         },
       }),
       db.branch.selectRows({
+        where: tableWhere("Branch", f),
         select: {
           branchCode: true,
           branchName: true,
@@ -89,6 +91,7 @@ async function handleGet(req: Request) {
         },
       }),
       db.vendorCampaign.selectRows({
+        where: tableWhere("VendorCampaign", f),
         select: {
           sourceCampaignName: true,
           platform: true,

@@ -1,3 +1,4 @@
+import { tableWhere } from "@/lib/server/filters";
 import { withApiErrors } from "@/lib/server/api-errors";
 // ============================================================
 // GET /api/campaigns — dim_campaign roster enriched with paid,
@@ -34,9 +35,7 @@ export const dynamic = "force-dynamic";
 async function handleGet(req: Request) {
   const f = await parseFilters(req);
 
-  const campaignWhere: { campaignKey?: string; productId?: string } = {};
-  if (f.campaign) campaignWhere.campaignKey = f.campaign;
-  if (f.product) campaignWhere.productId = f.product;
+  const campaignWhere = tableWhere("Campaign", f);
 
   const [campaigns, products, paidRows, funnelRows, relRows] = await Promise.all([
     db.campaign.selectRows({ where: campaignWhere, orderBy: { campaignKey: "asc" } }),
@@ -63,7 +62,10 @@ async function handleGet(req: Request) {
       },
     }),
     db.relationshipValueMonthly.selectRows({
-      where: relWhere(f),
+      // This report's product selection scopes the campaign roster as well as
+      // contribution. Cross-sell rows from other campaign owners must not leak
+      // into the monthly chart while being absent from the campaign table.
+      where: { AND: [relWhere(f), ...(f.product ? [{ campaignKey: { in: f.productCampaigns ?? [] } }] : [])] },
       select: { campaignKey: true, valueMonth: true, netRelationshipContributionUsd: true },
     }),
   ]);

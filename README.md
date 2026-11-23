@@ -52,8 +52,8 @@ The production server defaults to port 8000 locally. `PORT` overrides it; `DATAB
 
 ## Runtime behavior and limits
 
-- Date presets end at the latest paid-media date in the connected warehouse and clamp to its earliest date. They no longer use fixed demo dates. Empty paid-media tables use today's UTC date as the neutral range.
-- The app preserves existing domain-specific filter semantics: for example, some marts lack market/platform/segment columns; those filters apply only where the underlying table supports them. The funnel retains `UNATTRIBUTED` rows, and website/offline filters retain the original null-attribution rules. Experiments and Brand Lift keep their existing unfiltered navigation behavior.
+- Date presets use the available date range across all 17 marts, including experiment/reach window ends. They no longer depend on paid-media dates alone. An entirely empty set of marts uses today's UTC date as the neutral range.
+- Filter controls are report-specific. Brand and Experiments now support applicable filters; unavailable dimensions are disabled. Date/campaign/platform/product/market/segment selections persist across reports, and unsupported selections are excluded from the request and cache key. Clear removes all saved dimension selections in one action and preserves the chosen date preset. The funnel retains `UNATTRIBUTED` rows, and website/offline retain null-attribution rows for campaign coverage; a product/platform cohort can exclude unattributed rows with no valid campaign link.
 - Warehouse queries run with isolated sessions on one reusable OAuth client, at most four at a time, with a bounded waiting queue. `DATABRICKS_QUERY_CONCURRENCY` adjusts this from 1–16.
 - Each query has a 120-second client deadline with cancellation. Adjust `DATABRICKS_QUERY_TIMEOUT_SECONDS` from 1–600. Configure the warehouse's statement timeout separately if required.
 - Analytics reads are limited to 100,000 rows per underlying query and fail explicitly above that threshold; they never silently truncate KPIs. Narrow filters or increase `DATABRICKS_MAX_ROWS` (maximum 1,000,000) if memory permits. Existing tab calculations remain in TypeScript; counts, min/max/sum queries and channel-group spend aggregation execute in SQL. Large production workloads may need further SQL aggregation and performance tuning.
@@ -97,3 +97,25 @@ The healthcheck change fixes the deployment gate; it does not repair missing war
 Driver error handling supports plain-object `StatusError` values and nested retry/operation causes. Older deployments may show only `WAREHOUSE_ERROR` even when the driver supplied a specific permission, SQL or connection error. Redeploy the current feature branch to receive the classified diagnostic; this diagnostic fix does not itself repair the underlying warehouse failure.
 
 Runtime diagnostics revision 3 adds `stage`, `errorType`, and a redacted `runtimeMessage` for JavaScript TypeErrors to failed API responses. App logs also include stack frame locations, without the SQL statement or credentials. Stages identify `connect`, `open_session`, `execute_statement`, `fetch_results`, and `has_more_rows`; `api_handler` indicates an error outside the SQL transport. A `WAREHOUSE_RUNTIME` response is an application/driver exception, not evidence by itself of missing permissions. Share the full `/api/ready` response after redeploying this revision to locate the failure.
+
+## Filter integration update
+
+The platform dropdown discovers non-empty platform values from **every gold table with a platform column**, including vendor media, social, reach, funnel, attribution and campaign dimensions. It is not limited to the paid-media mart. Source aliases are normalized case-insensitively (Meta/Meta Ads/Facebook/Instagram, LinkedIn/LinkedIn Ads, X/Twitter, Google/Google Ads, YouTube/YouTube Ads, and other named families). Unknown source platform names are retained; absent platforms are not invented. A platform can exist in a dimension or vendor source while having no delivery rows in the paid mart, in which case paid delivery totals can correctly be zero.
+
+When a campaign-keyed table lacks platform or product, the filter selects linked campaigns using platform-bearing gold tables or `dim_campaign.product_id`. These are **campaign cohorts, not proportional attribution**: a multi-platform campaign's relationship value remains a campaign-level measure and is not allocated among platforms. Shared target and invoice/GL totals have no campaign/platform breakdown and remain scoped to their actual columns. Each report shows its filter scope beneath the controls.
+
+| Report | Available controls | Scope limits |
+|---|---|---|
+| Control Tower, Campaigns | Date, campaign, platform, market, product | Market affects market-grain measures; campaign spend has no market grain. |
+| Paid Media | Date, campaign, platform, market, product | Market scopes ad registry; reach uses overlapping 28-day windows. |
+| Funnel, Digital | Date, campaign, platform, product | No market or segment grain. Web/email use linked-campaign cohorts for platform. |
+| Omnichannel | Date, campaign, platform, market, product | Market matches mail/offline geography/branches; branch directory has no campaign grain. |
+| Customers, Contribution | All six controls | Segment scopes customers/new funding; revenue has no segment attribution. |
+| Finance | Date, campaign, platform, product | Invoice/GL reconciliation is date-grain; spend comparisons support campaign cohorts. |
+| Targets | Date, campaign, platform, market, product | Campaign/platform scope contribution, not target allocation. Overrides now follow date. |
+| Brand | Date, campaign, platform, market, product | Platform/product scope linked campaigns. |
+| Experiments | Date, campaign, platform, product | Date selects overlapping experiment windows without clipping variant counts. |
+| E-Commerce | Date | Monthly order/status totals cannot be split by campaign, platform, market, banking product or customer segment. |
+| Schema, Governance | None | Remain schema-wide reference/governance views. |
+
+Validation includes all report APIs against the 39-table fixture, independent expected totals for the filters, the three-platform paid-mart regression, alias handling, empty intersections, clear/reset behavior and browser checks of visible KPI changes and navigation. Fixture tests run locally and do not certify the live workspace's current data, SQL engine or user-session access.

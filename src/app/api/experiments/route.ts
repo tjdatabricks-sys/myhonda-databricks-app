@@ -1,9 +1,10 @@
+import { tableWhere } from "@/lib/server/filters";
 import { withApiErrors } from "@/lib/server/api-errors";
 // ============================================================
 // GET /api/experiments — A/B test readouts with two-proportion
 // z-tests (ExperimentsResponse contract; see src/lib/api-types.ts)
-// Query params are intentionally ignored: each experiment is
-// analyzed across its own window.
+// Filters select overlapping experiment windows and linked campaigns.
+// Variant counts retain their original whole-window meaning.
 // Sources: mart_demo_experiment_variant joined to
 // dim_web_experiment_variant (testKey + variantId) and dim_campaign.
 // ============================================================
@@ -37,12 +38,15 @@ function formatWindow(begin: Date, end: Date): string {
 }
 
 async function handleGet(req: Request) {
-  const f = await parseFilters(req); // filters intentionally ignored for experiments
+  const f = await parseFilters(req);
 
   const [martRows, dimRows, campaigns] = await Promise.all([
     db.experimentVariantMart.selectRows({
+      where: tableWhere("ExperimentVariantMart", f),
       orderBy: [{ experimentId: "asc" }, { variantId: "asc" }],
     }),
+    // Variant definitions identify controls; keep them available even when
+    // their campaign-resolution metadata is incomplete or outside the window.
     db.webExperimentVariant.selectRows(),
     db.campaign.selectRows({ select: { campaignKey: true, campaignTitle: true } }),
   ]);

@@ -25,7 +25,7 @@ function fmtPp(v: number | null | undefined, decimals = 1): string {
 }
 
 export function BrandTab() {
-  const { data, isLoading } = useAnalyticsQuery<BrandResponse>("brand", { withFilters: false });
+  const { data, isLoading } = useAnalyticsQuery<BrandResponse>("brand");
 
   // Awareness metrics may arrive as decimals (0.35) per the API contract; guard against raw pct (35).
   const scale = useMemo(() => {

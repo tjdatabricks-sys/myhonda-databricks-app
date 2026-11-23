@@ -10,10 +10,11 @@ import {
   Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
 } from "@/components/ui/select";
 import { CalendarDays, FilterX, SlidersHorizontal } from "lucide-react";
+import { FILTER_CAPABILITIES, type FilterKey } from '@/lib/filter-capabilities';
 
 const ANY = "__any__";
 
-export function FilterBar() {
+export function FilterBar({ report }: { report: string }) {
   const store = useFilterStore();
   const { data: filters } = useQuery<FiltersResponse>({
     queryKey: ["filters"],
@@ -24,6 +25,8 @@ export function FilterBar() {
   useEffect(() => { if (filters?.dateRange) store.setDataRange(filters.dateRange); }, [filters?.dateRange, store.setDataRange]);
 
   const selectCls = "h-8 w-full text-xs";
+  const capability = FILTER_CAPABILITIES[report];
+  const supports = (filter: FilterKey) => capability?.supported.includes(filter) ?? false;
   const activeCount = [store.campaignKey, store.platform, store.marketId, store.productId, store.segmentId].filter(Boolean).length;
 
   return (
@@ -36,7 +39,7 @@ export function FilterBar() {
 
         <div className="w-[164px]">
           <Select value={store.rangePreset} onValueChange={(v) => store.setRange(v as typeof store.rangePreset)}>
-            <SelectTrigger className={selectCls}><CalendarDays className="mr-1 h-3.5 w-3.5 text-slate-400" /><SelectValue /></SelectTrigger>
+            <SelectTrigger aria-label="Date range" className={selectCls}><CalendarDays className="mr-1 h-3.5 w-3.5 text-slate-400" /><SelectValue /></SelectTrigger>
             <SelectContent>
               {Object.entries(RANGE_LABELS).map(([k, v]) => (
                 <SelectItem key={k} value={k} className="text-xs">{v}</SelectItem>
@@ -46,8 +49,8 @@ export function FilterBar() {
         </div>
 
         <div className="w-[190px]">
-          <Select value={store.campaignKey || ANY} onValueChange={(v) => store.setCampaign(v === ANY ? "" : v)}>
-            <SelectTrigger className={selectCls}><SelectValue placeholder="All campaigns" /></SelectTrigger>
+          <Select disabled={!supports('campaign')} value={supports('campaign') ? store.campaignKey || ANY : ANY} onValueChange={(v) => store.setCampaign(v === ANY ? "" : v)}>
+            <SelectTrigger aria-label="Campaign" title={!supports('campaign') ? 'Campaign is unavailable for this report' : undefined} className={selectCls}><SelectValue placeholder="All campaigns" /></SelectTrigger>
             <SelectContent className="max-h-72">
               <SelectItem value={ANY} className="text-xs">All campaigns</SelectItem>
               {(filters?.campaigns ?? []).map((c) => (
@@ -60,8 +63,8 @@ export function FilterBar() {
         </div>
 
         <div className="w-[140px]">
-          <Select value={store.platform || ANY} onValueChange={(v) => store.setPlatform(v === ANY ? "" : v)}>
-            <SelectTrigger className={selectCls}><SelectValue placeholder="All platforms" /></SelectTrigger>
+          <Select disabled={!supports('platform')} value={supports('platform') ? store.platform || ANY : ANY} onValueChange={(v) => store.setPlatform(v === ANY ? "" : v)}>
+            <SelectTrigger aria-label="Platform" title={!supports('platform') ? 'Platform is unavailable for this report' : undefined} className={selectCls}><SelectValue placeholder="All platforms" /></SelectTrigger>
             <SelectContent>
               <SelectItem value={ANY} className="text-xs">All platforms</SelectItem>
               {(filters?.platforms ?? []).map((p) => (
@@ -72,8 +75,8 @@ export function FilterBar() {
         </div>
 
         <div className="w-[150px]">
-          <Select value={store.marketId || ANY} onValueChange={(v) => store.setMarket(v === ANY ? "" : v)}>
-            <SelectTrigger className={selectCls}><SelectValue placeholder="All markets" /></SelectTrigger>
+          <Select disabled={!supports('market')} value={supports('market') ? store.marketId || ANY : ANY} onValueChange={(v) => store.setMarket(v === ANY ? "" : v)}>
+            <SelectTrigger aria-label="Market" title={!supports('market') ? 'Market is unavailable for this report' : undefined} className={selectCls}><SelectValue placeholder="All markets" /></SelectTrigger>
             <SelectContent>
               <SelectItem value={ANY} className="text-xs">All markets</SelectItem>
               {(filters?.markets ?? []).map((m) => (
@@ -84,8 +87,8 @@ export function FilterBar() {
         </div>
 
         <div className="w-[150px]">
-          <Select value={store.productId || ANY} onValueChange={(v) => store.setProduct(v === ANY ? "" : v)}>
-            <SelectTrigger className={selectCls}><SelectValue placeholder="All products" /></SelectTrigger>
+          <Select disabled={!supports('product')} value={supports('product') ? store.productId || ANY : ANY} onValueChange={(v) => store.setProduct(v === ANY ? "" : v)}>
+            <SelectTrigger aria-label="Product" title={!supports('product') ? 'Product is unavailable for this report' : undefined} className={selectCls}><SelectValue placeholder="All products" /></SelectTrigger>
             <SelectContent>
               <SelectItem value={ANY} className="text-xs">All products</SelectItem>
               {(filters?.products ?? []).map((p) => (
@@ -96,8 +99,8 @@ export function FilterBar() {
         </div>
 
         <div className="w-[150px]">
-          <Select value={store.segmentId || ANY} onValueChange={(v) => store.setSegment(v === ANY ? "" : v)}>
-            <SelectTrigger className={selectCls}><SelectValue placeholder="All segments" /></SelectTrigger>
+          <Select disabled={!supports('segment')} value={supports('segment') ? store.segmentId || ANY : ANY} onValueChange={(v) => store.setSegment(v === ANY ? "" : v)}>
+            <SelectTrigger aria-label="Segment" title={!supports('segment') ? 'Segment is unavailable for this report' : undefined} className={selectCls}><SelectValue placeholder="All segments" /></SelectTrigger>
             <SelectContent>
               <SelectItem value={ANY} className="text-xs">All segments</SelectItem>
               {(filters?.segments ?? []).map((s) => (
@@ -109,7 +112,7 @@ export function FilterBar() {
 
         {activeCount > 0 ? (
           <button
-            onClick={() => { store.setCampaign(""); store.setPlatform(""); store.setMarket(""); store.setProduct(""); store.setSegment(""); }}
+            onClick={store.clearDimensions}
             className="flex h-8 items-center gap-1 rounded-md border border-slate-200 px-2.5 text-xs font-medium text-slate-500 transition-colors hover:border-rose-200 hover:bg-rose-50 hover:text-rose-600"
           >
             <FilterX className="h-3.5 w-3.5" />
@@ -126,6 +129,7 @@ export function FilterBar() {
           </Badge>
         </div>
       </div>
+      {capability ? <p className="mt-2 max-w-5xl text-[11px] leading-relaxed text-slate-500" data-testid="filter-scope">{capability.note} Disabled filters are unavailable for this report; saved selections resume on supported reports.</p> : null}
     </div>
   );
 }

@@ -16,7 +16,7 @@ const CONTROL_COLOR = "#94a3b8";
 const TREATMENT_COLOR = "#0d9488";
 
 export function ExperimentsTab() {
-  const { data, isLoading } = useAnalyticsQuery<ExperimentsResponse>("experiments", { withFilters: false });
+  const { data, isLoading } = useAnalyticsQuery<ExperimentsResponse>("experiments");
   const s = data?.summary;
 
   const experiments = useMemo(() => {
