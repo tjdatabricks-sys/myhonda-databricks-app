@@ -100,7 +100,7 @@ Runtime diagnostics revision 3 adds `stage`, `errorType`, and a redacted `runtim
 
 ## Filter integration update
 
-The platform dropdown discovers non-empty platform values from **every gold table with a platform column**, including vendor media, social, reach, funnel, attribution and campaign dimensions. It is not limited to the paid-media mart. Source aliases are normalized case-insensitively (Meta/Meta Ads/Facebook/Instagram, LinkedIn/LinkedIn Ads, X/Twitter, Google/Google Ads, YouTube/YouTube Ads, and other named families). Unknown source platform names are retained; absent platforms are not invented. A platform can exist in a dimension or vendor source while having no delivery rows in the paid mart, in which case paid delivery totals can correctly be zero.
+The platform dropdown uses only the distinct non-empty `platform` values in `mart_demo_paid_media_daily`, retaining their original source labels. This restores the previous paid-media-only platform list; vendor/social/dimension-only values do not add options. Matching across reports still handles source aliases case-insensitively, so the other filter integration improvements are retained.
 
 When a campaign-keyed table lacks platform or product, the filter selects linked campaigns using platform-bearing gold tables or `dim_campaign.product_id`. These are **campaign cohorts, not proportional attribution**: a multi-platform campaign's relationship value remains a campaign-level measure and is not allocated among platforms. Shared target and invoice/GL totals have no campaign/platform breakdown and remain scoped to their actual columns. Each report shows its filter scope beneath the controls.
 
@@ -119,3 +119,7 @@ When a campaign-keyed table lacks platform or product, the filter selects linked
 | Schema, Governance | None | Remain schema-wide reference/governance views. |
 
 Validation includes all report APIs against the 39-table fixture, independent expected totals for the filters, the three-platform paid-mart regression, alias handling, empty intersections, clear/reset behavior and browser checks of visible KPI changes and navigation. Fixture tests run locally and do not certify the live workspace's current data, SQL engine or user-session access.
+
+## V4 display update
+
+Branch `codex/v4` restores the original paid-media-only platform dropdown and removes the aggregate CAC/ROI cards throughout the app: Blended CAC on Control Tower, Blended CAC and Blended ROI on Campaign Performance, Avg CAC on Customer Acquisition, and Blended ROI on Revenue & Contribution. The remaining KPI grids reflow to five, four, five and five cards respectively. Campaign-level CAC/ROI table columns, chart measures and API response fields remain available.

@@ -35,9 +35,22 @@ test('all 15 tabs render with live-shaped responses and no browser errors', asyn
     await page.getByRole('button',{name:label,exact:true}).click();
     await expect(page.getByRole('heading',{name:label,exact:true})).toBeVisible();
     await expect(page.locator('main')).not.toContainText('NaN');
+    for (const removed of ['Blended CAC','Blended ROI','Avg CAC','Observed ROI']) await expect(page.getByText(removed,{exact:true})).toHaveCount(0);
   }
   expect(errors).toEqual([]);
   await page.screenshot({path:'tests/generated/desktop.png',fullPage:true});
+});
+
+test('aggregate CAC and ROI cards are removed and the remaining KPI grids stay complete',async ({page}) => {
+  await page.goto('/');
+  for (const [label,cards] of [['Control Tower',5],['Campaign Performance',4],['Customer Acquisition',5],['Revenue & Contribution',5]] as const) {
+    await page.getByRole('button',{name:label,exact:true}).click();
+    await expect(page.getByRole('group',{name:/ KPI$/})).toHaveCount(cards);
+    for (const removed of ['Blended CAC','Blended ROI','Avg CAC','Observed ROI']) await expect(page.getByText(removed,{exact:true})).toHaveCount(0);
+  }
+  await page.getByRole('button',{name:'Campaign Performance',exact:true}).click();
+  await expect(page.getByRole('columnheader',{name:'ROI',exact:true}).first()).toBeVisible();
+  await expect(page.getByRole('columnheader',{name:'CAC',exact:true}).first()).toBeVisible();
 });
 
 test('date filters use fixture dates and mobile navigation opens a report',async ({page}) => {

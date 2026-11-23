@@ -15,7 +15,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
-import { UserPlus, UserCheck, Target, Clock, Smartphone, Mail } from "lucide-react";
+import { UserPlus, UserCheck, Clock, Smartphone, Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function CustomersTab() {
@@ -89,10 +89,9 @@ export function CustomersTab() {
   return (
     <div className="space-y-4">
       {/* KPI row */}
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-5">
         <KpiCard label="New Funded Customers" value={fmtNumber(k?.newCustomers)} icon={UserPlus} loading={isLoading} accent="teal" description="in the selected range" />
         <KpiCard label="Lead to Customer Rate" value={fmtPct(k?.leadToCustomerRate)} icon={UserCheck} loading={isLoading} accent="cyan" description="leads that funded an account" />
-        <KpiCard label="Avg CAC" value={fmtCurrency(k?.avgCac)} icon={Target} loading={isLoading} accent="amber" description="blended across channels" />
         <KpiCard label="Avg Tenure" value={tenureValue} icon={Clock} loading={isLoading} accent="violet" description="months since first product" />
         <KpiCard label="Digital Banking Share" value={fmtPct(k?.digitalShare)} icon={Smartphone} loading={isLoading} accent="rose" description="enrolled in digital banking" />
         <KpiCard label="Email Opt-in" value={fmtPct(k?.emailOptInRate)} icon={Mail} loading={isLoading} accent="slate" description="marketing consent on file" />

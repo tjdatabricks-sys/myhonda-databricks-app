@@ -13,7 +13,7 @@ import {
   PieChart, Pie, Cell,
 } from "recharts";
 import {
-  DollarSign, Users, FileCheck2, Landmark, Target, TrendingUp, Lightbulb, ShieldCheck, Activity, MousePointerClick,
+  DollarSign, Users, FileCheck2, Landmark, TrendingUp, Lightbulb, ShieldCheck, Activity, MousePointerClick,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
@@ -69,12 +69,11 @@ export function OverviewTab() {
       ) : null}
 
       {/* KPI row */}
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-5">
         <KpiCard label="Marketing Spend" value={fmtCurrency(k?.spend, { compact: true })} delta={data?.deltas.spend} deltaLabel="vs prior period" icon={DollarSign} loading={isLoading} accent="slate" />
         <KpiCard label="Leads" value={fmtNumber(k?.leads)} delta={data?.deltas.leads} deltaLabel="vs prior period" icon={Users} loading={isLoading} accent="cyan" />
         <KpiCard label="Applications" value={fmtNumber(k?.applications)} icon={FileCheck2} loading={isLoading} accent="violet" description="submitted applications" />
         <KpiCard label="Funded Accounts" value={fmtNumber(k?.fundedAccounts)} delta={data?.deltas.fundedAccounts} deltaLabel="vs prior period" icon={Landmark} loading={isLoading} accent="teal" />
-        <KpiCard label="Blended CAC" value={fmtCurrency(k?.cac)} delta={data?.deltas.cac} invertDelta deltaLabel="vs prior period" icon={Target} loading={isLoading} accent="amber" />
         <KpiCard label="Net Contribution" value={fmtCurrency(k?.contribution, { compact: true })} delta={data?.deltas.contribution} deltaLabel="observed to date" icon={TrendingUp} loading={isLoading} accent="rose" />
       </div>
 

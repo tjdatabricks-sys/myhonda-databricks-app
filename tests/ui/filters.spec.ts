@@ -18,7 +18,7 @@ const reports = [
   ['ecom','E-Commerce',['Campaign','Platform','Market','Product','Segment']],
 ] as const;
 const selections: Record<string,{label:string;name:string}> = {
-  platform:{label:'Platform',name:'Meta'},
+  platform:{label:'Platform',name:dimensions.platform},
   campaign:{label:'Campaign',name:generated.filterOptions.campaigns.find((row:{campaignKey:string}) => row.campaignKey===dimensions.campaign).campaignTitle},
   market:{label:'Market',name:generated.filterOptions.markets.find((row:{marketId:string}) => row.marketId===dimensions.market).marketDisplayName},
   product:{label:'Product',name:generated.filterOptions.products.find((row:{productId:string}) => row.productId===dimensions.product).productName},
@@ -41,7 +41,7 @@ test.beforeEach(async ({page}) => {
   });
 });
 
-test('platform dropdown offers every discovered family including platforms outside paid media',async ({page}) => {
+test('platform dropdown retains only the original paid-media source labels',async ({page}) => {
   await page.goto('/');
   await page.getByRole('combobox',{name:'Platform',exact:true}).click();
   await expect(page.getByRole('option')).toHaveCount(generated.filterOptions.platforms.length+1);
@@ -55,9 +55,9 @@ test('platform selection changes visible spend and Clear restores the original K
   await page.getByRole('button',{name:'Paid Media',exact:true}).click();
   const spend = page.getByRole('group',{name:'Spend KPI',exact:true});
   await expect(spend).toContainText(compactMoney(result('paid-media').kpis.spend));
-  await select(page,'Platform','Meta');
-  await expect(spend).toContainText(compactMoney(result('paid-media',{platform:'Meta'}).kpis.spend));
-  expect(result('paid-media',{platform:'Meta'}).kpis.spend).not.toBe(result('paid-media').kpis.spend);
+  await select(page,'Platform',dimensions.platform);
+  await expect(spend).toContainText(compactMoney(result('paid-media',{platform:dimensions.platform}).kpis.spend));
+  expect(result('paid-media',{platform:dimensions.platform}).kpis.spend).not.toBe(result('paid-media').kpis.spend);
   await page.getByRole('button',{name:/Clear \(/}).click();
   await expect(spend).toContainText(compactMoney(result('paid-media').kpis.spend));
   await expect(page.getByRole('combobox',{name:'Platform',exact:true})).toContainText('All platforms');
@@ -72,8 +72,8 @@ test('delivery chart renders non-flat data after filtering and clearing',async (
     await expect.poll(() => chart.evaluate(element => (element as SVGGraphicsElement).getBBox().height)).toBeGreaterThan(1);
   };
   await expectPlot();
-  await select(page,'Platform','Meta');
-  await expect(page.getByRole('group',{name:'Spend KPI',exact:true})).toContainText(compactMoney(result('paid-media',{platform:'Meta'}).kpis.spend));
+  await select(page,'Platform',dimensions.platform);
+  await expect(page.getByRole('group',{name:'Spend KPI',exact:true})).toContainText(compactMoney(result('paid-media',{platform:dimensions.platform}).kpis.spend));
   await expectPlot();
   await page.getByRole('button',{name:/Clear \(/}).click();
   await expect(page.getByRole('group',{name:'Spend KPI',exact:true})).toContainText(compactMoney(result('paid-media').kpis.spend));
@@ -83,20 +83,20 @@ test('delivery chart renders non-flat data after filtering and clearing',async (
 test('rapid platform changes and a late response cannot overwrite the current selection or Clear',async ({page}) => {
   await page.route('**/api/paid-media?**',async route => {
     const platform = new URL(route.request().url()).searchParams.get('platform');
-    if (platform==='Meta') await new Promise(resolve => setTimeout(resolve,600));
+    if (platform===dimensions.platform) await new Promise(resolve => setTimeout(resolve,600));
     return route.fulfill({status:200,json:result('paid-media',platform ? {platform} : {})});
   });
   await page.goto('/'); await allTime(page);
   await page.getByRole('button',{name:'Paid Media',exact:true}).click();
-  await select(page,'Platform','Meta');
+  await select(page,'Platform',dimensions.platform);
   await select(page,'Platform','Google Ads');
   const spend = page.getByRole('group',{name:'Spend KPI',exact:true});
   await expect(spend).toContainText(compactMoney(result('paid-media',{platform:'Google Ads'}).kpis.spend));
   await expect(page.getByRole('combobox',{name:'Platform',exact:true})).toContainText('Google Ads');
   await page.getByRole('button',{name:/Clear \(/}).click();
   await expect(spend).toContainText(compactMoney(result('paid-media').kpis.spend));
-  await select(page,'Platform','Meta');
-  await expect(spend).toContainText(compactMoney(result('paid-media',{platform:'Meta'}).kpis.spend));
+  await select(page,'Platform',dimensions.platform);
+  await expect(spend).toContainText(compactMoney(result('paid-media',{platform:dimensions.platform}).kpis.spend));
 });
 
 for (const dimension of ['market','product','segment'] as const) {

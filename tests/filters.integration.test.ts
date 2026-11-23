@@ -40,19 +40,19 @@ async function request(endpoint: string, params: Record<string,string> = {}) {
   return response.json();
 }
 
-test('platform inventory covers every platform-bearing table, not just a three-platform paid mart',async () => {
+test('platform inventory restores paid-media-only labels and excludes vendor/dimension-only platforms',async () => {
   fixture.database.run('SAVEPOINT inventory');
   try {
     fixture.database.run("UPDATE mart_demo_paid_media_daily SET platform = CASE WHEN rowid % 3 = 0 THEN 'Meta' WHEN rowid % 3 = 1 THEN 'LinkedIn' ELSE 'X' END");
     fixture.database.run("UPDATE mart_vendor_media_daily SET platform = 'Vendor-only DSP' WHERE rowid = 1");
     const body = await request('filters');
-    assert.ok(body.platforms.includes('Vendor-only DSP'));
-    for (const name of ['Meta','LinkedIn','X','Google Ads','The Trade Desk']) assert.ok(body.platforms.includes(name),name);
+    assert.deepEqual(body.platforms,['LinkedIn','Meta','X']);
+    assert.ok(!body.platforms.includes('Vendor-only DSP'));
     assert.equal(new Set(body.platforms.map((name:string) => name.toLowerCase())).size,body.platforms.length);
-    assert.ok(body.platforms.length > 3);
+    assert.equal(body.platforms.length,3);
   } finally { fixture.database.run('ROLLBACK TO inventory'); fixture.database.run('RELEASE inventory'); }
   const body = await request('filters');
-  assert.deepEqual(body.platforms, platformOptions(rawOptions));
+  assert.deepEqual(body.platforms,[...new Set(csvRows('mart_demo_paid_media_daily').map(row => row.platform.trim()).filter(Boolean))].sort((a,b) => a.localeCompare(b)));
   const {DATA_DATES} = await import('../src/lib/server/filter-catalog');
   const earliest = Object.entries(DATA_DATES).flatMap(([table,col]) => csvRows(table).map(row => date(row[col]))).sort()[0];
   const latest = Object.entries(DATA_DATES).flatMap(([table,col]) => csvRows(table).map(row => date(row.window_end || row[col]))).sort().at(-1);
@@ -254,7 +254,7 @@ test('normalized SQL platform filters remain bound, reject non-strings, and pres
 
 test('capture real route responses for browser checks of filter-driven KPI changes',async () => {
   const filterOptions = await request('filters');
-  const dimensions = {campaign:csvRows('dim_campaign')[0].campaign_key,platform:'Meta',market:market.market_id,product,segment};
+  const dimensions = {campaign:csvRows('dim_campaign')[0].campaign_key,platform:filterOptions.platforms.find((value:string) => canonicalPlatform(value)==='Meta') ?? filterOptions.platforms[0],market:market.market_id,product,segment};
   const cases: Record<string,Record<string,string>> = {none:{},combined:dimensions,...Object.fromEntries(Object.entries(dimensions).map(([key,value]) => [key,{[key]:value}]))};
   const scenarios: Record<string,Record<string,unknown>> = {};
   for (const endpoint of endpoints) {

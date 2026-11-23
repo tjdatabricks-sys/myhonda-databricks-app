@@ -15,13 +15,12 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Skeleton } from "@/components/ui/skeleton";
-import { DollarSign, User, Percent, Receipt, TrendingUp, CalendarClock, Hourglass } from "lucide-react";
+import { DollarSign, User, Percent, Receipt, CalendarClock, Hourglass } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function ContributionTab() {
   const { data, isLoading } = useAnalyticsQuery<ContributionResponse>("contribution");
   const k = data?.kpis;
-  const roi = k?.roi ?? 0;
 
   // Break-even diagonal end point for the spend vs contribution scatter
   const scatter = data?.scatter ?? [];
@@ -76,39 +75,11 @@ export function ContributionTab() {
   return (
     <div className="space-y-4">
       {/* KPI row */}
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-5">
         <KpiCard label="Net Contribution" value={fmtCurrency(k?.netContribution, { compact: true })} icon={DollarSign} loading={isLoading} accent="teal" description="interest + non-interest, net" />
         <KpiCard label="Per Customer" value={fmtCurrency(k?.perCustomer)} icon={User} loading={isLoading} accent="cyan" description="contribution / funded account" />
         <KpiCard label="Interest Income" value={fmtCurrency(k?.interestIncome, { compact: true })} icon={Percent} loading={isLoading} accent="amber" description="accrued in range" />
         <KpiCard label="Non-Interest Income" value={fmtCurrency(k?.otherIncome, { compact: true })} icon={Receipt} loading={isLoading} accent="violet" description="fees and other income, accrued" />
-        {isLoading ? (
-          <Card>
-            <CardContent className="p-4">
-              <Skeleton className="h-4 w-24" />
-              <Skeleton className="mt-3 h-8 w-20" />
-              <Skeleton className="mt-2 h-3 w-28" />
-            </CardContent>
-          </Card>
-        ) : (
-          <Card className="group transition-shadow hover:shadow-md">
-            <CardContent className="p-4">
-              <div className="flex items-start justify-between gap-2">
-                <div className="min-w-0">
-                  <p className="truncate text-xs font-medium tracking-wide text-slate-500 uppercase">Blended ROI</p>
-                  <p className={cn("mt-1.5 truncate text-2xl font-semibold tracking-tight", roi >= 0 ? "text-emerald-600" : "text-rose-600")}>
-                    {fmtX(k?.roi)}
-                  </p>
-                </div>
-                <div className={cn("flex h-9 w-9 shrink-0 items-center justify-center rounded-lg", roi >= 0 ? "bg-teal-50 text-teal-600" : "bg-rose-50 text-rose-600")}>
-                  <TrendingUp size={18} />
-                </div>
-              </div>
-              <div className="mt-2 flex items-center gap-1.5">
-                <span className="truncate text-[11px] text-slate-400">{roi >= 0 ? "above break-even" : "below break-even"}</span>
-              </div>
-            </CardContent>
-          </Card>
-        )}
         <KpiCard label="Est. 36-Mo Value" value={fmtCurrency(k?.estimated36m, { compact: true })} icon={CalendarClock} loading={isLoading} accent="slate" description="projected contribution" />
       </div>
 

@@ -8,12 +8,12 @@ import { ChartCard, EmptyState } from "@/components/analytics/chart-card";
 import { DataTable, type Column } from "@/components/analytics/data-table";
 import { ChartTooltip } from "@/components/analytics/chart-tooltip";
 import { CHART_COLORS, AXIS, GRID_STROKE, GOOD, BAD, TOOLTIP_STYLE } from "@/lib/chart-theme";
-import { fmtCurrency, fmtNumber, fmtPct, fmtX, fmtMonth, safeDiv } from "@/lib/format";
+import { fmtCurrency, fmtNumber, fmtPct, fmtX, fmtMonth } from "@/lib/format";
 import {
   ResponsiveContainer, ComposedChart, BarChart, Bar, Line, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip, Legend,
   ScatterChart, Scatter, Cell, LabelList,
 } from "recharts";
-import { Megaphone, Wallet, DollarSign, Users, Target, TrendingUp } from "lucide-react";
+import { Megaphone, Wallet, DollarSign, Users } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
@@ -98,18 +98,14 @@ export function CampaignsTab() {
     let budget = 0;
     let spend = 0;
     let funded = 0;
-    let contribution = 0;
     for (const r of rs) {
       budget += r.budget;
       spend += r.spend;
       funded += r.fundedAccounts;
-      contribution += r.contribution;
     }
-    return { count: rs.length, budget, spend, funded, contribution };
+    return { count: rs.length, budget, spend, funded };
   }, [data]);
 
-  const blendedCac = safeDiv(totals.spend, totals.funded);
-  const blendedRoi = safeDiv(totals.contribution - totals.spend, totals.spend);
 
   const channelCols: Column<CampaignsResponse["channelSummary"][number]>[] = [
     { key: "channel", header: "Channel", cell: (r) => <span className="font-medium text-slate-700">{r.channel}</span>, sortValue: (r) => r.channel },
@@ -169,13 +165,11 @@ export function CampaignsTab() {
   return (
     <div className="space-y-4">
       {/* KPI row */}
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
+      <div className="grid grid-cols-2 gap-3 xl:grid-cols-4">
         <KpiCard label="Total Campaigns" value={fmtNumber(totals.count)} icon={Megaphone} loading={isLoading} accent="teal" description="matching filters" />
         <KpiCard label="Total Budget" value={fmtCurrency(totals.budget, { compact: true })} icon={Wallet} loading={isLoading} accent="cyan" description="planned budgets" />
         <KpiCard label="Total Spend" value={fmtCurrency(totals.spend, { compact: true })} icon={DollarSign} loading={isLoading} accent="slate" description="delivered to date" />
         <KpiCard label="Funded Accounts" value={fmtNumber(totals.funded)} icon={Users} loading={isLoading} accent="violet" description="across campaigns" />
-        <KpiCard label="Blended CAC" value={fmtCurrency(blendedCac)} icon={Target} loading={isLoading} accent="amber" description="spend / funded" />
-        <KpiCard label="Blended ROI" value={fmtX(blendedRoi)} icon={TrendingUp} loading={isLoading} accent="rose" description="(contribution - spend) / spend" />
       </div>
 
       {/* Monthly trend + channel spend distribution */}

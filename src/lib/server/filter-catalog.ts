@@ -2,7 +2,7 @@ import { GOLD_TABLES } from './gold-tables';
 import { qualifiedTable, quoteIdentifier } from './config';
 import { queryTransport } from './warehouse';
 import { normalizeValue, type Statement } from './query';
-import { platformAliases, platformOptions } from '../platforms';
+import { platformAliases } from '../platforms';
 
 export const DATA_DATES: Record<string, string> = {
   mart_banking_funded_accounts_monthly: 'opening_month', mart_brand_survey_wave: 'survey_date',
@@ -17,8 +17,9 @@ export const DATA_DATES: Record<string, string> = {
 };
 
 export function platformInventoryStatement(): Statement {
-  const sources = Object.entries(GOLD_TABLES).filter(([, def]) => def.fields.platform);
-  return { sql: `SELECT DISTINCT TRIM(platform) AS platform FROM (${sources.map(([table]) => `SELECT platform FROM ${qualifiedTable(table)}`).join(' UNION ALL ')}) AS platforms WHERE platform IS NOT NULL AND TRIM(platform) <> ''`, parameters: {} };
+  // Restore the original dropdown source and source labels. Other reports can
+  // still match source aliases through the shared filter integration layer.
+  return { sql: `SELECT DISTINCT TRIM(platform) AS platform FROM ${qualifiedTable('mart_demo_paid_media_daily')} WHERE platform IS NOT NULL AND TRIM(platform) <> ''`, parameters: {} };
 }
 export function dataRangeStatement(): Statement {
   return { sql: `SELECT MIN(min_date) AS minDate, MAX(max_date) AS maxDate FROM (${Object.entries(DATA_DATES).map(([table, column]) => {
@@ -31,7 +32,8 @@ export async function loadFilterCatalog() {
   const today = new Date().toISOString().slice(0, 10);
   const min = normalizeValue('DateTime', dates[0]?.minDate) as Date | null;
   const max = normalizeValue('DateTime', dates[0]?.maxDate) as Date | null;
-  return { platforms: platformOptions(platforms.map(row => typeof row.platform === 'string' ? row.platform : null)), dateRange: { min: min?.toISOString().slice(0, 10) ?? today, max: max?.toISOString().slice(0, 10) ?? today } };
+  const options = [...new Set(platforms.flatMap(row => typeof row.platform === 'string' && row.platform.trim() ? [row.platform.trim()] : []))].sort((a, b) => a.localeCompare(b));
+  return { platforms: options, dateRange: { min: min?.toISOString().slice(0, 10) ?? today, max: max?.toISOString().slice(0, 10) ?? today } };
 }
 
 export function platformCampaignStatement(platform: string): Statement {
