@@ -38,3 +38,25 @@ test('diagnostics distinguish authentication, permissions, schema and connection
     assert.doesNotMatch(diagnostic.message, /SECRET_TOKEN/);
   }
 });
+
+test('SQL driver plain-object and nested errors keep their diagnosis without exposing details', async () => {
+  const cases = [
+    { error: { name: 'Status Error', message: 'INSUFFICIENT_PRIVILEGES SECRET_TOKEN', code: 7 }, code: 'WAREHOUSE_PERMISSION' },
+    { error: { name: 'Status Error', message: 'TABLE_OR_VIEW_NOT_FOUND secret_customer_data' }, code: 'WAREHOUSE_SCHEMA' },
+    { error: { message: 'The operation failed due to an error', response: { errorMessage: 'PARSE_SYNTAX_ERROR SELECT secret_customer_data', sqlState: '42601' } }, code: 'WAREHOUSE_QUERY' },
+    { error: { message: 'Max retry count exceeded', payload: { cause: { message: 'ECONNRESET SECRET_TOKEN' } } }, code: 'WAREHOUSE_CONNECTION' },
+    { error: { message: 'Max retry count exceeded' }, code: 'WAREHOUSE_RETRY_EXHAUSTED' },
+  ];
+  for (const { error, code } of cases) {
+    const diagnostic = warehouseDiagnostic(error);
+    assert.equal(diagnostic.code, code);
+    assert.doesNotMatch(diagnostic.message, /SECRET_TOKEN|secret_customer_data/);
+  }
+  const { withApiErrors } = await import('../src/lib/server/api-errors');
+  const handler = withApiErrors(async () => { throw cases[0].error; });
+  const response = await handler(new Request('http://localhost/api/ready'));
+  assert.equal(response.status, 503);
+  const body = await response.text();
+  assert.match(body, /WAREHOUSE_PERMISSION/);
+  assert.doesNotMatch(body, /SECRET_TOKEN/);
+});

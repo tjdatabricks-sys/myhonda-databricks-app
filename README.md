@@ -86,6 +86,10 @@ If the app shows **Warehouse needs attention**, inspect `/api/ready` and the `ap
 | `WAREHOUSE_PERMISSION` | Grant warehouse and Unity Catalog access to the app principal, not just the developer. |
 | `SCHEMA_MISMATCH` / `WAREHOUSE_SCHEMA` | Check the selected catalog/schema and required table/column types. |
 | `WAREHOUSE_CONNECTION` / `QUERY_TIMEOUT` | Check warehouse availability and app networking. |
+| `WAREHOUSE_QUERY` | Inspect the failed statement in warehouse Query History for a SQL or data-type error. |
+| `WAREHOUSE_RETRY_EXHAUSTED` | Check warehouse availability, networking and the failed query before changing grants. |
 | `WAREHOUSE_ERROR` | The driver error was not classified; share the request ID and relevant sanitized workspace diagnostics for investigation. |
 
 The healthcheck change fixes the deployment gate; it does not repair missing warehouse grants, business tables, or workspace networking.
+
+Driver error handling supports plain-object `StatusError` values and nested retry/operation causes. Older deployments may show only `WAREHOUSE_ERROR` even when the driver supplied a specific permission, SQL or connection error. Redeploy the current feature branch to receive the classified diagnostic; this diagnostic fix does not itself repair the underlying warehouse failure.
