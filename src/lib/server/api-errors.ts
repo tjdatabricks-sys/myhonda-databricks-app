@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { ConfigurationError } from './config';
 import { WarehouseError } from './warehouse';
+import { failureDetails } from './error-context';
 
 function driverDetails(error: unknown): string {
   // The SQL driver's StatusError is a plain object, not an Error subclass.
@@ -50,8 +51,14 @@ export function withApiErrors(handler: (request: Request) => Promise<Response>) 
       let { message, code, status } = warehouseDiagnostic(error);
       if (error instanceof ConfigurationError) { message = error.message; code = 'CONFIGURATION_ERROR'; }
       if (error instanceof WarehouseError) { message = error.message; code = error.code; status = error.status; }
-      console.error(JSON.stringify({ event: 'api_error', id, code, message, errorType: error instanceof Error ? error.name : 'Unknown' }));
-      return NextResponse.json({ error: message, code, requestId: id }, { status, headers: { 'Cache-Control': 'no-store' } });
+      const details = failureDetails(error);
+      if (error instanceof TypeError && code === 'WAREHOUSE_ERROR') {
+        code = 'WAREHOUSE_RUNTIME';
+        message = 'A runtime error interrupted the warehouse request. Share the runtimeMessage and stage below to diagnose the application or SQL driver failure.';
+      }
+      console.error(JSON.stringify({ event: 'api_error', id, code, message, diagnosticsVersion: 3, ...details }));
+      const { stackFrames: _frames, ...publicDetails } = details;
+      return NextResponse.json({ error: message, code, requestId: id, diagnosticsVersion: 3, ...publicDetails }, { status, headers: { 'Cache-Control': 'no-store' } });
     }
   };
 }

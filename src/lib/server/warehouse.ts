@@ -4,6 +4,7 @@ import type IDBSQLSession from '@databricks/sql/dist/contracts/IDBSQLSession';
 import type IOperation from '@databricks/sql/dist/contracts/IOperation';
 import { connectionSettings, positiveInteger, required } from './config';
 import type { Statement } from './query';
+import { recordFailure } from './error-context';
 
 export class WarehouseError extends Error {
   constructor(message: string, public readonly code: string, public readonly status = 503) { super(message); }
@@ -34,7 +35,7 @@ export function createSqlExecutor(makeClient: () => IDBSQLClient = () => new DBS
         : { ...settings, authType: 'databricks-oauth' as const, useDatabricksOAuthInAzure: true, oauthClientId: required('DATABRICKS_CLIENT_ID'), oauthClientSecret: required('DATABRICKS_CLIENT_SECRET') };
       connection = client.connect(options).catch(async error => {
         connection = undefined;
-        await client.close().catch(() => {});
+        try { await client.close(); } catch {}
         throw error;
       });
     }
@@ -47,21 +48,27 @@ export function createSqlExecutor(makeClient: () => IDBSQLClient = () => new DBS
       let operation: IOperation | undefined;
       let timer: ReturnType<typeof setTimeout> | undefined;
       let timedOut = false;
+      let stage = 'configuration';
       try {
         const cap = positiveInteger('DATABRICKS_MAX_ROWS', 100000, 1000000);
         const timeoutMs = positiveInteger('DATABRICKS_QUERY_TIMEOUT_SECONDS', 120, 600) * 1000;
         const work = (async () => {
+          stage = 'connect';
           const client = await connect();
           if (timedOut) return [];
+          stage = 'open_session';
           session = await client.openSession();
           if (timedOut) { await session.close(); return []; }
+          stage = 'execute_statement';
           operation = await session.executeStatement(statement.sql, { namedParameters: statement.parameters, runAsync: true, maxRows: 1000, useLZ4Compression: false });
           if (timedOut) { await operation.cancel(); await operation.close(); await session.close(); return []; }
           const rows: Record<string, unknown>[] = [];
           do {
+            stage = 'fetch_results';
             const chunk = await operation.fetchChunk({ maxRows: Math.min(5000, cap + 1 - rows.length) });
             rows.push(...chunk as Record<string, unknown>[]);
             if (rows.length > cap) throw new WarehouseError(`This request exceeds the ${cap.toLocaleString()} row limit. Narrow the filters or use the paginated CSV export.`, 'ROW_LIMIT', 422);
+            stage = 'has_more_rows';
           } while (!timedOut && await operation.hasMoreRows());
           return rows;
         })();
@@ -73,10 +80,13 @@ export function createSqlExecutor(makeClient: () => IDBSQLClient = () => new DBS
           }, timeoutMs);
         });
         return await Promise.race([work, timeout]);
+      } catch (error) {
+        recordFailure(error, stage, statement.parameters);
+        throw error;
       } finally {
         if (timer) clearTimeout(timer);
-        await operation?.close().catch(() => {});
-        await session?.close().catch(() => {});
+        try { await operation?.close(); } catch {}
+        try { await session?.close(); } catch {}
         release();
       }
     },
