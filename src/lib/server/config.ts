@@ -30,11 +30,22 @@ export function qualifiedTable(table: string): string {
 }
 
 export function connectionSettings() {
-  const url = new URL(required('DATABRICKS_HOST'));
-  if (url.protocol !== 'https:' || url.username || url.password || url.pathname !== '/') {
-    throw new ConfigurationError('DATABRICKS_HOST must be an HTTPS workspace URL.');
+  const raw = required('DATABRICKS_HOST');
+  let url: URL;
+  try {
+    // Workspace configuration can supply either a bare server hostname or an
+    // HTTPS URL. The SQL driver always needs the bare hostname.
+    url = new URL(raw.includes('://') ? raw : `https://${raw}`);
+  } catch {
+    throw new ConfigurationError('DATABRICKS_HOST is invalid. Use the workspace hostname from the SQL warehouse Connection details, or its HTTPS workspace URL.');
+  }
+  if (url.protocol !== 'https:' || url.username || url.password || url.pathname !== '/' || !url.hostname.includes('.') || (url.port && url.port !== '443')) {
+    throw new ConfigurationError('DATABRICKS_HOST must be a workspace hostname or HTTPS workspace URL, without a path, credentials, or a non-HTTPS port.');
+  }
+  if (url.hostname.endsWith('.databricksapps.com') || url.hostname === 'databricksapps.com') {
+    throw new ConfigurationError('DATABRICKS_HOST points to an app URL. Use the Databricks workspace hostname from the SQL warehouse Connection details instead.');
   }
   const warehouseId = required('DATABRICKS_WAREHOUSE_ID');
   if (!/^[a-zA-Z0-9-]+$/.test(warehouseId)) throw new ConfigurationError('Invalid warehouse ID.');
-  return { host: url.host, path: `/sql/1.0/warehouses/${warehouseId}` };
+  return { host: url.hostname, path: `/sql/1.0/warehouses/${warehouseId}` };
 }

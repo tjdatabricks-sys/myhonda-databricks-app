@@ -15,6 +15,8 @@ Databricks installs Node packages and builds Next.js from source. The start scri
 
 The only app-specific connection choices are **warehouse, catalog, and schema**. Resource grants, app creation and deployment still require a developer or administrator with the appropriate workspace permissions. The chosen schema must already contain the business data described by `data/gold-business-schema.csv` (39 tables, 468 columns). This is a consumption app; it does not create or populate production tables, run ETL, or invent missing data.
 
+`DATABRICKS_HOST` is automatically supplied by Databricks Apps. Remove manual overrides that set it to `sql-warehouse`, a warehouse ID, or the app URL. `sql-warehouse` belongs only in `DATABRICKS_WAREHOUSE_ID.valueFrom`. For local development, the host may be either the bare workspace hostname (for example `dbc-example.cloud.databricks.com`) or its HTTPS URL. Both are normalized to the hostname for the SQL driver; malformed values produce `CONFIGURATION_ERROR` instead of a generic `TypeError: Invalid URL`.
+
 ## Identity and data access
 
 Queries use the app's service principal through OAuth M2M. Every person allowed to use the app sees data available to that principal, including row-level exports. Grant app access accordingly. This implementation does not forward individual user tokens; per-user Unity Catalog permissions would require a separate authorization change.

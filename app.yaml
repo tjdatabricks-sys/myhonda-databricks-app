@@ -1,4 +1,6 @@
 command: ['node', 'scripts/start.mjs']
+# DATABRICKS_HOST is supplied by Databricks Apps. Do not bind it to sql-warehouse.
+# The sql-warehouse resource supplies only DATABRICKS_WAREHOUSE_ID below.
 env:
   - name: DATABRICKS_WAREHOUSE_ID
     valueFrom: sql-warehouse

@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { compileRead, compileWhere, normalizeValue } from '../src/lib/server/query';
-import { connectionSettings, quoteIdentifier } from '../src/lib/server/config';
+import { ConfigurationError, connectionSettings, quoteIdentifier } from '../src/lib/server/config';
 import { compatibleType, validateColumns } from '../src/lib/server/metadata';
 import { rangeParams } from '../src/lib/store';
 import schema from '../data/gold-business-schema.json';
@@ -56,4 +56,23 @@ test('warehouse hostname and HTTP path derive from the three deployment settings
   process.env.DATABRICKS_HOST='https://test.cloud.databricks.com';
   process.env.DATABRICKS_WAREHOUSE_ID='abc123';
   assert.deepEqual(connectionSettings(),{host:'test.cloud.databricks.com',path:'/sql/1.0/warehouses/abc123'});
+});
+
+test('bare workspace hosts reproduce and fix the Invalid URL connection failure', () => {
+  const hostname = 'dbc-example.cloud.databricks.com';
+  assert.throws(() => new URL(hostname), TypeError);
+  process.env.DATABRICKS_WAREHOUSE_ID = 'abc123';
+  for (const input of [hostname, `https://${hostname}`, `https://${hostname}/`, `  ${hostname}  `, `https://${hostname}:443/`]) {
+    process.env.DATABRICKS_HOST = input;
+    assert.deepEqual(connectionSettings(), { host: hostname, path: '/sql/1.0/warehouses/abc123' });
+  }
+});
+
+test('invalid hosts and app URLs produce actionable configuration errors', () => {
+  for (const host of ['sql-warehouse', 'not-a-url', 'https://', 'bad host.example.com', 'http://test.cloud.databricks.com', 'https://test.cloud.databricks.com/sql/warehouses', 'https://user:password@test.cloud.databricks.com', 'https://test.cloud.databricks.com:8080']) {
+    process.env.DATABRICKS_HOST = host;
+    assert.throws(() => connectionSettings(), ConfigurationError);
+  }
+  process.env.DATABRICKS_HOST = 'https://appv1-7474646781720269.aws.databricksapps.com/';
+  assert.throws(() => connectionSettings(), /points to an app URL/);
 });
